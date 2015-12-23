@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelsRegister xmlns="http://www.smpte-ra.org/schemas/400/2012">
+  <Entries>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>VisuallyImpairedNarrativeControlChannel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01010100</UL>
+      <Kind>LEAF</Kind>
+      <Name>Visually Impaired Narrative Control Channel</Name>
+      <Definition>Identifies an Audio Channel carrying a signal intended to be used to control the level of the Main Programme audio when it is being mixed with a Visually Impaired Narrative Audio Channel</Definition>
+      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>VisuallyImpairedNarrativeAudioAndControl</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01020100</UL>
+      <Kind>LEAF</Kind>
+      <Name>Visually Impaired Narrative Audio and Control</Name>
+      <Definition>Identifies an Soundfield Group carrying a Visually Impaired Narrative Audio Channel and a Visually Impaired Narrative Control Channel</Definition>
+      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>AlternativeProgram</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01030100</UL>
+      <Kind>LEAF</Kind>
+      <Name>Alternative Program</Name>
+      <Definition>Identifies an alternative, complete audio program</Definition>
+      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>VisuallyImpairedNarrativeProgramMix</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01030200</UL>
+      <Kind>LEAF</Kind>
+      <Name>Visually Impaired Narrative Program Mix</Name>
+      <Definition>Identifies a mix of the program audio with Visually Impaired Narrative audio</Definition>
+      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>VisuallyImpairedNarrative</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01030300</UL>
+      <Kind>LEAF</Kind>
+      <Name>Visually Impaired Narrative</Name>
+      <Definition>Identifies Visually Impaired Narrative audio</Definition>
+      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>MusicAndEffects</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01030400</UL>
+      <Kind>LEAF</Kind>
+      <Name>Music and Effects</Name>
+      <Definition>Identifies a mix of the Main Programme with no dialogue</Definition>
+      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>LeftAudioChannel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020101.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Left Audio Channel</Name>
+      <Definition>Identifies the Audio Channel intended to drive the Left loudspeaker</Definition>
+      <DefiningDocument>ST 428-12</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>RightAudioChannel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020102.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Right Audio Channel</Name>
+      <Definition>Identifies the Audio Channel intended to drive the Right loudspeaker</Definition>
+      <DefiningDocument>ST 428-12</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>CenterAudioChannel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020103.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Center Audio Channel</Name>
+      <Definition>Identifies the Audio Channel intended to drive the Center loudspeaker</Definition>
+      <DefiningDocument>ST 428-12</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>LFEAudioChannel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020104.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>LFE Audio Channel</Name>
+      <Definition>Identifies the Audio Channel intended to drive the screen Low Frequency Effects loudspeaker</Definition>
+      <DefiningDocument>ST 428-12</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>LeftSurroundAudioChannel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020105.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Left Surround Audio Channel</Name>
+      <Definition>Identifies the Audio Channel intended to drive the Left Surround</Definition>
+      <DefiningDocument>ST 428-12</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>RightSurroundAudioChannel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020106.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Right Surround Audio Channel</Name>
+      <Definition>Identifies the Audio Channel intended to drive the Right Surround</Definition>
+      <DefiningDocument>ST 428-12</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>VisuallyImpairedNarrativeAudioChannel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.0302010f.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Visually Impaired Narrative Audio Channel</Name>
+      <Definition>A dedicated narration channel describing the main picture events for the visually impaired.</Definition>
+      <DefiningDocument>ST 428-12</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>_51SoundfieldGroup</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020201.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>5.1 Soundfield Group</Name>
+      <Definition>Identifies the 5.1 Soundfield Group</Definition>
+      <DefiningDocument>ST 428-12</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>SMPTEST20678StandardStereo</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020220.01000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>SMPTE ST 2067-8 Standard Stereo</Name>
+      <Definition>Consists of Audio Channels L, R</Definition>
+      <DefiningDocument>ST 2067-8</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+      <Symbol>SMPTEST20678MainProgram</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0401010d.03020320.01000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>SMPTE ST 2067-8 Main Program</Name>
+      <Definition>Identifies SMPTE ST 2067-8 2067-8 Main Program</Definition>
+      <DefiningDocument>ST 2067-8</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+  </Entries>
+</LabelsRegister>

@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes-DomainSpecific" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes-DomainSpecific" elementFormDefault="qualified">
+
+  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" schemaLocation="DM_Common.xsd"/>
+
+  <xs:element name="Programmes-DomainSpecific_DM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Series_Title" type="cmn:string127" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The final name of a "group" of episodes to which the programme belongs. These episodes have a shared identification and branding and are linked by common characters, subject matter, style or story.
+            </xs:documentation>
+            <xs:documentation cmn:documentationType="friendly" xml:lang="en">
+              This is the "friendly" definition of Series_Title
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Programme_Title" type="cmn:string127">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The final name of the programme used to identify it as a version of an episode. This name indicates the specific purpose for which the version was created.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Episode_Title_Number" type="cmn:string127" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The final name of the programme used to identify it as an editorially distinct member of a series i.e. an episode. This name may include a number (or consist only of a number) indicating the position of the episode within the series.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Synopsis" type="cmn:string250" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              A brief descriptive summary of the programme.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Genre" type="cmn:string127" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              A single style or category describing the whole programme.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Completion_Date" type="xs:date" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The date on which the programme file was completed ready for delivery to the Broadcaster.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Copyright_Year" type="xs:gYear" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The full year in which one of the following occurred or will occur: completion of the production of the programme; delivery of the completed file to the Broadcaster; transmission of the delivered programme.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Originator" type="cmn:string127" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The name of the person or organisation responsible for creating the programme.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Distributor" type="cmn:string127" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The name of the person or organisation responsible for supplying the programme to the Broadcaster.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Contact_Email" type="cmn:string127" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The email address for the person or organisation responsible for supplying the programme file to the Broadcaster.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Contact_Telephone_Number" type="cmn:string127" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The telephone number for the person or organisation responsible for supplying the programme file to the Broadcaster.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Picture_Ratio" type="pg1:Picture_Ratio_type" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The ratio of the display width to the display height of the smallest rectangle that completely contains (throughout the duration of the entire programme) the region of the video frame used for "programme content" (where "programme content" includes all pictures, captions, etc but excludes any black bars). If the precise value of this ratio is unknown then one of the text values can be used instead.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Product_Placement" type="xs:boolean" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              A flag to indicate whether the programme contains "product placement".
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Textless_Elements_Exist" type="xs:boolean" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              A flag to indicate whether the programme contains "textless elements" after the end of the main programme content.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:choice minOccurs="0" maxOccurs="1">
+          <xs:element name="Programme_Has_No_Text">
+            <xs:complexType/>
+          </xs:element>
+          <xs:element name="Programme_Has_Text">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                The presence of this element indicates that the main programme content contains text overlays (or similar) in the video. 
+              </xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Programme_Text_Language" type="xs:language" minOccurs="1" maxOccurs="1">
+                  <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                      A code to identify the main language used for text overlays (or similar) in the video of the main programme content.
+                    </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+        <xs:element name="Total_Programme_Duration" type="cmn:Duration_type" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The sum of the durations of all the parts / segments in the entire programme.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Line_Up_Start" type="cmn:Timecode_type" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The timecode at which the line-up test signals begin.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Ident_Clock_Start" type="cmn:Timecode_type" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              The timecode at which the initial "ident" or countdown clock begins.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:choice minOccurs="1" maxOccurs="1">
+          <xs:element name="Is_Not_Three_D">
+            <xs:complexType/>
+          </xs:element>
+          <xs:element name="Is_Three_D">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                The presence of this element indicates that the file contains video intended for stereoscopic rendition. 
+              </xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ThreeD_Type" type="pg1:ThreeD_Type_type" minOccurs="1" maxOccurs="1">
+                  <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                      A code to identify the kind of stereoscopic video contained in the file.
+                    </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:simpleType name="ThreeD_Type_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Side by side">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            <!-- TODO --> 
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Left eye only">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            <!-- TODO --> 
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Right eye only">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            <!-- TODO --> 
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <xs:complexType name="Picture_Ratio_type">
+    <xs:choice>
+      <xs:element name="Full_Frame">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The picture fills the entire frame horizontally and vertically</xs:documentation>
+        </xs:annotation>
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="Not_Full_Frame">
+        <xs:complexType>
+          <xs:choice>
+            <xs:element name="Defined_Picture" type="pg1:Defined_Picture_Ratios_type"/>
+            <xs:element name="Custom_Picture" type="cmn:string250"/>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:simpleType name="Defined_Picture_Ratios_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="4/3">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="14/9">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="15/9">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="16/9">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1.85:1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="21/9">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2.35:1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2.37:1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2.40:1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Centred Letterbox">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The picture fills the full width of the frame, is vertically centered in the frame and there are black bars of unspecified height to the top and bottom of the picture</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Centred Pillarbox">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The picture fills the full height of the frame, is horizontally centered in the frame and has black bars of unspecified width to the left and right of the picture</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

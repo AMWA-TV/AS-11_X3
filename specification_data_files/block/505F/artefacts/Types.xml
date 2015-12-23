@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TypesRegister xmlns="http://www.smpte-ra.org/schemas/2003/2012">
+  <Entries>
+    <Entry>
+      <Register>Types</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/2003/2012</NamespaceName>
+      <Symbol>UInt16</Symbol>
+      <UL>urn:smpte:ul:060e2b34.01040101.01010200.00000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>UInt16</Name>
+      <Applications>AAF</Applications>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <TypeKind>Integer</TypeKind>
+      <TypeSize>2</TypeSize>
+      <TypeQualifiers>isNumeric</TypeQualifiers>
+    </Entry>
+  </Entries>
+</TypesRegister>

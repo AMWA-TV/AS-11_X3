@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification" elementFormDefault="qualified">
+
+  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" schemaLocation="DM_Common.xsd"/>
+
+  <xs:element name="Identifiers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Identifier" type="id:Identifier_Set_type" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:complexType name="Identifier_Set_type">
+    <xs:sequence>
+      <xs:element name="Identifier_Value" type="cmn:string250" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            <!-- TODO -->
+            
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Identifier_Type" type="cmn:string250" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            <!-- TODO -->
+            
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Identifier_Authority" type="cmn:string250" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            <!-- TODO -->
+            The entity responsible for issuing the identifier.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

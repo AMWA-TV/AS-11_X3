@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelsRegister xmlns="http://www.smpte-ra.org/schemas/400/2012">
+  <Entries>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>Default_Audio_Layout_A_without_MCA_Labeling</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.02030000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Default Audio Layout A without MCA Labeling</Name>
+      <Definition>Identifies default audio layout A without use of the MXF Multichannel Audio Framework</Definition>
+      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+  </Entries>
+</LabelsRegister>

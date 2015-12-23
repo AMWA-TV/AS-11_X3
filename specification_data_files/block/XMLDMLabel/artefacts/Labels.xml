@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelsRegister xmlns="http://www.smpte-ra.org/schemas/400/2012">
+  <Entries>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>DM_XML_Document</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.04010000</UL>
+      <Kind>LEAF</Kind>
+      <Name>DM_XML_Document</Name>
+      <Definition>Descriptive Metadata XML Document in Header Metadata</Definition>
+      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+  </Entries>
+</LabelsRegister>

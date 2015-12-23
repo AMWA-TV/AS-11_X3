@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelsRegister xmlns="http://www.smpte-ra.org/schemas/400/2012">
+  <Entries>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/as11</NamespaceName>
+      <Symbol>DM_AS_11_Segmentation</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010701.0b020000</UL>
+      <Kind>LEAF</Kind>
+      <Name>DM_AS_11_Segmentation</Name>
+      <Definition>AS-11 segmentation metadata scheme</Definition>
+      <DefiningDocument>AMWA Application Specification AS-11 MXF Program Contribution</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+  </Entries>
+</LabelsRegister>

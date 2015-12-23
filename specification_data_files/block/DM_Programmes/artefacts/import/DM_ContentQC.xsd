@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:qc="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC" elementFormDefault="qualified">
+
+  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" schemaLocation="DM_Common.xsd"/>
+
+  <xs:element name="Content_Quality_Checking_And_Testing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Audio_Comments" type="cmn:string127" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+             <xs:documentation xml:lang="en">
+               A description of the subjective quality of the audio in the programme including notes on any global characteristics or audio treatments.
+             </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Video_Comments" type="cmn:string127" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+             <xs:documentation xml:lang="en">
+               A description of the subjective quality of the video in the programme including notes on any global characteristics or video treatments.
+             </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:choice minOccurs="1" maxOccurs="1">
+          <xs:element name="Programme_Audio_Is_Not_Intentionally_Quiet">
+            <xs:complexType/>
+          </xs:element>
+          <xs:element name="Programme_Audio_Is_Intentionally_Quiet">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">
+                 The presence of this element indicates that the programme audio is quieter than would usually be expected.
+               </xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Justification" type="cmn:string127" minOccurs="1" maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xml:lang="en">
+                       An explanation for the unusually quiet programme audio.
+                     </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+        <xs:element name="PSE_Test_Results" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PSE_Test" type="qc:PSE_Test_type" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Audio_Loudness_Test_Results" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Audio_Loudness_Test" type="qc:Audio_Loudness_Test_type" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:complexType name="Audio_Loudness_Test_type">
+    <xs:sequence>
+      <xs:element name="Audio_Loudness_Specification" type="qc:Audio_Loudness_Specification_type" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Compliance_To_Specification_Achieved" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Programme_Loudness_Value" type="xs:float" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+           <xs:documentation xml:lang="en">
+             The "Programme Loudness Value" in LUFS as measured in accordance with the Audio_Loudness_Specification.
+           </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PSE_Test_type">
+    <xs:sequence>
+      <xs:element name="Test_Device" type="cmn:string250" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+           <xs:documentation xml:lang="en">
+             <!-- TODO -->
+             
+           </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Test_Passed" type="xs:boolean" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+           <xs:documentation xml:lang="en">
+             <!-- TODO -->
+             
+           </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="Audio_Loudness_Specification_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ITU-R REC SB.1770"/>
+      <xs:enumeration value="EBU Tech 3341"/>
+      <xs:enumeration value="EBU R 128"/>
+      <xs:enumeration value="EBU R 128 s1"/>
+      <xs:enumeration value="ITU-R REC BS.1864"/>
+      <xs:enumeration value="FreeTV OP-59"/>
+      <xs:enumeration value="FreeTV OP-48"/>
+      <xs:enumeration value="ATSC A/85:2009"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

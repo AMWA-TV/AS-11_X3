@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" elementFormDefault="qualified">
+
+  <xs:simpleType name="Timecode_type">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{1,2}:\d{1,2}:\d{1,2}[;:]\d{1,5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Duration_type">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(\d+:\d{1,2}:\d{1,2}:\d+)?"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="string127">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="127"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="string250">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="250"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Rational_String_type">
+    <xs:restriction base="xs:string">
+       <xs:pattern value="[1-9][0-9]*/[1-9][0-9]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

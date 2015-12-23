@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ElementsRegister xmlns="http://www.smpte-ra.org/schemas/335/2012">
+  <Entries>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>Specification_Identification</Symbol>
+      <UL>urn:smpte:ul:060e2b34.01010101.0d010801.01000000</UL>
+      <Kind>NODE</Kind>
+      <Name>Specification Identification</Name>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+  </Entries>
+</ElementsRegister>

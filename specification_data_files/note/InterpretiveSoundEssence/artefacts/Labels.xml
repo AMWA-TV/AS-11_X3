@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelsRegister xmlns="http://www.smpte-ra.org/schemas/400/2012">
+  <Entries>
+    <Entry>
+      <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>InterpretiveSoundEssence</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01000000</UL>
+      <Kind>NODE</Kind>
+      <Name>Sound Essence</Name>
+      <Definition>SMPTE Label identifiers for Sound Essence interpretive data</Definition>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+  </Entries>
+</LabelsRegister>

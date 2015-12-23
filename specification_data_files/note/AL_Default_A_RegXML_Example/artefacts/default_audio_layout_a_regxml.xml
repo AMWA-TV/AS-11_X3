@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example (partial) Reg-XML file -->
+<!-- FOR DEFAULT AUDIO LAYOUT A - Order of Descriptors, SubDescriptors, Sound Tracks, Audio Channels and Sound Essence is the same as the order of entries in this Reg-XML file -->
+<!-- Note that MCA Labeling is not necessarily always present when Default Audio Layout A applies: this file merely shows how the MCA Labeling details could appear if present in the MXF file -->
+
+<r1:FileDescriptors xmlns:r0="http://www.smpte-ra.org/reg/395/2014/13/1/aaf"
+                    xmlns:r1="http://www.smpte-ra.org/reg/335/2012"
+                    xmlns:r2="http://www.smpte-ra.org/reg/2003/2012"
+                    xmlns:r3="http://sandflow.com/ns/SMPTEST2001-1/baseline">
+
+<!-- Stereo Sound Track Descriptor using MCA Labeling -->
+    <r0:WAVEPCMDescriptor>
+      <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+      <r1:LinkedTrackID>2001</r1:LinkedTrackID>
+      <r1:SampleRate>25/1</r1:SampleRate>
+      <r1:EssenceLength>1500</r1:EssenceLength>
+      <r1:AudioSampleRate>48000/1</r1:AudioSampleRate>
+      <r1:ChannelCount>2</r1:ChannelCount>
+      <r1:QuantizationBits>24</r1:QuantizationBits>
+      <r1:BlockAlign>6</r1:BlockAlign>
+      <r1:AverageBytesPerSecond>288000</r1:AverageBytesPerSecond>
+      <r1:ChannelAssignment>urn:smpte:ul:060e2b34.********.********.********</r1:ChannelAssignment>
+      <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+      <r1:SubDescriptors>
+        <r0:GroupOfSoundfieldGroupsLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020320.01000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>MPg</r1:MCATagSymbol>
+          <r1:MCATagName>Main Program</r1:MCATagName>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:GroupOfSoundfieldGroupsLabelSubDescriptor>
+        <r0:SoundfieldGroupLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020220.01000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>ST</r1:MCATagSymbol>
+          <r1:MCATagName>Standard Stereo</r1:MCATagName>
+          <r1:RFC5646SpokenLanguage>en</r1:RFC5646SpokenLanguage>
+          <r1:GroupOfSoundfieldGroupsLinkID><!-- Same as xpath(../GroupOfSoundfieldGroupsLabelSubDescriptor/MCALinkID) --></r1:GroupOfSoundfieldGroupsLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:SoundfieldGroupLabelSubDescriptor>
+        <r0:AudioChannelLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020101.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>L</r1:MCATagSymbol>
+          <r1:MCATagName>Left</r1:MCATagName>
+          <r1:MCAChannelID>1</r1:MCAChannelID>
+          <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:AudioChannelLabelSubDescriptor>
+        <r0:AudioChannelLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020102.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>R</r1:MCATagSymbol>
+          <r1:MCATagName>Right</r1:MCATagName>
+          <r1:MCAChannelID>2</r1:MCAChannelID>
+          <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:AudioChannelLabelSubDescriptor>
+      </r1:SubDescriptors>
+    </r0:WAVEPCMDescriptor>
+
+
+
+<!-- 5.1 Sound Track Descriptor using MCA Labeling -->
+    <r0:WAVEPCMDescriptor>
+      <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+      <r1:LinkedTrackID>2002</r1:LinkedTrackID>
+      <r1:SampleRate>25/1</r1:SampleRate>
+      <r1:EssenceLength>1500</r1:EssenceLength>
+      <r1:AudioSampleRate>48000/1</r1:AudioSampleRate>
+      <r1:ChannelCount>6</r1:ChannelCount>
+      <r1:QuantizationBits>24</r1:QuantizationBits>
+      <r1:BlockAlign>18</r1:BlockAlign>
+      <r1:AverageBytesPerSecond>864000</r1:AverageBytesPerSecond>
+      <r1:ChannelAssignment>urn:smpte:ul:060e2b34.********.********.********</r1:ChannelAssignment>
+      <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+      <r1:SubDescriptors>
+        <r0:GroupOfSoundfieldGroupsLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020320.01000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>MPg</r1:MCATagSymbol>
+          <r1:MCATagName>Main Program</r1:MCATagName>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:GroupOfSoundfieldGroupsLabelSubDescriptor>
+        <r0:SoundfieldGroupLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020201.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>51</r1:MCATagSymbol>
+          <r1:MCATagName>5.1</r1:MCATagName>
+          <r1:RFC5646SpokenLanguage>en</r1:RFC5646SpokenLanguage>
+          <r1:GroupOfSoundfieldGroupsLinkID><!-- Same as xpath(../GroupOfSoundfieldGroupsLabelSubDescriptor/MCALinkID) --></r1:GroupOfSoundfieldGroupsLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:SoundfieldGroupLabelSubDescriptor>
+        <r0:AudioChannelLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020101.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>L</r1:MCATagSymbol>
+          <r1:MCATagName>Left</r1:MCATagName>
+          <r1:MCAChannelID>1</r1:MCAChannelID>
+          <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:AudioChannelLabelSubDescriptor>
+        <r0:AudioChannelLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020102.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>R</r1:MCATagSymbol>
+          <r1:MCATagName>R</r1:MCATagName>
+          <r1:MCAChannelID>2</r1:MCAChannelID>
+          <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:AudioChannelLabelSubDescriptor>
+        <r0:AudioChannelLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020103.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>C</r1:MCATagSymbol>
+          <r1:MCATagName>Center</r1:MCATagName>
+          <r1:MCAChannelID>3</r1:MCAChannelID>
+          <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:AudioChannelLabelSubDescriptor>
+        <r0:AudioChannelLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020104.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>LFE</r1:MCATagSymbol>
+          <r1:MCATagName>LFE</r1:MCATagName>
+          <r1:MCAChannelID>4</r1:MCAChannelID>
+          <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:AudioChannelLabelSubDescriptor>
+        <r0:AudioChannelLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020105.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>Ls</r1:MCATagSymbol>
+          <r1:MCATagName>Left Surround</r1:MCATagName>
+          <r1:MCAChannelID>5</r1:MCAChannelID>
+          <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:AudioChannelLabelSubDescriptor>
+        <r0:AudioChannelLabelSubDescriptor>
+          <r1:InstanceID><!-- unique ID --></r1:InstanceID>
+          <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020106.00000000</r1:MCALabelDictionaryID>
+          <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
+          <r1:MCATagSymbol>Rs</r1:MCATagSymbol>
+          <r1:MCATagName>Right Surround</r1:MCATagName>
+          <r1:MCAChannelID>6</r1:MCAChannelID>
+          <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
+          <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
+        </r0:AudioChannelLabelSubDescriptor>
+      </r1:SubDescriptors>
+    </r0:WAVEPCMDescriptor>
+
+<!-- Other Sound Tracks permitted -->
+</r1:FileDescriptors>
