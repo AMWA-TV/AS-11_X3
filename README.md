@@ -8,7 +8,7 @@ For the latest version of this repository and issue tracker etc please refer to 
 
 Open [AMWA_AS_11_X3.html](AMWA_AS_11_X3.html) to read the Specification. This web page is the principal rendering / view of the Specification. It contains contextual links to other files in this repository.
 
-This web page can be viewed by downloading or cloning the entire repository to your local machine and then opening the file in a web browser.
+This web page can be viewed by downloading or cloning the entire repository to your local machine and then opening the file in a web browser. Alternatively, a hosted copy of this repository is available: the web page can be found at [http://amwa.tv/](https://github.com/)
 
 ## Full Repository Contents
 
