@@ -55,8 +55,6 @@
         </acs:Signing_Present>
     </acs:In_Vision_Access_Services>
     <qc:Content_Quality_Checking_And_Testing>
-        <qc:Audio_Comments></qc:Audio_Comments>
-        <qc:Video_Comments></qc:Video_Comments>
         <qc:Programme_Audio_Is_Intentionally_Quiet>
             <qc:Justification>This programme is intentionally quiet as agreed when commissioned</qc:Justification>
         </qc:Programme_Audio_Is_Intentionally_Quiet>
