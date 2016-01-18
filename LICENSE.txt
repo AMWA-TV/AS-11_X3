@@ -1,6 +1,7 @@
 (c) AMWA 2015, Licensed under the Apache License, Version 2.0
 
-The following license applies to all parts of this Specification except as documented below:
+The following license applies to all parts of this Specification except
+as documented below:
 
 ====
 
