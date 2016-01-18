@@ -1,6 +1,6 @@
 # **DRAFT** AS-11 X3 (MXF Program Contribution - HD Long GOP (25p, 50p))
 
-_This file is one rendering / view of this AMWA Specification and is a part of the Specification repository. For the latest version of the repository and issue tracker etc please refer to [https://github.com/](https://github.com/)_
+_This file is one rendering / view of this AMWA Specification and is a part of the Specification repository. For the latest version of the repository and issue tracker etc please refer to [https://github.com/AMWA-TV/AS-11_X3/](https://github.com/AMWA-TV/AS-11_X3/)_
 
 # AS-11: Media Contribution File Formats
 

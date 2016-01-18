@@ -2,13 +2,13 @@
 
 This repository contains the full details of this AMWA Specification.
 
-For the latest version of this repository and issue tracker etc please refer to [https://github.com/](https://github.com/)
+For the latest version of this repository and issue tracker etc please refer to [https://github.com/AMWA-TV/AS-11_X3/](https://github.com/AMWA-TV/AS-11_X3/)
 
 ## Getting Started
 
 Open [AMWA_AS_11_X3.html](AMWA_AS_11_X3.html) to read the Specification. This web page is the principal rendering / view of the Specification. It contains contextual links to other files in this repository.
 
-This web page can be viewed by downloading or cloning the entire repository to your local machine and then opening the file in a web browser. Alternatively, a hosted copy of this repository is available: the web page can be found at [http://amwa.tv/](https://github.com/)
+This web page can be viewed by downloading or cloning the entire repository to your local machine and then opening the file in a web browser.
 
 ## Full Repository Contents
 
