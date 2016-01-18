@@ -89,7 +89,7 @@
         <xs:element name="Picture_Ratio" type="pg1:Picture_Ratio_type" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
-              The ratio of the display width to the display height of the smallest rectangle that completely contains (throughout the duration of the entire programme) the region of the video frame used for "programme content" (where "programme content" includes all pictures, captions, etc but excludes any black bars). If the precise value of this ratio is unknown then one of the text values can be used instead.
+              The ratio of the display width to the display height of the smallest rectangle that completely contains (throughout the duration of the entire programme) the region of the video frame used for "programme content" (where "programme content" includes all pictures, captions, etc but excludes any black bars).
             </xs:documentation>
           </xs:annotation>
         </xs:element>
@@ -229,47 +229,57 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="4/3">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 4/3 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="14/9">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 14/9 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="15/9">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 15/9 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="16/9">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 16/9 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="1.85:1">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 1.85:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1.90:1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A 1.90:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="21/9">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 21/9 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="2.35:1">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 2.35:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="2.37:1">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 2.37:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2.39:1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A 2.39:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="2.40:1">
         <xs:annotation>
-          <xs:documentation xml:lang="en"> <!-- TODO --> </xs:documentation>
+          <xs:documentation xml:lang="en">A 2.40:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Centred Letterbox">
