@@ -402,7 +402,7 @@ There are two special types of Block which allow the value of one Block to be se
         [B] AVC constraints
             Conformance: mandatory
             [A] <AVC> conforms to the "High 10 Profile".
-            [A] The <Picture Essence> has an {video signal format} of {1080p25} or {1080p50}".
+            [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.709> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component";
             [A] <bit_depth_luma_minus8> is "2" and <bit_depth_chroma_minus8> is "2".
             [A] <chroma_format_idc> is "1" and <separate_colour_plane_flag> is "0".
     [V] File Format Specification Identification Label
