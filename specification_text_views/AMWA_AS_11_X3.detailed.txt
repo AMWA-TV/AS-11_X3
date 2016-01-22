@@ -4,7 +4,8 @@ _This file is one rendering / view of this AMWA Specification and is a part of t
 
 # AS-11: Media Contribution File Formats
 
-The AMWA AS-11 Specifications define constrained media file formats for the delivery of finished media assets to a publisher, broadcaster, etc. Each Specification is developed for a particular business purpose.
+The AMWA AS-11 Specifications define constrained media file formats for the delivery of finished media assets to a broadcaster or publisher. Each Specification is developed for a particular business purpose.
+
 
 
 # Purpose of the AS-11 X3 Specification
