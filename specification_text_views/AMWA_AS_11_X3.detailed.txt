@@ -131,7 +131,7 @@ There are two special types of Block which allow the value of one Block to be se
                 [A] When first created, the file includes a <KLV Fill> item of at least 8192 bytes in total length following the <Header Metadata>.
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/030/artefacts/1.xml>
                     [T] KLV Fill
-                        Refers to the well-defined means of inserting empty, “fill”, data in an MXF file.
+                        Refers to the well-defined means of inserting empty, "fill", data in an MXF file.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/KLV%20Fill/>
                     [T] Header Metadata
                         MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
