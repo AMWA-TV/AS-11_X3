@@ -44,24 +44,24 @@
           </xs:element>
         </xs:choice>
         <xs:element name="PSE_Test_Results" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">A set of details and results of the PSE tests that have been carried out on the content</xs:documentation>
+          </xs:annotation>
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PSE_Test" type="qc:PSE_Test_type" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
-          <xs:annotation>
-            <xs:documentation xml:lang="en">A set of details and results of the PSE tests that have been carried out on the content</xs:documentation>
-          </xs:annotation>
         </xs:element>
         <xs:element name="Audio_Loudness_Test_Results" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">A set of details and results of the Audio Loudness tests that have been carried out on the content</xs:documentation>
+          </xs:annotation>
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Audio_Loudness_Test" type="qc:Audio_Loudness_Test_type" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
-          <xs:annotation>
-            <xs:documentation xml:lang="en">A set of details and results of the Audio Loudness tests that have been carried out on the content</xs:documentation>
-          </xs:annotation>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
