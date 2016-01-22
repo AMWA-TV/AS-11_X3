@@ -1433,6 +1433,27 @@ There are two special types of Block which allow the value of one Block to be se
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/>
             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/Labels.xml
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/Labels.xml>
+            [A] This table contains information that completes the specification of the Audio Channel Labels for which SMPTE Metadata Registers Entries are defined here.
+                
+                 SMPTE Metadata Registers Symbol           | MCA Tag Name                  | MCA Tag Symbol
+                 ------------------------------------------|-------------------------------|----------------
+                 `AudioDescriptionStudioSignalDataChannel` | AD Studio Signal Data Channel | `ADSSdc`
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/AC.md>
+            [A] This table contains information that completes the specification of the Soundfield Group Labels for which SMPTE Metadata Registers Entries are defined here.
+                
+                 SMPTE Metadata Registers Symbol           | MCA Tag Name      | MCA Tag Symbol | Constituent Audio Channels
+                 ------------------------------------------|-------------------|----------------|----------------------------
+                 `AudioDescriptionStudioSignal`            | AD Studio Signal  | `ADSS`         | `VIN`, `ADSSdc`
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/SG.md>
+            [A] This table contains information that completes the specification of the Group of Soundfield Groups Labels for which SMPTE Metadata Registers Entries are defined here.
+                
+                 SMPTE Metadata Registers Symbol           | MCA Tag Name        | MCA Tag Symbol
+                 ------------------------------------------|---------------------|----------------
+                 `AlternativeProgram`                      | Alternative Program | `APg`
+                 `MusicAndEffects`                         | Music and Effects   | `ME`
+                 `AudioDescription`                        | Audio Description   | `AD`
+                 `AudioDescriptionProgramMix`              | Audio Description Programme Mix | `ADPgMx`
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/GSG.md>
             [N] SMPTE Registers Node: InterpretiveSoundEssence
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/InterpretiveSoundEssence/>
                 [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/InterpretiveSoundEssence/artefacts/Labels.xml

@@ -4,22 +4,22 @@
     <Entry>
       <Register>Labels</Register>
       <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
-      <Symbol>VisuallyImpairedNarrativeControlChannel</Symbol>
+      <Symbol>AudioDescriptionStudioSignalDataChannel</Symbol>
       <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01010100</UL>
       <Kind>LEAF</Kind>
-      <Name>Visually Impaired Narrative Control Channel</Name>
-      <Definition>Identifies an Audio Channel carrying a signal intended to be used to control the level of the Main Programme audio when it is being mixed with a Visually Impaired Narrative Audio Channel</Definition>
+      <Name>Audio Description Studio Signal Data Channel</Name>
+      <Definition>Identifies an Audio Channel carrying a data signal in the format defined by BBC R&amp;D White Paper WHP 198, intended to be used to control the fade and pan of the Main Programme audio when it is being mixed with a Visually Impaired Narrative Audio Channel</Definition>
       <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
     <Entry>
       <Register>Labels</Register>
       <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
-      <Symbol>VisuallyImpairedNarrativeAudioAndControl</Symbol>
+      <Symbol>AudioDescriptionStudioSignal</Symbol>
       <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01020100</UL>
       <Kind>LEAF</Kind>
-      <Name>Visually Impaired Narrative Audio and Control</Name>
-      <Definition>Identifies an Soundfield Group carrying a Visually Impaired Narrative Audio Channel and a Visually Impaired Narrative Control Channel</Definition>
+      <Name>Audio Description Studio Signal</Name>
+      <Definition>Identifies an Soundfield Group carrying a Visually Impaired Narrative Audio Channel and an Audio Description Studio Signal Data Channel - this is the two-channel Audio Description Studio Signal defined by BBC R&amp;D White Paper WHP 198</Definition>
       <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
@@ -37,22 +37,22 @@
     <Entry>
       <Register>Labels</Register>
       <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
-      <Symbol>VisuallyImpairedNarrativeProgramMix</Symbol>
+      <Symbol>AudioDescriptionProgramMix</Symbol>
       <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01030200</UL>
       <Kind>LEAF</Kind>
-      <Name>Visually Impaired Narrative Program Mix</Name>
-      <Definition>Identifies a mix of the program audio with Visually Impaired Narrative audio</Definition>
+      <Name>Audio Description Program Mix</Name>
+      <Definition>Identifies a mix of the program audio with audio description audio</Definition>
       <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
     <Entry>
       <Register>Labels</Register>
       <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
-      <Symbol>VisuallyImpairedNarrative</Symbol>
+      <Symbol>AudioDescription</Symbol>
       <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01030300</UL>
       <Kind>LEAF</Kind>
-      <Name>Visually Impaired Narrative</Name>
-      <Definition>Identifies Visually Impaired Narrative audio</Definition>
+      <Name>Audio Description</Name>
+      <Definition>Identifies a verbal description of the visual scene</Definition>
       <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
