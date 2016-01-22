@@ -9,6 +9,7 @@
         <xs:element name="Identifier" type="id:Identifier_Set_type" minOccurs="1" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
+    <xs:documentation xml:lang="en">A set of identifiers for the content</xs:documentation>
   </xs:element>
 
 
@@ -16,26 +17,17 @@
     <xs:sequence>
       <xs:element name="Identifier_Value" type="cmn:token250" minOccurs="1" maxOccurs="1">
         <xs:annotation>
-          <xs:documentation xml:lang="en">
-            <!-- TODO -->
-            
-          </xs:documentation>
+          <xs:documentation xml:lang="en">The identifier itself</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="Identifier_Type" type="cmn:token250" minOccurs="1" maxOccurs="1">
         <xs:annotation>
-          <xs:documentation xml:lang="en">
-            <!-- TODO -->
-            
-          </xs:documentation>
+          <xs:documentation xml:lang="en">The type of identifier in Identifier_Value. Examples include UMID and ISBN</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="Identifier_Authority" type="cmn:token250" minOccurs="0" maxOccurs="1">
         <xs:annotation>
-          <xs:documentation xml:lang="en">
-            <!-- TODO -->
-            The entity responsible for issuing the identifier.
-          </xs:documentation>
+          <xs:documentation xml:lang="en">The entity responsible for issuing the identifier</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>

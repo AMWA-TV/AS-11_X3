@@ -49,6 +49,9 @@
               <xs:element name="PSE_Test" type="qc:PSE_Test_type" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
+          <xs:annotation>
+            <xs:documentation xml:lang="en">A set of details and results of the PSE tests that have been carried out on the content</xs:documentation>
+          </xs:annotation>
         </xs:element>
         <xs:element name="Audio_Loudness_Test_Results" minOccurs="1" maxOccurs="1">
           <xs:complexType>
@@ -56,6 +59,9 @@
               <xs:element name="Audio_Loudness_Test" type="qc:Audio_Loudness_Test_type" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
+          <xs:annotation>
+            <xs:documentation xml:lang="en">A set of details and results of the Audio Loudness tests that have been carried out on the content</xs:documentation>
+          </xs:annotation>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
@@ -64,13 +70,19 @@
 
   <xs:complexType name="Audio_Loudness_Test_type">
     <xs:sequence>
-      <xs:element name="Audio_Loudness_Specification" type="qc:Audio_Loudness_Specification_type" minOccurs="1" maxOccurs="1"/>
-      <xs:element name="Compliance_To_Specification_Achieved" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Audio_Loudness_Specification" type="qc:Audio_Loudness_Specification_type" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The specification to which this Audio Loudness test was carried out</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Compliance_To_Specification_Achieved" type="xs:boolean" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicates whether or not the entire content passed the test specified by Audio_Loudness_Specification</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="Programme_Loudness_Value" type="xs:float" minOccurs="0" maxOccurs="1">
         <xs:annotation>
-           <xs:documentation xml:lang="en">
-             The "Programme Loudness Value" in LUFS as measured in accordance with the Audio_Loudness_Specification.
-           </xs:documentation>
+          <xs:documentation xml:lang="en">The "Programme Loudness Value" in LUFS as measured in accordance with the Audio_Loudness_Specification.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -80,18 +92,12 @@
     <xs:sequence>
       <xs:element name="Test_Device" type="cmn:token250" minOccurs="1" maxOccurs="1">
         <xs:annotation>
-           <xs:documentation xml:lang="en">
-             <!-- TODO -->
-             
-           </xs:documentation>
+          <xs:documentation xml:lang="en">The name of the device used to perform the test for compliance with PSE guidelines</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="Test_Passed" type="xs:boolean" minOccurs="1" maxOccurs="1">
         <xs:annotation>
-           <xs:documentation xml:lang="en">
-             <!-- TODO -->
-             
-           </xs:documentation>
+          <xs:documentation xml:lang="en">Indicates whether or not the entire content passed a flash and pattern test for compliance with Photosensitive Epilepsy (PSE) guidelines, as implemented in the Test_Device</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
