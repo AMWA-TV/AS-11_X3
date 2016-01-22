@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg0="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" xmlns:qc="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC" xmlns:acs="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_InVisionAccessServices" xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification" xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes-DomainSpecific" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg0="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" xmlns:qc="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC" xmlns:acs="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_InVisionAccessServices" xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification" xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes" elementFormDefault="qualified">
 
   <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification" schemaLocation="import/DM_Identification.xsd"/>
-  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes-DomainSpecific" schemaLocation="import/DM_Programmes-DomainSpecific.xsd"/>
+  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific" schemaLocation="import/DM_Programmes_DomainSpecific.xsd"/>
   <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_InVisionAccessServices" schemaLocation="import/DM_InVisionAccessServices.xsd"/>
   <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC" schemaLocation="import/DM_ContentQC.xsd"/>
   <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" schemaLocation="import/DM_Common.xsd"/>
@@ -11,7 +11,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="id:Identifiers" minOccurs="1" maxOccurs="1"/>
-        <xs:element ref="pg1:Programmes-DomainSpecific_DM" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="pg1:Programmes_DomainSpecific_DM" minOccurs="1" maxOccurs="1"/>
         <xs:element ref="acs:In_Vision_Access_Services" minOccurs="1" maxOccurs="1"/>
         <xs:element ref="qc:Content_Quality_Checking_And_Testing" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>

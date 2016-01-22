@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pg0:Programmes_DM xmlns:qc="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC"
                      xmlns:pg0="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes"
-                     xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes-DomainSpecific"
+                     xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific"
                      xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification"
                      xmlns:acs="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_InVisionAccessServices">
     <id:Identifiers>
@@ -15,7 +15,7 @@
             <id:Identifier_Type>EIDR</id:Identifier_Type>
         </id:Identifier>
     </id:Identifiers>
-    <pg1:Programmes-DomainSpecific_DM>
+    <pg1:Programmes_DomainSpecific_DM>
         <pg1:Series_Title>Series Title</pg1:Series_Title>
         <pg1:Programme_Title>Programme Title - Post Watershed Version</pg1:Programme_Title>
         <pg1:Episode_Title_Number>Test File</pg1:Episode_Title_Number>
@@ -43,15 +43,15 @@
         <pg1:Is_Three_D>
             <pg1:ThreeD_Type>Side by side</pg1:ThreeD_Type>
         </pg1:Is_Three_D>
-    </pg1:Programmes-DomainSpecific_DM>
+    </pg1:Programmes_DomainSpecific_DM>
     <acs:In_Vision_Access_Services>
         <acs:Open_Captions_Present>
             <acs:Caption_Language>en</acs:Caption_Language>
-            <acs:Caption_Type>Hard Of Hearing</acs:Caption_Type>
+            <acs:Caption_Type>Hard of hearing</acs:Caption_Type>
         </acs:Open_Captions_Present>
         <acs:Signing_Present>
             <acs:Signing_Language>bfi</acs:Signing_Language>
-            <acs:Signing_Type>Signer With Programme</acs:Signing_Type>
+            <acs:Signing_Type>Signer with programme</acs:Signing_Type>
         </acs:Signing_Present>
     </acs:In_Vision_Access_Services>
     <qc:Content_Quality_Checking_And_Testing>

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes-DomainSpecific" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes-DomainSpecific" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific" elementFormDefault="qualified">
 
   <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" schemaLocation="DM_Common.xsd"/>
 
-  <xs:element name="Programmes-DomainSpecific_DM">
+  <xs:element name="Programmes_DomainSpecific_DM">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Series_Title" type="cmn:token127" minOccurs="1" maxOccurs="1">
@@ -282,12 +282,12 @@
           <xs:documentation xml:lang="en">A 2.40:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="Centred Letterbox">
+      <xs:enumeration value="Centred letterbox">
         <xs:annotation>
           <xs:documentation xml:lang="en">The picture fills the full width of the frame, is vertically centered in the frame and there are black bars of unspecified height to the top and bottom of the picture</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="Centred Pillarbox">
+      <xs:enumeration value="Centred pillarbox">
         <xs:annotation>
           <xs:documentation xml:lang="en">The picture fills the full height of the frame, is horizontally centered in the frame and has black bars of unspecified width to the left and right of the picture</xs:documentation>
         </xs:annotation>

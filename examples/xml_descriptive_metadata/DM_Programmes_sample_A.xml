@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pg0:Programmes_DM xmlns:qc="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC"
                      xmlns:pg0="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes"
-                     xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes-DomainSpecific"
+                     xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific"
                      xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification"
                      xmlns:acs="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_InVisionAccessServices">
     <id:Identifiers>
@@ -11,7 +11,7 @@
             <id:Identifier_Authority>British Broadcasting Corporation</id:Identifier_Authority>
         </id:Identifier>
     </id:Identifiers>
-    <pg1:Programmes-DomainSpecific_DM>
+    <pg1:Programmes_DomainSpecific_DM>
         <pg1:Series_Title>Series Title</pg1:Series_Title>
         <pg1:Programme_Title>Programme Title - Post Watershed Version</pg1:Programme_Title>
         <pg1:Episode_Title_Number>Test File</pg1:Episode_Title_Number>
@@ -35,7 +35,7 @@
         <pg1:Line_Up_Start>09:59:30:00</pg1:Line_Up_Start>
         <pg1:Ident_Clock_Start>09:59:50:00</pg1:Ident_Clock_Start>
         <pg1:Is_Not_Three_D/>
-    </pg1:Programmes-DomainSpecific_DM>
+    </pg1:Programmes_DomainSpecific_DM>
     <acs:In_Vision_Access_Services>
         <acs:Open_Captions_Not_Present/>
         <acs:Signing_Not_Present/>
