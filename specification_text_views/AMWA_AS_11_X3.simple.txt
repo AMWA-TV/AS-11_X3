@@ -112,6 +112,13 @@ There are two special types of Block which allow the value of one Block to be se
             [B] One-to-one Track mapping
                 Conformance: mandatory
                 [A] Each <Essence Track> in the <Top-Level File Package> is referenced by exactly one <Essence Track> in the <Material Package>.
+                [N] No division/combination of Audio Channels between Sound Tracks
+                    [A] This prohibits:
+                        
+                        * the mapping of audio channels from a multi-channel Sound Track in a Source Package to single-channel Sound Tracks in the Material Package
+                        * the mapping of audio channels from single-channel Sound Tracks in a Source Package to multi-channel Sound Tracks in the Material Package
+                        
+                        which is specified in Annex E of SMPTE ST 382:2007.
         [B] MXF constraints for VBE Essence
             Conformance: mandatory
             [B] Segment the Essence Container

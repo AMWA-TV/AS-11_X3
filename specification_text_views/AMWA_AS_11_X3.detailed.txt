@@ -282,6 +282,15 @@ There are two special types of Block which allow the value of one Block to be se
                     [T] Material Package
                         An MXF data structure that describe an output timeline of the file.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                [N] No division/combination of Audio Channels between Sound Tracks
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E19/>
+                    [A] This prohibits:
+                        
+                        * the mapping of audio channels from a multi-channel Sound Track in a Source Package to single-channel Sound Tracks in the Material Package
+                        * the mapping of audio channels from single-channel Sound Tracks in a Source Package to multi-channel Sound Tracks in the Material Package
+                        
+                        which is specified in Annex E of SMPTE ST 382:2007.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E19/artefacts/1.md>
         [B] MXF constraints for VBE Essence
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MXF_Inter/>
