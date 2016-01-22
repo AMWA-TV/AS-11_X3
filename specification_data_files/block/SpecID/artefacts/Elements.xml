@@ -8,7 +8,7 @@
       <UL>urn:smpte:ul:060e2b34.01010101.0d010801.01010000</UL>
       <Kind>LEAF</Kind>
       <Name>Specification Identifiers</Name>
-      <Definition>A set of AUIDs that each identify a file format specification to which the file conforms</Definition>
+      <Definition>A set of AUIDs that each identify a file format Specification to which the file conforms</Definition>
       <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
       <ContextScope>UnknownContext</ContextScope>

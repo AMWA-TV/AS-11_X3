@@ -318,7 +318,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             [A] The <Specification_Identifiers> Element is present in the <Preface> of the <Header Partition>.
                 [B] Specification_Identifiers
-                    An Element for signalling the file format specification that is in use
+                    An Element for signalling the file format Specification that is in use
                     [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID/artefacts/Elements.xml
                     [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID/artefacts/Types.xml
                     [N] SMPTE Registers Node: Specification_Identification (Elements Register)
