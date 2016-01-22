@@ -448,17 +448,8 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
                     [R] SMPTE ST 381-3:2013
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0381-3/document/2013/>
-                [A] In the <Picture Essence Descriptor> the value of Byte 15 of the "Essence Container" property is 60h.
+                [A] The value of Byte 15 of the "Essence Container" label is 60h.
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/artefacts/2.xml>
-                    [T] Picture Essence Descriptor
-                        MXF technical metadata that describes the <Picture Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence%20Descriptor/>
-                        [T] Picture Essence
-                            A type of <Essence> containing predominantly picture data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
-                            [T] Essence
-                                A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
                 [A] The <Picture Essence Descriptor> used is the {CDCIDescriptor}.
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/artefacts/3.xml>
                     [T] Picture Essence Descriptor
@@ -1382,38 +1373,48 @@ There are two special types of Block which allow the value of one Block to be se
         Conformance: mandatory
         Associated Parameter Key: "Picture Essence Constraints" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param2/)
         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_10/>
-        [B] AVC constraints
+        [B] Picture Essence Bitstream and Mapping Constraints: HD, 4:2:0, Long GOP
             Conformance: mandatory
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/>
-            [A] <AVC> conforms to the "High 10 Profile".
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/1.xml>
-                [T] AVC
-                    Advanced Video Coding. A DCT-based video compression format.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/AVC/>
-            [A] The <Picture Essence> has an {video signal format} of {1080p25} or {1080p50}".
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/2.xml>
-                [T] Picture Essence
-                    A type of <Essence> containing predominantly picture data.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
-                    [T] Essence
-                        A bitstream comprising picture, sound or data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-            [A] <bit_depth_luma_minus8> is "2" and <bit_depth_chroma_minus8> is "2".
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/3.xml>
-                [T] bit_depth_luma_minus8
-                    An AVC syntax element that specifies the bit depth of the samples of the luma array and the value of the luma quantisation parameter range offset.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/bit_depth_luma_minus8/>
-                [T] bit_depth_chroma_minus8
-                    An AVC syntax element that specifies the bit depth of the samples of the chroma array and the value of the chroma quantisation parameter range offset.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/bit_depth_chroma_minus8/>
-            [A] <chroma_format_idc> is "1" and <separate_colour_plane_flag> is "0".
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/4.xml>
-                [T] chroma_format_idc
-                    An AVC syntax element that is used to indicate various properties of the chroma sampling relative to the luma sampling. This includes the relative locations of the samples and the ratio of sampling resolutions (chroma subsampling).
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/chroma_format_idc/>
-                [T] separate_colour_plane_flag
-                    An AVC syntax element that is used in combination with <chroma_format_idc> to indicate chroma sampling relative to the luma sampling. This includes the relative locations of the samples and the ratio of sampling resolutions (chroma subsampling).
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/separate_colour_plane_flag/>
+            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PEC_4/>
+            [B] Picture format constraints
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/>
+                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.709> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component"
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/2.xml>
+                    [T] Picture Essence
+                        A type of <Essence> containing predominantly picture data.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                        [T] Essence
+                            A bitstream comprising picture, sound or data.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                    [R] ITU-R Recommendation ITU-R BT.709
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/R-Rec-BT.709/document/6/>
+            [B] Constrained AVC long-GOP coding (4:2:0)
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_110/>
+                [A] The <AVC> bitstream is encoded in accordance with <AVC High 10 constraints>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_110/artefacts/1.xml>
+                    [T] AVC
+                        Advanced Video Coding. A DCT-based video compression format.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/AVC/>
+                    [B] AVC High 10 constraints
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/>
+                        [A] The <AVC> bitstream conforms to the "High 10 Profile".
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/artefacts/1.xml>
+                        [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01315001`
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/artefacts/2.md>
+                [N] TODO: Repetition of parameter sets
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T1>
+                    [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T1/artefacts/1.md>
+                [N] TODO: GOP structure
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2>
+                    [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/artefacts/1.md>
+            [N] Implementation Notes
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E20/>
+                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of 4.1 or 4.2.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E20/artefacts/1.md>
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param3/)

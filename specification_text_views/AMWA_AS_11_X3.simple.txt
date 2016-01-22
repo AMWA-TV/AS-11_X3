@@ -162,7 +162,7 @@ There are two special types of Block which allow the value of one Block to be se
             [B] ST 381-3 mapping
                 Conformance: mandatory
                 [A] The <Picture Essence> is mapped to the file as specified in <SMPTE ST 381-3:2013>.
-                [A] In the <Picture Essence Descriptor> the value of Byte 15 of the "Essence Container" property is 60h.
+                [A] The value of Byte 15 of the "Essence Container" label is 60h.
                 [A] The <Picture Essence Descriptor> used is the {CDCIDescriptor}.
                 [N] Use of the AVC Sub Descriptor
                     [A] <SMPTE ST 381-3:2013> defines the AVC Sub Descriptor and states that it "should" be used. This Block places no additional constraints on the use of the AVC Sub Descriptor. Therefore, as far as this Block is concerned its use is regarded as optional but recommended. However, note that <SMPTE ST 381-3:2013> does mandate how the values of the AVC Sub Descriptor are populated -- for certain AVC streams it would not be possible to fulfil these requirements and so in such cases there is no choice but to omit the AVC Sub Descriptor.
@@ -406,12 +406,23 @@ There are two special types of Block which allow the value of one Block to be se
     [V] Picture Essence Constraints
         Conformance: mandatory
         Associated Parameter Key: "Picture Essence Constraints" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param2/)
-        [B] AVC constraints
+        [B] Picture Essence Bitstream and Mapping Constraints: HD, 4:2:0, Long GOP
             Conformance: mandatory
-            [A] <AVC> conforms to the "High 10 Profile".
-            [A] The <Picture Essence> has an {video signal format} of {1080p25} or {1080p50}".
-            [A] <bit_depth_luma_minus8> is "2" and <bit_depth_chroma_minus8> is "2".
-            [A] <chroma_format_idc> is "1" and <separate_colour_plane_flag> is "0".
+            [B] Picture format constraints
+                Conformance: mandatory
+                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.709> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component"
+            [B] Constrained AVC long-GOP coding (4:2:0)
+                Conformance: mandatory
+                [A] The <AVC> bitstream is encoded in accordance with <AVC High 10 constraints>.
+                    [B] AVC High 10 constraints
+                        [A] The <AVC> bitstream conforms to the "High 10 Profile".
+                        [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01315001`
+                [N] TODO: Repetition of parameter sets
+                    [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]
+                [N] TODO: GOP structure
+                    [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
+            [N] Implementation Notes
+                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of 4.1 or 4.2.
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param3/)
