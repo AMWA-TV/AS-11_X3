@@ -290,8 +290,6 @@ There are two special types of Block which allow the value of one Block to be se
                             
                             ## Amendment
                             A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.
-                    [N] QUERY: Add XML Document padding?
-                        [A] Should we add padding (inside or outside the string) to allow trivial in-place overwriting of the XML document?
         [B] AS-11 Segmentation DM
             Conformance: mandatory
             [A] The file contains exactly one <Program Segmentation Track>.

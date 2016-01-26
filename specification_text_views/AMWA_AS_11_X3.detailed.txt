@@ -928,10 +928,6 @@ There are two special types of Block which allow the value of one Block to be se
                             ## Amendment
                             A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E9/artefacts/1.md>
-                    [N] QUERY: Add XML Document padding?
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Q11/>
-                        [A] Should we add padding (inside or outside the string) to allow trivial in-place overwriting of the XML document?
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Q11/artefacts/1.md>
         [B] AS-11 Segmentation DM
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/>
