@@ -11,9 +11,6 @@
             <xs:documentation xml:lang="en">
               The final name of a "group" of episodes to which the programme belongs. These episodes have a shared identification and branding and are linked by common characters, subject matter, style or story.
             </xs:documentation>
-            <xs:documentation cmn:documentationType="friendly" xml:lang="en">
-              This is the "friendly" definition of Series_Title
-            </xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="Programme_Title" type="cmn:token127">
