@@ -105,7 +105,7 @@
 
   <xs:simpleType name="Audio_Loudness_Specification_type">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="ITU-R REC SB.1770"/>
+      <xs:enumeration value="ITU-R REC BS.1770"/>
       <xs:enumeration value="EBU Tech 3341"/>
       <xs:enumeration value="EBU R 128"/>
       <xs:enumeration value="EBU R 128 s1"/>
