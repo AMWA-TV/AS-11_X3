@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ex="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Extras" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Extras" elementFormDefault="qualified">
+
+
+  <xs:element name="Extras">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Any additional XML content</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
