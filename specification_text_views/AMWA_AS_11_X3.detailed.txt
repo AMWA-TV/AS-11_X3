@@ -1443,24 +1443,40 @@ There are two special types of Block which allow the value of one Block to be se
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/Labels.xml>
             [A] This table contains information that completes the specification of the Audio Channel Labels for which SMPTE Metadata Registers Entries are defined here.
                 
+                This table also lists the MCA Tag Name and MCA Tag Symbol to be used for each Audio Channel Label that is used here but defined elsewhere.
+                
                  SMPTE Metadata Registers Symbol           | MCA Tag Name                  | MCA Tag Symbol
                  ------------------------------------------|-------------------------------|----------------
-                 `AudioDescriptionStudioSignalDataChannel` | AD Studio Signal Data Channel | `ADSSdc`
+                 `AudioDescriptionStudioSignalDataChannel` | AD Studio Signal Data Channel | `chADSSdc`
+                 `LeftAudioChannel`                        | Left                          | `chL`
+                 `RightAudioChannel`                       | Right                         | `chR`
+                 `CenterAudioChannel`                      | Center                        | `chC`
+                 `LFEAudioChannel`                         | LFE                           | `chLFE`
+                 `LeftSurroundAudioChannel`                | Left                          | `chLs`
+                 `RightSurroundAudioChannel`               | Right                         | `chRs`
+                 `VisuallyImpairedNarrativeAudioChannel`   | Visually Impaired Narrative   | `chVIN`
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/AC.md>
             [A] This table contains information that completes the specification of the Soundfield Group Labels for which SMPTE Metadata Registers Entries are defined here.
                 
+                This table also lists the constituent Audio Channels, and the MCA Tag Name and MCA Tag Symbol to be used for each Soundfield Group Label that is used here but defined elsewhere.
+                
                  SMPTE Metadata Registers Symbol           | MCA Tag Name      | MCA Tag Symbol | Constituent Audio Channels
                  ------------------------------------------|-------------------|----------------|----------------------------
-                 `AudioDescriptionStudioSignal`            | AD Studio Signal  | `ADSS`         | `VIN`, `ADSSdc`
+                 `AudioDescriptionStudioSignal`            | AD Studio Signal  | `sgADSS`       | `chVIN`, `chADSSdc`
+                 `_51SoundfieldGroup`                      | 5.1               | `sg51`         | `chL`, `chC`, `chR`, `chLs`, `chRs`, `chLFE`
+                 `SMPTEST20678StandardStereo`              | Standard Stereo   | `sgST`         | `chL`, `chR`
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/SG.md>
             [A] This table contains information that completes the specification of the Group of Soundfield Groups Labels for which SMPTE Metadata Registers Entries are defined here.
                 
-                 SMPTE Metadata Registers Symbol           | MCA Tag Name        | MCA Tag Symbol
-                 ------------------------------------------|---------------------|----------------
-                 `AlternativeProgram`                      | Alternative Program | `APg`
-                 `MusicAndEffects`                         | Music and Effects   | `ME`
-                 `AudioDescription`                        | Audio Description   | `AD`
-                 `AudioDescriptionProgramMix`              | Audio Description Programme Mix | `ADPgMx`
+                This table also lists the MCA Tag Name and MCA Tag Symbol to be used for each Group of Soundfield Groups Label that is used here but defined elsewhere.
+                
+                 SMPTE Metadata Registers Symbol           | MCA Tag Name                    | MCA Tag Symbol
+                 ------------------------------------------|---------------------------------|----------------
+                 `AlternativeProgram`                      | Alternative Program             | `ggAPg`
+                 `MusicAndEffects`                         | Music and Effects               | `ggME`
+                 `AudioDescription`                        | Audio Description               | `ggAD`
+                 `AudioDescriptionProgramMix`              | Audio Description Programme Mix | `ggADPgMx`
+                 `SMPTEST20678MainProgram`                 | Main Program                    | `ggMPg`
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/GSG.md>
             [N] SMPTE Registers Node: InterpretiveSoundEssence
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/InterpretiveSoundEssence/>
@@ -1478,6 +1494,12 @@ There are two special types of Block which allow the value of one Block to be se
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/GroupOfSoundfieldGroups/>
                 [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/GroupOfSoundfieldGroups/artefacts/Labels.xml
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/GroupOfSoundfieldGroups/artefacts/Labels.xml>
+            [N] MCA Tag Symbol prefixes
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E26/>
+                [A] The MCA Tag Symbols for labels that are used here but defined elsewhere have had prefixes applied to the values specified in their defining documents.
+                    
+                    These prefixes (`ch` for Audio Channel; `sg` for Soundfield Group; `gg` for Group of Soundfield Group) are also applied by the Digital Cinema and IMF applications of the Multichannel Audio Labeling framework (SMPTE ST 377-4), so this Specification uses the same MCA Tag Symbols as used in those applications.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E26/artefacts/1.md>
     [V] Extra Audio Layout Modes
         Conformance: mandatory
         Associated Parameter Key: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/)
