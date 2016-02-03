@@ -8,9 +8,13 @@ Issues for this and other AMWA Specifications are tracked in a [separate GitHub 
 
 ## Getting Started
 
-Open [AMWA_AS_11_X3.html](AMWA_AS_11_X3.html) to read the Specification. This web page is the principal rendering / view of the Specification. It contains contextual links to other files in this repository.
+Visit the AMWA [web page for the Specification](http://amwa.tv/projects/AS-11-X3.shtml). It has information about revisions and current development.
 
-This web page can be viewed by downloading or cloning the entire repository to your local machine and then opening the file in a web browser.
+Alternatively, clone or download this repository and open [AMWA_AS_11_X3.html](AMWA_AS_11_X3.html) in a web browser to read the Specification. This web page is the principal rendering / view of the Specification. It contains contextual links to other files in this repository.
+
+## Examining Changes
+
+The Specification is tracked using [git](http://git-scm.com/). Various tools are available for showing the differences between commits in a git repository and they can be used to examine changes to the Specification. However, the HTML rendering of the Specification that is included in the repository is not suitable for tracking changes to the contents of the Specification. It is best to ignore changes to `AMWA_AS_11_X3.html` when comparing versions of this repository.
 
 ## Full Repository Contents
 
