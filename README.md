@@ -2,7 +2,9 @@
 
 This repository contains the full details of this AMWA Specification.
 
-For the latest version of this repository and issue tracker etc please refer to [https://github.com/AMWA-TV/AS-11_X3/](https://github.com/AMWA-TV/AS-11_X3/)
+For the latest version of this repository please refer to [its GitHub project](https://github.com/AMWA-TV/AS-11_X3/).
+
+Issues for this and other AMWA Specifications are tracked in a [separate GitHub project](https://github.com/AMWA-TV/AS-11_Overview).
 
 ## Getting Started
 
