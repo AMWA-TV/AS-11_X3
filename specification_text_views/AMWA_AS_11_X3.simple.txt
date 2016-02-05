@@ -499,9 +499,20 @@ There are two special types of Block which allow the value of one Block to be se
             [A] "MCA Labeling Present" is "true".
             [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
                 [B] Default Audio Layout 'A'
-                    [A] The first <Sound Track>, if present, is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
-                    [A] The second <Sound Track>, if present, is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
+                    [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
+                    [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
                     [A] The order of Descriptors, SubDescriptors, <Sound Track>s, <Audio Channel>s and <Sound Essence> is consistent and as stated here.
+                    [N] Implementation Notes
+                        [A] All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.
+                            
+                            Sound Tracks in this Default Audio Layout are identified by the order in which they appear.
+                            
+                            So, if you are using this Layout and want to deliver 5.1 Main Programme only (with no Stereo Main Programme) then your file will have to include two tracks, like so:
+                            
+                            * first Sound Track: 2-channel (silence is advised)
+                            * second Sound Track: 6-channel (5.1 Main Programme content)
+                            
+                            No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.
                     [N] Reg-XML Example
                         [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
         [B] Audio Layout Mode 2
@@ -512,9 +523,20 @@ There are two special types of Block which allow the value of one Block to be se
             [A] "MCA Labeling Present" is "false".
             [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
                 [B] Default Audio Layout 'A'
-                    [A] The first <Sound Track>, if present, is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
-                    [A] The second <Sound Track>, if present, is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
+                    [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
+                    [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
                     [A] The order of Descriptors, SubDescriptors, <Sound Track>s, <Audio Channel>s and <Sound Essence> is consistent and as stated here.
+                    [N] Implementation Notes
+                        [A] All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.
+                            
+                            Sound Tracks in this Default Audio Layout are identified by the order in which they appear.
+                            
+                            So, if you are using this Layout and want to deliver 5.1 Main Programme only (with no Stereo Main Programme) then your file will have to include two tracks, like so:
+                            
+                            * first Sound Track: 2-channel (silence is advised)
+                            * second Sound Track: 6-channel (5.1 Main Programme content)
+                            
+                            No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.
                     [N] Reg-XML Example
                         [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
     [N] Audio Layout Modes summary

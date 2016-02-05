@@ -1682,13 +1682,35 @@
 </li>
 </ul>
 </li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_520'><div class='content_container clearfix'><p>The first <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>, if present, is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.</p></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_520'><div class='content_container clearfix'><p>If there is at least one <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.</p></div>
 </li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_527'><div class='content_container clearfix'><p>The second <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>, if present, is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.</p></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_527'><div class='content_container clearfix'><p>If there are at least two <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.</p></div>
 </li>
 <li data-jstree='{"icon":"include/artefact.png"}' id='index_534'><div class='content_container clearfix'><p>The order of Descriptors, SubDescriptors, <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>s, <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/" class="" data-toggle="tooltip" title="A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.">Audio Channel</a>s and <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/" class="" data-toggle="tooltip" title="A type of &lt;Essence&gt; containing sound data.">Sound Essence</a> is consistent and as stated here.</p></div>
 </li>
-<li data-jstree='{"icon":"include/note.png"}' id='index_544'><div class='content_container clearfix'><b>Reg-XML Example</b></div>
+<li data-jstree='{"icon":"include/note.png"}' id='index_544'><div class='content_container clearfix'><b>Implementation Notes</b></div>
+<ul>
+<li data-jstree='{"icon":"include/file.png"}'><div class='content_container clearfix'>Additional Information</div>
+<ul>
+<li data-jstree='{"icon":"hidden", "disabled":"true"}'><p class='info'><b>ID: </b><a href='http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/' target='_blank'>http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/</a></p>
+</li>
+</ul>
+</li>
+<li data-jstree='{"icon":"include/noteartefact.png"}' id='index_545'><div class='content_container clearfix'><p>All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.</p>
+
+<p>Sound Tracks in this Default Audio Layout are identified by the order in which they appear.</p>
+
+<p>So, if you are using this Layout and want to deliver 5.1 Main Programme only (with no Stereo Main Programme) then your file will have to include two tracks, like so:</p>
+
+<ul>
+<li>first Sound Track: 2-channel (silence is advised)</li>
+<li>second Sound Track: 6-channel (5.1 Main Programme content)</li>
+</ul>
+
+<p>No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.</p>
+<hr></div>
+</li></ul></li>
+<li data-jstree='{"icon":"include/note.png"}' id='index_546'><div class='content_container clearfix'><b>Reg-XML Example</b></div>
 <ul>
 <li data-jstree='{"icon":"include/file.png"}'><div class='content_container clearfix'>Additional Information</div>
 <ul>
@@ -1696,9 +1718,9 @@
 </li>
 </ul>
 </li>
-<li data-jstree='{"icon":"include/noteartefact.png"}' id='index_545'><div class='content_container clearfix'><p>View Reg-XML file in (specification_data_files/note/AL_Default_A_RegXML_Example/artefacts)</p></div>
+<li data-jstree='{"icon":"include/noteartefact.png"}' id='index_547'><div class='content_container clearfix'><p>View Reg-XML file in (specification_data_files/note/AL_Default_A_RegXML_Example/artefacts)</p></div>
 </li></ul></li></ul></li></ul></li></ul></li>
-<li data-jstree='{"icon":"include/blockrec.png"}' id='index_546'><div class='content_container clearfix'><b>Audio Layout Mode 2</b> <em> (Optional)</em></div>
+<li data-jstree='{"icon":"include/blockrec.png"}' id='index_548'><div class='content_container clearfix'><b>Audio Layout Mode 2</b> <em> (Optional)</em></div>
 <ul>
 <li data-jstree='{"icon":"include/file.png"}'><div class='content_container clearfix'>Additional Information</div>
 <ul>
@@ -1706,10 +1728,10 @@
 </li>
 </ul>
 </li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_547'><div class='content_container clearfix'><p>"Channel Assignment Label" is <a href="#index_548" class="btn btn-default btn-xs" data-toggle="tooltip" title="BLOCK: Click to show in the tree">Default_Audio_Layout_A_without_MCA_Labeling</a>.</p></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_549'><div class='content_container clearfix'><p>"Channel Assignment Label" is <a href="#index_550" class="btn btn-default btn-xs" data-toggle="tooltip" title="BLOCK: Click to show in the tree">Default_Audio_Layout_A_without_MCA_Labeling</a>.</p></div>
 
 <ul>
-<li data-jstree='{"icon":"include/block.png"}' id='index_548'><div class='content_container clearfix'><b>Default_Audio_Layout_A_without_MCA_Labeling</b></div>
+<li data-jstree='{"icon":"include/block.png"}' id='index_550'><div class='content_container clearfix'><b>Default_Audio_Layout_A_without_MCA_Labeling</b></div>
 <ul>
 <li data-jstree='{"icon":"include/file.png"}'><div class='content_container clearfix'>Additional Information</div>
 <ul>
@@ -1717,14 +1739,14 @@
 </li>
 </ul>
 </li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_549'><div class='content_container clearfix'><h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.04010101.0d010801.02030000</td><td>Default_Audio_Layout_A_without_MCA_Labeling</td><td class="smpte_registers_class_definition_column">Identifies default audio layout A without use of the MXF Multichannel Audio Framework</td></tr></tbody></table><p>View SMPTE Metadata Registers XML file(s) in (specification_data_files/block/CA_L2/artefacts)</p><hr></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_551'><div class='content_container clearfix'><h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.04010101.0d010801.02030000</td><td>Default_Audio_Layout_A_without_MCA_Labeling</td><td class="smpte_registers_class_definition_column">Identifies default audio layout A without use of the MXF Multichannel Audio Framework</td></tr></tbody></table><p>View SMPTE Metadata Registers XML file(s) in (specification_data_files/block/CA_L2/artefacts)</p><hr></div>
 </li></ul></li></ul></li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_550'><div class='content_container clearfix'><p>"MCA Labeling Present" is "false".</p></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_552'><div class='content_container clearfix'><p>"MCA Labeling Present" is "false".</p></div>
 </li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_551'><div class='content_container clearfix'><p>"Default Audio Layout" is <a href="#index_552" class="btn btn-default btn-xs" data-toggle="tooltip" title="BLOCK: Click to show in the tree">Default Audio Layout 'A'</a>.</p></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_553'><div class='content_container clearfix'><p>"Default Audio Layout" is <a href="#index_554" class="btn btn-default btn-xs" data-toggle="tooltip" title="BLOCK: Click to show in the tree">Default Audio Layout 'A'</a>.</p></div>
 
 <ul>
-<li data-jstree='{"icon":"include/block.png"}' id='index_552'><div class='content_container clearfix'><b>Default Audio Layout 'A'</b></div>
+<li data-jstree='{"icon":"include/block.png"}' id='index_554'><div class='content_container clearfix'><b>Default Audio Layout 'A'</b></div>
 <ul>
 <li data-jstree='{"icon":"include/file.png"}'><div class='content_container clearfix'>Additional Information</div>
 <ul>
@@ -1732,13 +1754,35 @@
 </li>
 </ul>
 </li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_553'><div class='content_container clearfix'><p>The first <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>, if present, is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.</p></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_555'><div class='content_container clearfix'><p>If there is at least one <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.</p></div>
 </li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_560'><div class='content_container clearfix'><p>The second <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>, if present, is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.</p></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_562'><div class='content_container clearfix'><p>If there are at least two <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.</p></div>
 </li>
-<li data-jstree='{"icon":"include/artefact.png"}' id='index_567'><div class='content_container clearfix'><p>The order of Descriptors, SubDescriptors, <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>s, <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/" class="" data-toggle="tooltip" title="A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.">Audio Channel</a>s and <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/" class="" data-toggle="tooltip" title="A type of &lt;Essence&gt; containing sound data.">Sound Essence</a> is consistent and as stated here.</p></div>
+<li data-jstree='{"icon":"include/artefact.png"}' id='index_569'><div class='content_container clearfix'><p>The order of Descriptors, SubDescriptors, <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/" class="" data-toggle="tooltip" title="A type of &lt;Essence Track&gt; that references &lt;Sound Essence&gt;.">Sound Track</a>s, <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/" class="" data-toggle="tooltip" title="A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.">Audio Channel</a>s and <a href="#http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/" class="" data-toggle="tooltip" title="A type of &lt;Essence&gt; containing sound data.">Sound Essence</a> is consistent and as stated here.</p></div>
 </li>
-<li data-jstree='{"icon":"include/note.png"}' id='index_577'><div class='content_container clearfix'><b>Reg-XML Example</b></div>
+<li data-jstree='{"icon":"include/note.png"}' id='index_579'><div class='content_container clearfix'><b>Implementation Notes</b></div>
+<ul>
+<li data-jstree='{"icon":"include/file.png"}'><div class='content_container clearfix'>Additional Information</div>
+<ul>
+<li data-jstree='{"icon":"hidden", "disabled":"true"}'><p class='info'><b>ID: </b><a href='http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/' target='_blank'>http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/</a></p>
+</li>
+</ul>
+</li>
+<li data-jstree='{"icon":"include/noteartefact.png"}' id='index_580'><div class='content_container clearfix'><p>All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.</p>
+
+<p>Sound Tracks in this Default Audio Layout are identified by the order in which they appear.</p>
+
+<p>So, if you are using this Layout and want to deliver 5.1 Main Programme only (with no Stereo Main Programme) then your file will have to include two tracks, like so:</p>
+
+<ul>
+<li>first Sound Track: 2-channel (silence is advised)</li>
+<li>second Sound Track: 6-channel (5.1 Main Programme content)</li>
+</ul>
+
+<p>No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.</p>
+<hr></div>
+</li></ul></li>
+<li data-jstree='{"icon":"include/note.png"}' id='index_581'><div class='content_container clearfix'><b>Reg-XML Example</b></div>
 <ul>
 <li data-jstree='{"icon":"include/file.png"}'><div class='content_container clearfix'>Additional Information</div>
 <ul>
@@ -1746,9 +1790,9 @@
 </li>
 </ul>
 </li>
-<li data-jstree='{"icon":"include/noteartefact.png"}' id='index_578'><div class='content_container clearfix'><p>View Reg-XML file in (specification_data_files/note/AL_Default_A_RegXML_Example/artefacts)</p></div>
+<li data-jstree='{"icon":"include/noteartefact.png"}' id='index_582'><div class='content_container clearfix'><p>View Reg-XML file in (specification_data_files/note/AL_Default_A_RegXML_Example/artefacts)</p></div>
 </li></ul></li></ul></li></ul></li></ul></li></ul></li>
-<li data-jstree='{"icon":"include/note.png"}' id='index_579'><div class='content_container clearfix'><b>Audio Layout Modes summary</b></div>
+<li data-jstree='{"icon":"include/note.png"}' id='index_583'><div class='content_container clearfix'><b>Audio Layout Modes summary</b></div>
 <ul>
 <li data-jstree='{"icon":"include/file.png"}'><div class='content_container clearfix'>Additional Information</div>
 <ul>
@@ -1756,7 +1800,7 @@
 </li>
 </ul>
 </li>
-<li data-jstree='{"icon":"include/noteartefact.png"}' id='index_580'><div class='content_container clearfix'><p>A summary of the {Audio Layout Mode}s available in this Specification is in the table below. Note that every MXF file must use one of the listed modes.</p>
+<li data-jstree='{"icon":"include/noteartefact.png"}' id='index_584'><div class='content_container clearfix'><p>A summary of the {Audio Layout Mode}s available in this Specification is in the table below. Note that every MXF file must use one of the listed modes.</p>
 
 <p>In all defined modes there can be between 0 and 127 (inclusive) Sound Tracks in the MXF file.</p>
 
