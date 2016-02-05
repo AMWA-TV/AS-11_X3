@@ -1692,6 +1692,8 @@ There are two special types of Block which allow the value of one Block to be se
         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E14/>
         [A] A summary of the {Audio Layout Mode}s available in this Specification is in the table below. Note that every MXF file must use one of the listed modes.
             
+            In all defined modes there can be between 0 and 127 (inclusive) Sound Tracks in the MXF file.
+            
             Mode Name           | "Channel Assignment Label"                                                 | "MCA Labeling Present"  |     "Default Audio Layout"
             ------------------- | -------------------------------------------------------------------------- | ----------------------- | ------------------------------
             Audio Layout Mode 0 | ConstrainedMultichannelAudioLabelingFramework                              |          true           | **NOT SET** (no assumptions can be made)
