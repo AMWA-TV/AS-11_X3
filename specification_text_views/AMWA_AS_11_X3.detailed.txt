@@ -1504,6 +1504,10 @@ There are two special types of Block which allow the value of one Block to be se
                     
                     These prefixes (`ch` for Audio Channel; `sg` for Soundfield Group; `gg` for Group of Soundfield Group) are also applied by the Digital Cinema and IMF applications of the Multichannel Audio Labeling framework (SMPTE ST 377-4), so this Specification uses the same MCA Tag Symbols as used in those applications.
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E26/artefacts/1.md>
+            [N] Labels used here but defined elsewhere
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E27/>
+                [A] Some of the Labels listed here are defined elsewhere. For a full explanation of such Labels, refer to the document detailed in the `DefiningDocument` element for the Label in the relevant XML.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E27/artefacts/1.md>
     [V] Extra Audio Layout Modes
         Conformance: mandatory
         Associated Parameter Key: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/)
