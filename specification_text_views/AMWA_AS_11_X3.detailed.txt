@@ -1464,10 +1464,10 @@ There are two special types of Block which allow the value of one Block to be se
                 
                 This table also lists the constituent Audio Channels, and the MCA Tag Name and MCA Tag Symbol to be used for each Soundfield Group Label that is used here but defined elsewhere.
                 
-                 SMPTE Metadata Registers Symbol           | MCA Tag Name      | MCA Tag Symbol | Constituent Audio Channels
+                 SMPTE Metadata Registers Symbol           | MCA Tag Name      | MCA Tag Symbol | Constituent Audio Channels (in no particular order)
                  ------------------------------------------|-------------------|----------------|----------------------------
                  `AudioDescriptionStudioSignal`            | AD Studio Signal  | `sgADSS`       | `chVIN`, `chADSSdc`
-                 `_51SoundfieldGroup`                      | 5.1               | `sg51`         | `chL`, `chC`, `chR`, `chLs`, `chRs`, `chLFE`
+                 `_51SoundfieldGroup`                      | 5.1               | `sg51`         | `chL`, `chR`, `chC`, `chLFE`, `chLs`, `chRs`
                  `SMPTEST20678StandardStereo`              | Standard Stereo   | `sgST`         | `chL`, `chR`
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/SG.md>
             [A] This table contains information that completes the specification of the Group of Soundfield Groups Labels for which SMPTE Metadata Registers Entries are defined here.
