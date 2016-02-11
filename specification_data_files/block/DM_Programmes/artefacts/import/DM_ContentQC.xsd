@@ -20,29 +20,6 @@
              </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:choice minOccurs="1" maxOccurs="1">
-          <xs:element name="Programme_Audio_Is_Not_Intentionally_Quiet">
-            <xs:complexType/>
-          </xs:element>
-          <xs:element name="Programme_Audio_Is_Intentionally_Quiet">
-            <xs:annotation>
-               <xs:documentation xml:lang="en">
-                 The presence of this element indicates that the programme audio is quieter than would usually be expected.
-               </xs:documentation>
-            </xs:annotation>
-            <xs:complexType>
-              <xs:sequence>
-                <xs:element name="Justification" type="cmn:token127" minOccurs="1" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xml:lang="en">
-                       An explanation for the unusually quiet programme audio.
-                     </xs:documentation>
-                  </xs:annotation>
-                </xs:element>
-              </xs:sequence>
-            </xs:complexType>
-          </xs:element>
-        </xs:choice>
         <xs:element name="PSE_Test_Results" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">A set of details and results of the PSE tests that have been carried out on the content</xs:documentation>
@@ -53,13 +30,32 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Audio_Loudness_Test_Results" minOccurs="1" maxOccurs="1">
+        <xs:element name="Audio_Loudness_Details" minOccurs="1" maxOccurs="1">
           <xs:annotation>
-            <xs:documentation xml:lang="en">A set of details and results of the Audio Loudness tests that have been carried out on the content</xs:documentation>
+            <xs:documentation xml:lang="en">Details of the Audio Loudness Specification that the programme maker was working to</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Audio_Loudness_Test" type="qc:Audio_Loudness_Test_type" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="Audio_Loudness_Specification" type="qc:Audio_Loudness_Specification_type" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">The Audio Loudness Specification to which the maker of the programme intended the finished (ready for transmission) audio content to comply</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Compliance_To_Specification_Achieved" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">Indicates whether or not the finished (ready for transmission) audio content complies with the indicated Audio Loudness Specification</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Programme_Loudness_Value" type="xs:float" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">The "Programme Loudness Value" in LUFS as measured in accordance with the indicated Audio Loudness Specification. This is intended to give an indicatation of the degree to which the content deviates from the indicated Audio Loudness Specification, rather than a precise measurement of the loudness of the content.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Explanation" type="cmn:token250" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">An explanation for any failure to fully comply with all provisions of the indicated Audio Loudness Specification, such as the content being "intentionally quiet"</xs:documentation>
+                </xs:annotation>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -67,26 +63,6 @@
     </xs:complexType>
   </xs:element>
 
-
-  <xs:complexType name="Audio_Loudness_Test_type">
-    <xs:sequence>
-      <xs:element name="Audio_Loudness_Specification" type="qc:Audio_Loudness_Specification_type" minOccurs="1" maxOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The specification to which this Audio Loudness test was carried out</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Compliance_To_Specification_Achieved" type="xs:boolean" minOccurs="1" maxOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Indicates whether or not the entire content passed the test specified by Audio_Loudness_Specification</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Programme_Loudness_Value" type="xs:float" minOccurs="0" maxOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The "Programme Loudness Value" in LUFS as measured in accordance with the Audio_Loudness_Specification.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
 
   <xs:complexType name="PSE_Test_type">
     <xs:sequence>
@@ -105,8 +81,6 @@
 
   <xs:simpleType name="Audio_Loudness_Specification_type">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="ITU-R REC BS.1770"/>
-      <xs:enumeration value="EBU Tech 3341"/>
       <xs:enumeration value="EBU R 128"/>
       <xs:enumeration value="EBU R 128 s1"/>
       <xs:enumeration value="ITU-R REC BS.1864"/>

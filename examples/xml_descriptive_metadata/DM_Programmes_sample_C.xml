@@ -48,7 +48,6 @@
     </acs:In_Vision_Access_Services>
     <qc:Content_Quality_Checking_And_Testing>
         <qc:Video_Comments>Graded to look a bit washed out</qc:Video_Comments>
-        <qc:Programme_Audio_Is_Not_Intentionally_Quiet/>
         <qc:PSE_Test_Results>
             <qc:PSE_Test>
                 <qc:Test_Device>My wonderful PSE tester v1.2</qc:Test_Device>
@@ -63,12 +62,10 @@
                 <qc:Test_Passed>true</qc:Test_Passed>
             </qc:PSE_Test>
         </qc:PSE_Test_Results>
-        <qc:Audio_Loudness_Test_Results>
-            <qc:Audio_Loudness_Test>
-                <qc:Audio_Loudness_Specification>EBU R 128</qc:Audio_Loudness_Specification>
-                <qc:Compliance_To_Specification_Achieved>true</qc:Compliance_To_Specification_Achieved>
-                <qc:Programme_Loudness_Value>-22.9</qc:Programme_Loudness_Value>
-            </qc:Audio_Loudness_Test>
-        </qc:Audio_Loudness_Test_Results>
+        <qc:Audio_Loudness_Details>
+            <qc:Audio_Loudness_Specification>EBU R 128</qc:Audio_Loudness_Specification>
+            <qc:Compliance_To_Specification_Achieved>true</qc:Compliance_To_Specification_Achieved>
+            <qc:Programme_Loudness_Value>-22.9</qc:Programme_Loudness_Value>
+        </qc:Audio_Loudness_Details>
     </qc:Content_Quality_Checking_And_Testing>
 </pg0:Programmes_DM>
