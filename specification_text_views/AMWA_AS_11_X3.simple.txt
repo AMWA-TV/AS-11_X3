@@ -123,38 +123,56 @@ There are two special types of Block which allow the value of one Block to be se
                         * the mapping of audio channels from single-channel Sound Tracks in a Source Package to multi-channel Sound Tracks in the Material Package
                         
                         which is specified in Annex E of SMPTE ST 382:2007.
-        [B] MXF constraints for VBE Essence
+        [B] MXF Indexing and Partitioning
             Conformance: mandatory
-            [B] Segment the Essence Container
-                Conformance: mandatory
-                [A] The <Essence Container> is segmented into <Partition>s after every X minutes of <Essence> where X is between one and ten inclusive.
-                [N] Essence partitioning
-                    [A] # Explanation of Essence Segmenting and Partitions
-                        
-                        Refer to SMPTE ST 377-1:2011 Section 6.2.1 for the "Partition Rules Overview"
-                        
-                        # Small segments
-                        
-                        There could be small segments of Essence under this regime. This would occur if, for example:
-                        
-                        * There is less than one minute of Essence in total. In this case there is a single Essence segment and this Essence segment is short (less than one minute).
-                        * There is 30.5 minutes of Essence and Essence is being segmented every 10 minutes. In this case the final segment is only 30 seconds long.
-            [B] Index Each Essence Container Segment
-                Conformance: mandatory
-                [A] Each <Essence Container> segment is indexed by <Index Table Segment>(s) that occur after it but before the next <Essence Container> segment.
-                [A] These <Index Table Segment>(s) index every <Edit Unit> of every <Essence Element> in the <Essence Container> segment.
-                [N] Indexing and Partitions
-                    [A] # Index Table Segment details
-                        
-                        The stated constraints mean that in each Index Table Segment a "Delta Entry Array" will be required. Additionally, if there is at least one <VBE> <Essence Element> in the <Essence Container> then an "Index Entry Array" could be required (the need for this will depend on, for example, whether <KLV Fill> padding has been used).
-                        
-                        # Partitions
-                        
-                        This Block allows a number of options regarding which Partition the Index Table Segments are located in. For example, they could be in their own dedicated Partition or in the same Partition as the next Essence Container segment (because in a Partition Index Table Segments always come before an Essence Container segment). The Index Table Segments will not necessarily be in the Partition that immediately follows the Essence Partition: there could be other Partitions in between (such as a Generic Stream Partition).
-                        
-                        # Index Table Repetition
-                        
-                        This Block places no constraint on Index Table Repetition. For example, a complete Index Table could additionally be included somewhere in the file if required.
+            [A] The file is in accordance with either of: <MXF Indexing and Partitioning strategy for VBE Essence> or <MXF Indexing and Partitioning strategy for CBE Essence>.
+                [B] MXF Indexing and Partitioning strategy for VBE Essence
+                    [B] Segment the Essence Container
+                        Conformance: mandatory
+                        [A] The <Essence Container> is segmented into <Partition>s after every X minutes of <Essence> where X is between one and ten inclusive.
+                        [N] Essence partitioning
+                            [A] # Explanation of Essence Segmenting and Partitions
+                                
+                                Refer to SMPTE ST 377-1:2011 Section 6.2.1 for the "Partition Rules Overview"
+                                
+                                # Small segments
+                                
+                                There could be small segments of Essence under this regime. This would occur if, for example:
+                                
+                                * There is less than one minute of Essence in total. In this case there is a single Essence segment and this Essence segment is short (less than one minute).
+                                * There is 30.5 minutes of Essence and Essence is being segmented every 10 minutes. In this case the final segment is only 30 seconds long.
+                    [B] Index Each Essence Container Segment
+                        Conformance: mandatory
+                        [A] Each <Essence Container> segment is indexed by <Index Table Segment>(s) that occur after it but before the next <Essence Container> segment.
+                        [A] These <Index Table Segment>(s) index every <Edit Unit> of every <Essence Element> in the <Essence Container> segment.
+                        [N] Indexing and Partitions
+                            [A] # Index Table Segment details
+                                
+                                The stated constraints mean that in each Index Table Segment a "Delta Entry Array" will be required. Additionally, if there is at least one <VBE> <Essence Element> in the <Essence Container> then an "Index Entry Array" could be required (the need for this will depend on, for example, whether <KLV Fill> padding has been used).
+                                
+                                # Partitions
+                                
+                                This Block allows a number of options regarding which Partition the Index Table Segments are located in. For example, they could be in their own dedicated Partition or in the same Partition as the next Essence Container segment (because in a Partition Index Table Segments always come before an Essence Container segment). The Index Table Segments will not necessarily be in the Partition that immediately follows the Essence Partition: there could be other Partitions in between (such as a Generic Stream Partition).
+                                
+                                # Index Table Repetition
+                                
+                                This Block places no constraint on Index Table Repetition. For example, a complete Index Table could additionally be included somewhere in the file if required.
+                    [N] Application to CBE Essence
+                        [A] While these constraints are designed for use with Varible Bytes per Element (VBE) Essence, it is possible to apply them to Constant Bytes per Element (CBE) Essence. There are more efficient ways to deal with CBE Essence, however.
+                [B] MXF Indexing and Partitioning strategy for CBE Essence
+                    [B] Index precedes Essence
+                        Conformance: mandatory
+                        [A] The file contains a complete <Index Table> before the <Essence>.
+                    [B] Index all Essence
+                        Conformance: mandatory
+                        [A] The <Index Table> indexes every <Edit Unit> of every <Essence Element> in the file.
+                    [B] Single Essence Partition
+                        Conformance: mandatory
+                        [A] The <Generic Container> is entirely contained in exactly one <Partition>.
+                    [N] Indexing and Partitions
+                        [A] It's generally considered good MXF practice to have one 'thing' per Partition, so you'd have separate Partitions for Header Metadata, Essence, and Index Tables. This isn't a requirement but following best practice is encouraged.
+                            
+                            The Index Table could be placed in the Header Partition, its own Body Partition or in a Body Partition with the Essence. Indeed it could be distributed across all three of these locations. Decoders need to be able to cope with all of these posibilities.
         [B] AVC mapped with ST 381-3
             Conformance: mandatory
             [B] One Picture Track
