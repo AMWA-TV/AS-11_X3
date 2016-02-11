@@ -112,9 +112,21 @@
       <xs:enumeration value="ITU-R REC BS.1864"/>
       <xs:enumeration value="FreeTV OP-59"/>
       <xs:enumeration value="FreeTV OP-48"/>
-      <xs:enumeration value="ATSC A/85 (Dialog Anchor)"/>
-      <xs:enumeration value="ATSC A/85 (Full Program mix Anchor)"/>
-      <xs:enumeration value="ATSC A/85 (Unspecified Anchor)"/>
+      <xs:enumeration value="ATSC A/85 (Dialog Anchor)">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ATSC A/85:2009 with dialog used as the Anchor Element</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ATSC A/85 (Full Program mix Anchor)">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">ATSC A/85:2009 with all elements of the soundtrack used as the Anchor Element</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ATSC A/85 (Unspecified Anchor)">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ATSC A/85:2009 when the Anchor Element is not the dialog and not all elements of the soundtrack</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
 
