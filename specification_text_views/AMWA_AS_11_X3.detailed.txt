@@ -1440,13 +1440,13 @@ There are two special types of Block which allow the value of one Block to be se
         Conformance: mandatory
         Associated Parameter Key: "Picture Essence Constraints" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param2/)
         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_10/>
-        [B] Picture Essence Bitstream and Mapping Constraints: HD, 4:2:0, Long GOP
+        [B] Picture Essence Bitstream and Mapping Constraints: HD, 4:2:2, Long GOP
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PEC_4/>
             [B] Picture format constraints
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/>
-                [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component"; with the exception that the "Sampling lattice" for the colour-difference samples is not as specified.
+                [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component".
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/2.xml>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
@@ -1456,32 +1456,24 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
                     [R] ITU-R Recommendation ITU-R BT.709
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/R-Rec-BT.709/document/6/>
-                [A] The "Sampling lattice" for the colour-difference samples of the decoded <Picture Essence> is 4:2:0.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/3.xml>
-                    [T] Picture Essence
-                        A type of <Essence> containing predominantly picture data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
-                        [T] Essence
-                            A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
                 [N] Active Video
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E23/>
                     [A] The "active video" of BT.709 is taken to be the 1920x1080 CIF frame, excluding any blanking or synchronizing signals.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E23/artefacts/1.md>
-            [B] Constrained AVC long-GOP coding (4:2:0)
+            [B] Constrained AVC long-GOP coding (4:2:2)
                 Conformance: mandatory
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_110/>
-                [A] The <AVC> bitstream is encoded in accordance with <AVC High 10 constraints>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_110/artefacts/1.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/>
+                [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/artefacts/1.xml>
                     [T] AVC
                         Advanced Video Coding. A DCT-based video compression format.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/AVC/>
-                    [B] AVC High 10 constraints
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/>
-                        [A] The <AVC> bitstream conforms to the "High 10 Profile".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/artefacts/1.xml>
-                        [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01315001`
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/artefacts/2.md>
+                    [B] AVC High 4:2:2 constraints
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/>
+                        [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/1.xml>
+                        [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/2.md>
                 [N] TODO: Repetition of parameter sets
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T1>
                     [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]

@@ -426,20 +426,19 @@ There are two special types of Block which allow the value of one Block to be se
     [V] Picture Essence Constraints
         Conformance: mandatory
         Associated Parameter Key: "Picture Essence Constraints" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param2/)
-        [B] Picture Essence Bitstream and Mapping Constraints: HD, 4:2:0, Long GOP
+        [B] Picture Essence Bitstream and Mapping Constraints: HD, 4:2:2, Long GOP
             Conformance: mandatory
             [B] Picture format constraints
                 Conformance: mandatory
-                [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component"; with the exception that the "Sampling lattice" for the colour-difference samples is not as specified.
-                [A] The "Sampling lattice" for the colour-difference samples of the decoded <Picture Essence> is 4:2:0.
+                [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component".
                 [N] Active Video
                     [A] The "active video" of BT.709 is taken to be the 1920x1080 CIF frame, excluding any blanking or synchronizing signals.
-            [B] Constrained AVC long-GOP coding (4:2:0)
+            [B] Constrained AVC long-GOP coding (4:2:2)
                 Conformance: mandatory
-                [A] The <AVC> bitstream is encoded in accordance with <AVC High 10 constraints>.
-                    [B] AVC High 10 constraints
-                        [A] The <AVC> bitstream conforms to the "High 10 Profile".
-                        [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01315001`
+                [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
+                    [B] AVC High 4:2:2 constraints
+                        [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
+                        [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
                 [N] TODO: Repetition of parameter sets
                     [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]
                 [N] TODO: GOP structure
