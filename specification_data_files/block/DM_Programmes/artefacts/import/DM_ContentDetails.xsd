@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:qc="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cd="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentDetails" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentDetails" elementFormDefault="qualified">
 
   <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common" schemaLocation="DM_Common.xsd"/>
 
-  <xs:element name="Content_Quality_Checking_And_Testing">
+  <xs:element name="Content_Details">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Audio_Comments" type="cmn:token127" minOccurs="0" maxOccurs="1">
@@ -26,7 +26,7 @@
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="PSE_Test" type="qc:PSE_Test_type" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="PSE_Test" type="cd:PSE_Test_type" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -36,7 +36,7 @@
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Audio_Loudness_Specification" type="qc:Audio_Loudness_Specification_type" minOccurs="1" maxOccurs="1">
+              <xs:element name="Audio_Loudness_Specification" type="cd:Audio_Loudness_Specification_type" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
                   <xs:documentation xml:lang="en">The Audio Loudness Specification to which the maker of the programme intended the finished (ready for transmission) audio content to comply</xs:documentation>
                 </xs:annotation>

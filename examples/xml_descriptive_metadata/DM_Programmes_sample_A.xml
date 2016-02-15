@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pg0:Programmes_DM xmlns:qc="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC"
+<pg0:Programmes_DM xmlns:cd="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentDetails"
                      xmlns:pg0="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes"
                      xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific"
                      xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification"
@@ -40,19 +40,19 @@
         <acs:Open_Captions_Not_Present/>
         <acs:Signing_Not_Present/>
     </acs:In_Vision_Access_Services>
-    <qc:Content_Quality_Checking_And_Testing>
-        <qc:Audio_Comments>1 kHz tone used artistically throughout</qc:Audio_Comments>
-        <qc:Video_Comments>Film grain applied in places</qc:Video_Comments>
-        <qc:PSE_Test_Results>
-            <qc:PSE_Test>
-                <qc:Test_Device>My wonderful PSE tester v1.2</qc:Test_Device>
-                <qc:Test_Passed>true</qc:Test_Passed>
-            </qc:PSE_Test>
-        </qc:PSE_Test_Results>
-        <qc:Audio_Loudness_Details>
-            <qc:Audio_Loudness_Specification>EBU R 128</qc:Audio_Loudness_Specification>
-            <qc:Compliance_To_Specification_Achieved>true</qc:Compliance_To_Specification_Achieved>
-            <qc:Programme_Loudness_Value>-23.2</qc:Programme_Loudness_Value>
-        </qc:Audio_Loudness_Details>
-    </qc:Content_Quality_Checking_And_Testing>
+    <cd:Content_Details>
+        <cd:Audio_Comments>1 kHz tone used artistically throughout</cd:Audio_Comments>
+        <cd:Video_Comments>Film grain applied in places</cd:Video_Comments>
+        <cd:PSE_Test_Results>
+            <cd:PSE_Test>
+                <cd:Test_Device>My wonderful PSE tester v1.2</cd:Test_Device>
+                <cd:Test_Passed>true</cd:Test_Passed>
+            </cd:PSE_Test>
+        </cd:PSE_Test_Results>
+        <cd:Audio_Loudness_Details>
+            <cd:Audio_Loudness_Specification>EBU R 128</cd:Audio_Loudness_Specification>
+            <cd:Compliance_To_Specification_Achieved>true</cd:Compliance_To_Specification_Achieved>
+            <cd:Programme_Loudness_Value>-23.2</cd:Programme_Loudness_Value>
+        </cd:Audio_Loudness_Details>
+    </cd:Content_Details>
 </pg0:Programmes_DM>

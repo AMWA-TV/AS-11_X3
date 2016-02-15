@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pg0:Programmes_DM xmlns:qc="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentQC"
+<pg0:Programmes_DM xmlns:cd="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentDetails"
                      xmlns:pg0="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes"
                      xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific"
                      xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification"
@@ -54,13 +54,13 @@
             <acs:Signing_Type>Signer with programme</acs:Signing_Type>
         </acs:Signing_Present>
     </acs:In_Vision_Access_Services>
-    <qc:Content_Quality_Checking_And_Testing>
-        <qc:PSE_Test_Results />
-        <qc:Audio_Loudness_Details>
-            <qc:Audio_Loudness_Specification>EBU R 128</qc:Audio_Loudness_Specification>
-            <qc:Compliance_To_Specification_Achieved>false</qc:Compliance_To_Specification_Achieved>
-            <qc:Programme_Loudness_Value>-25.9</qc:Programme_Loudness_Value>
-            <qc:Explanation>This programme is intentionally quiet as agreed when commissioned</qc:Explanation>
-        </qc:Audio_Loudness_Details>
-    </qc:Content_Quality_Checking_And_Testing>
+    <cd:Content_Details>
+        <cd:PSE_Test_Results />
+        <cd:Audio_Loudness_Details>
+            <cd:Audio_Loudness_Specification>EBU R 128</cd:Audio_Loudness_Specification>
+            <cd:Compliance_To_Specification_Achieved>false</cd:Compliance_To_Specification_Achieved>
+            <cd:Programme_Loudness_Value>-25.9</cd:Programme_Loudness_Value>
+            <cd:Explanation>This programme is intentionally quiet as agreed when commissioned</cd:Explanation>
+        </cd:Audio_Loudness_Details>
+    </cd:Content_Details>
 </pg0:Programmes_DM>
