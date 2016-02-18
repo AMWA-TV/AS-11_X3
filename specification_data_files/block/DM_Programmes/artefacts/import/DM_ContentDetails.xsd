@@ -41,19 +41,31 @@
                   <xs:documentation xml:lang="en">The Audio Loudness Specification to which the maker of the programme intended the finished (ready for transmission) audio content to comply</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="Compliance_To_Specification_Achieved" type="xs:boolean" minOccurs="1" maxOccurs="1">
-                <xs:annotation>
-                  <xs:documentation xml:lang="en">Indicates whether or not the finished (ready for transmission) audio content complies with the indicated Audio Loudness Specification</xs:documentation>
-                </xs:annotation>
-              </xs:element>
+              <xs:choice minOccurs="1" maxOccurs="1">
+                <xs:element name="Compliance_To_Specification_Is_Achieved">
+                  <xs:annotation>
+                    <xs:documentation xml:lang="en">The presence of this element indicates that the finished (ready for transmission) audio content complies with the indicated Audio Loudness Specification</xs:documentation>
+                  </xs:annotation>
+                  <xs:complexType/>
+                </xs:element>
+                <xs:element name="Compliance_To_Specification_Is_Not_Achieved">
+                  <xs:annotation>
+                    <xs:documentation xml:lang="en">The presence of this element indicates that the finished (ready for transmission) audio content does not comply with the indicated Audio Loudness Specification</xs:documentation>
+                  </xs:annotation>
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Explanation" type="cmn:token250" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                          <xs:documentation xml:lang="en">An explanation for any failure to fully comply with all provisions of the indicated Audio Loudness Specification, such as the content being "intentionally quiet"</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
               <xs:element name="Programme_Loudness_Value" type="xs:float" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:documentation xml:lang="en">The "Programme Loudness Value" in LUFS as measured in accordance with the indicated Audio Loudness Specification. This is intended to give an indicatation of the degree to which the content deviates from the indicated Audio Loudness Specification, rather than a precise measurement of the loudness of the content.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Explanation" type="cmn:token250" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:documentation xml:lang="en">An explanation for any failure to fully comply with all provisions of the indicated Audio Loudness Specification, such as the content being "intentionally quiet"</xs:documentation>
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
