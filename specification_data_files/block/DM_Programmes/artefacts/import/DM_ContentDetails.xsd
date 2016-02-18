@@ -96,7 +96,7 @@
             <xs:documentation xml:lang="en">ATSC A/85:2009 with all elements of the soundtrack used as the Anchor Element</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="ATSC A/85 (Unspecified Anchor)">
+      <xs:enumeration value="ATSC A/85 (Other Anchor)">
         <xs:annotation>
           <xs:documentation xml:lang="en">ATSC A/85:2009 when the Anchor Element is not the dialog and not all elements of the soundtrack</xs:documentation>
         </xs:annotation>
