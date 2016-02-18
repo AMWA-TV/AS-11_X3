@@ -1,20 +1,22 @@
 # **[Work In Progress]** AS-11 X3 (MXF Program Contribution - HD Long GOP (25p, 50p))
 
-This repository contains the full details of this AMWA Specification.
-
-For the latest version of this repository please refer to [its GitHub project](https://github.com/AMWA-TV/AS-11_X3/).
-
-Issues for this and other AMWA Specifications are tracked in a [separate GitHub project](https://github.com/AMWA-TV/AS-11_Overview).
+This repository contains the full details of this AMWA Specification. For the latest version of this repository please refer to [its GitHub project](https://github.com/AMWA-TV/AS-11_X3/).
 
 ## Getting Started
 
-Visit the AMWA [web page for the Specification](http://amwa.tv/projects/AS-11-X3.shtml). It has information about revisions and current development.
+The principal rendering / view of the Specification is a web page that contains contextual links to other files in this repository. To view this web page, either:
+* Visit the AMWA [web page for the Specification](http://amwa.tv/projects/AS-11-X3.shtml) to view the web page online.
+* Alternatively, clone or download this repository and open [AMWA_AS_11_X3.html](AMWA_AS_11_X3.html).
 
-Alternatively, clone or download this repository and open [AMWA_AS_11_X3.html](AMWA_AS_11_X3.html) in a web browser to read the Specification. This web page is the principal rendering / view of the Specification. It contains contextual links to other files in this repository.
+## Specification Development and Implementation
 
-## Examining Changes
+Information on the further development and implementation of this and other AMWA AS-11 rules based Specifications are in a [separate GitHub project](https://github.com/AMWA-TV/AS-11_Overview). Examples include:
+* Issue tracking
+* Sample MXF files
 
-The Specification is tracked using [git](http://git-scm.com/). Various tools are available for showing the differences between commits in a git repository and they can be used to examine changes to the Specification. However, the HTML rendering of the Specification that is included in the repository is not suitable for tracking changes to the contents of the Specification. It is best to ignore changes to `AMWA_AS_11_X3.html` when comparing versions of this repository.
+## Specification Change History
+
+The full Specification history is available [here](https://github.com/AMWA-TV/AS-11_X3/commits). It is best to ignore changes to `AMWA_AS_11_X3.html` when examining the history of this repository (all the pertinent changes will be apparent in other files).
 
 ## Full Repository Contents
 
