@@ -426,7 +426,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             [B] Picture format constraints
                 Conformance: mandatory
-                [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709-6> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component".
+                [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709-6> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coded signal" is "Y, Cb, Cr"; "Coding format" is "10 bits/component".
                 [N] Active Video
                     [A] The "active video" of BT.709 is taken to be the 1920x1080 CIF frame, excluding any blanking or synchronizing signals.
             [B] Constrained AVC long-GOP coding (4:2:2)
