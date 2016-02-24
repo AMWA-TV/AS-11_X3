@@ -422,7 +422,7 @@ There are two special types of Block which allow the value of one Block to be se
     [V] Picture Essence Constraints
         Conformance: mandatory
         Associated Parameter Key: "Picture Essence Constraints" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param2/)
-        [B] Picture Essence Bitstream and Mapping Constraints: HD, 4:2:2, Long GOP
+        [B] Picture Essence Bitstream and Mapping Constraints
             Conformance: mandatory
             [B] Picture format constraints
                 Conformance: mandatory
