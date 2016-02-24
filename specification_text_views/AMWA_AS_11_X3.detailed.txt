@@ -498,9 +498,9 @@ There are two special types of Block which allow the value of one Block to be se
                         Advanced Video Coding. A DCT-based video compression format.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/AVC/>
                     [T] Byte Stream Format
-                        The format defined by Annex B of <ITU-T Rec H.264>.
+                        The format defined by Annex B of <ITU-T Rec H.264-201402>.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/Byte%20Stream%20Format/>
-                        [R] ITU-T Rec H.264
+                        [R] ITU-T Rec H.264-201402
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/document/201402/>
             [B] ST 381-3 mapping
                 Conformance: mandatory
@@ -1442,7 +1442,7 @@ There are two special types of Block which allow the value of one Block to be se
             [B] Picture format constraints
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/>
-                [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component".
+                [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709-6> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coding format" is "10 bits/component".
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/2.xml>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
@@ -1450,7 +1450,7 @@ There are two special types of Block which allow the value of one Block to be se
                         [T] Essence
                             A bitstream comprising picture, sound or data.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                    [R] ITU-R Recommendation ITU-R BT.709
+                    [R] ITU-R Recommendation ITU-R BT.709-6
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/R-Rec-BT.709/document/6/>
                 [N] Active Video
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E23/>
