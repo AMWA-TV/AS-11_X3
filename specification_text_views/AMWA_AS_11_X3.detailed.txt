@@ -1456,6 +1456,10 @@ There are two special types of Block which allow the value of one Block to be se
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E23/>
                     [A] The "active video" of BT.709 is taken to be the 1920x1080 CIF frame, excluding any blanking or synchronizing signals.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E23/artefacts/1.md>
+                [N] Implementation Notes
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E31/>
+                    [A] The combinations of Transport and Frame Frequency listed here fall under the "25/P" and "50/P" Systems defined in BT.709.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E31/artefacts/1.md>
             [B] Constrained AVC long-GOP coding (4:2:2)
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/>
