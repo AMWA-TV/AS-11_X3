@@ -138,6 +138,16 @@
     fieldset { display: table-cell; }
   }
   
+ .dl-horizontal dt{
+    text-align: left;
+    margin-bottom: 0.1em;
+    width: auto;
+    padding-right: 1em;
+  }
+  
+  .dl-horizontal dt img:last-of-type{
+    margin-right: 0.5em;
+  } 
   </style>
   
 </head>
@@ -212,6 +222,28 @@
 </div><hr>
     <!--missingValues-->
     <h2>The Specification Blocks Tree</h2>
+    <div id="tree_legend">
+        <span id="legend_intro">Elements of the tree below are labelled with icons to identify their class.</span>
+        <dl class="dl-horizontal">
+            <dt><img src="include/block.png">Block</dt>
+            <dd>Its meaning is defined by its contents, which can be Artefacts or other Blocks.</dd>
+            <dt><img src="include/artefact.png">Artefact</dt>
+            <dd>A statement or a data file.</dd>
+            <dt><img src="include/key.png">Parameter Key</dt>
+            <dd>A Block whose value must be set elsewhere in the Specification (it effectively declares a "variable" or an "argument")</dd>
+            <dt><img src="include/value.png">Parameter Value</dt>
+            <dd>A Block which sets the value of a specific Parameter Key Block</dd>
+            <dt><img src="include/note.png">Note</dt>
+            <dd>This provides informative guidance on the implementation or application of the Specification.</dd>
+        </dl>
+
+        <dl class="dl-horizontal">
+            <dt><img src="include/value.png"><img src="include/key.png"><img src="include/block.png"></i></dt>
+            <dd>Solid fill on an icon denotes that element defines constraints that are <em>mandatory</em>.</dd>
+            <dt><img src="include/blockrec.png"></i></dt>
+            <dd>An icon with an outline style defines contraints that are <em>not mandatory</em>.</dd>
+        </dl>
+    </div>
     <div class="control_buttons_group">
         <button class="btn btn-default" type="button" id="tree_expand_all">Fully expand tree</button>
         <button class="btn btn-default" type="button" id="tree_collapse_all">Fully collapse tree</button>
