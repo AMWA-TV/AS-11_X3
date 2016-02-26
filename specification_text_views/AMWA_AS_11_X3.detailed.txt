@@ -1567,6 +1567,15 @@ There are two special types of Block which allow the value of one Block to be se
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E27/>
                 [A] Some of the Labels listed here are defined elsewhere. For a full explanation of such Labels, refer to the document detailed in the `DefiningDocument` element for the Label in the relevant XML.
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E27/artefacts/1.md>
+            [N] Labeling Audio Description
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E32/>
+                [A] The anticipated application of these Labels to "Audio Decsription" is as follows:
+                    
+                    * `AudioDescription` will be used with `AudioDescriptionStudioSignal`
+                    * `AudioDescriptionProgramMix` will be used with `SMPTEST20678StandardStereo`
+                    
+                    Other valid combinations of "Soundfield Group" and "Group of Soundfield Groups" Labels are also possible.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E32/artefacts/1.md>
     [V] Extra Audio Layout Modes
         Conformance: mandatory
         Associated Parameter Key: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/)
