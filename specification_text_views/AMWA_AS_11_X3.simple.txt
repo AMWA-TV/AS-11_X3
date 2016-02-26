@@ -440,7 +440,7 @@ There are two special types of Block which allow the value of one Block to be se
                 [N] TODO: GOP structure
                     [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
             [N] Implementation Notes
-                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of 4.1 or 4.2.
+                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 4.1 or 4.2.
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param3/)
