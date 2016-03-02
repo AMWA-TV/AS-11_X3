@@ -28,6 +28,8 @@ This Specification aims to define a file format for the delivery of finished HD 
 
 # Understanding the Specification Blocks Tree
 
+This Specification is formed of "Blocks" that naturally form a "tree". A rendering / view of this tree is shown below and is explained here.
+
 ## Entities Summary
 The Specification-writing framework used to produce this Specification has several different types of component / entity. In summary:
 
@@ -38,7 +40,7 @@ The Specification-writing framework used to produce this Specification has sever
 
 Each entity is identified by a unique URL.
 
-These entities naturally form a "tree" -- a rendering / view of this is shown below. Some of the letters in brackets above are used in the tree view to identify the type of each entity.
+Some of the letters in brackets above are used in the tree view to identify the type of each entity.
 
 ## Conformance
 
@@ -58,6 +60,7 @@ There are two special types of Block which allow the value of one Block to be se
 
 * **Parameter Key Block (K)** -- this is a Block whose value must be set elsewhere in the Specification (it effectively defines a "variable" or an "argument")
 * **Parameter Value Block (V)** -- this is a Block which sets the value of a specific Parameter Key Block (K)
+
 
 
 # The Specification Blocks Tree

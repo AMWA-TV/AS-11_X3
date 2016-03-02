@@ -182,6 +182,8 @@
 </ul>
 </div><div class='header_markdown'><h2 id="understanding-the-specification-blocks-tree">Understanding the Specification Blocks Tree</h2>
 
+<p>This Specification is formed of "Blocks" that naturally form a "tree". A rendering / view of this tree is shown below and is explained here.</p>
+
 <h3 id="entities-summary">Entities Summary</h3>
 
 <p>The Specification-writing framework used to produce this Specification has several different types of component / entity. In summary:</p>
@@ -195,7 +197,7 @@
 
 <p>Each entity is identified by a unique URL.</p>
 
-<p>These entities naturally form a "tree" -- a rendering / view of this is shown below. Some of the letters in brackets above are used in the tree view to identify the type of each entity.</p>
+<p>Some of the letters in brackets above are used in the tree view to identify the type of each entity.</p>
 
 <h3 id="conformance">Conformance</h3>
 
@@ -223,25 +225,25 @@
     <!--missingValues-->
     <h2>The Specification Blocks Tree</h2>
     <div id="tree_legend">
-        <span id="legend_intro">Elements of the tree below are labelled with icons to identify their class.</span>
+        <span id="legend_intro">The following icons are used in the Specification Blocks Tree</span>
         <dl class="dl-horizontal">
             <dt><img src="include/block.png">Block</dt>
             <dd>Its meaning is defined by its contents, which can be Artefacts or other Blocks.</dd>
-            <dt><img src="include/artefact.png">Artefact</dt>
-            <dd>A statement or a data file.</dd>
             <dt><img src="include/key.png">Parameter Key</dt>
             <dd>A Block whose value must be set elsewhere in the Specification (it effectively declares a "variable" or an "argument")</dd>
             <dt><img src="include/value.png">Parameter Value</dt>
             <dd>A Block which sets the value of a specific Parameter Key Block</dd>
             <dt><img src="include/note.png">Note</dt>
-            <dd>This provides informative guidance on the implementation or application of the Specification.</dd>
+            <dd>This provides informative guidance on the implementation or application of a Block.</dd>
+            <dt><img src="include/artefact.png"><img src="include/noteartefact.png">Artefact</dt>
+            <dd>A statement or a data file.</dd>
         </dl>
 
         <dl class="dl-horizontal">
             <dt><img src="include/value.png"><img src="include/key.png"><img src="include/block.png"></i></dt>
-            <dd>Solid fill on an icon denotes that element defines constraints that are <em>mandatory</em>.</dd>
+            <dd>An icon with a solid fill denotes constraints that are <em>mandatory</em>.</dd>
             <dt><img src="include/blockrec.png"></i></dt>
-            <dd>An icon with an outline style defines contraints that are <em>not mandatory</em>.</dd>
+            <dd>An icon with an outline style denotes constraints that are <em>not mandatory</em>.</dd>
         </dl>
     </div>
     <div class="control_buttons_group">
