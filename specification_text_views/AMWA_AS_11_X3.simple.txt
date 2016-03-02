@@ -73,27 +73,27 @@ There are two special types of Block which allow the value of one Block to be se
             [B] MXF File Format
                 Conformance: mandatory
                 [A] The file conforms to <SMPTE ST 377-1:2011>.
-                [N] N001
+                [N] Implementation Notes
                     [A] Section 5.2.1 of <SMPTE ST 377-1:2011> sets out a non-exhaustive list of changes from <SMPTE ST 377:2004>.
             [B] Operational pattern 1a
                 Conformance: mandatory
                 [A] The file conforms to <SMPTE ST 378:2004>.
-                [N] N011
+                [N] Implementation Notes
                     [A] The file must be labelled as OP1a in the Operational Pattern property of all Partition Packs and the Preface Set, as required by <SMPTE ST 377-1:2011> in Section 7.1 and Annex A, respectively.
             [B] Closed Complete Header
                 Conformance: mandatory
                 [A] The <Header Partition> is "Closed" and "Complete".
-                [N] N014
-                    [A] Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of <SMPTE ST 377-1:2011> for a full explanation.
-                [N] N045
-                    [A] Late delivery of a file is the term used to describe a workflow where playout (broadcast) of a file starts before the file transfer from supplier to broadcaster has completed. To support late delivery a broadcaster must be able to trust the metadata that is contained at the beginning of the file.
+                [N] Implementation Notes
+                    [A] Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of SMPTE ST 377-1:2011 for a full explanation.
+                        
+                        Late delivery of a file is the term used to describe a workflow where playout (broadcast) of a file starts before the file transfer from supplier to broadcaster has completed. To support late delivery a broadcaster must be able to trust the metadata that is contained at the beginning of the file.
             [B] Header Metadata KLV Fill
                 Conformance: recommended
                 [A] When first created, the file includes a <KLV Fill> item of at least 8192 bytes in total length following the <Header Metadata>.
-                [N] N002
+                [N] Implementation Notes
                     [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
-                [N] N025
-                    [A] The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
+                        
+                        The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
             [B] RIP present
                 Conformance: mandatory
                 [A] The file has a <Random Index Pack>.
@@ -110,7 +110,7 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 [A] The <Generic Container> uses <Frame Wrapping>.
                 [A] If the <Generic Container> contains <Picture Essence> then the related <Edit Unit> duration is equal to the duration of a video frame of the <Picture Essence>.
-                [N] E8
+                [N] Implementation Notes
                     [A] For example, this means that if the <Picture Essence> is field-encoded then each <Edit Unit> contains the data assosiated with both of the video fields for a video frame.
             [B] One-to-one Track mapping
                 Conformance: mandatory
@@ -210,7 +210,7 @@ There are two special types of Block which allow the value of one Block to be se
             [B] Uncompressed 24-bit PCM audio at 48 kHz
                 Conformance: mandatory
                 [A] For each <Audio Channel> the <Sound Essence> is "uncompressed PCM audio data" per <SMPTE ST 382:2007>, sampled at 48 kHz with 24 bits per sample.
-                [N] N029
+                [N] Implementation Notes
                     [A] As per Section 6 of <SMPTE ST 382:2007> samples are stored as little-endian integers.
             [B] Constrained ST 382 Wave PCM mapping
                 Conformance: mandatory
@@ -218,7 +218,7 @@ There are two special types of Block which allow the value of one Block to be se
                 [A] In the {WAVEPCMDescriptor} the (ordinarily optional) "ElectrospatialFormulation" property is not present.
                 [A] In the {WAVEPCMDescriptor} the (ordinarily optional) "ChannelAssignment" property is present.
                 [A] In the {WAVEPCMDescriptor} the value of the "ChannelAssignment" property is the same for all <Sound Track>s..
-                [N] N006b
+                [N] Implementation Notes
                     [A] This prohibits the use of the "AES3 Audio Essence Descriptor" defined in <SMPTE ST 382:2007>.
             [B] Audio Layout Mode
                 Conformance: mandatory
@@ -297,7 +297,7 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] The instance of "Text-Based DM Framework" is strongly referenced from a <Constrained Static DM Track>.
                         [B] Constrained Static DM Track
                             [A] A <Constrained Static DM Track> is a <Static Track (DM)> in the <Material Package> that contains a <Sequence>, which contains exactly one <DM Segment>, which strongly references an instance of a <DM Framework>.
-                            [N] N039
+                            [N] Track Name
                                 [A] The "Track Name" property of an <Constrained Static DM Track> does not identify the <DM Scheme> whose <DM Framework> it references. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <DM Scheme> used in the track, e.g. "AS_11_Core", "AS_11_UKDPP".
                     [A] The XML document is carried in the "UTF-8 Text Data" property of the "UTF-8 Text-based Set".
                     [A] In the "UTF-8 Text-based Set" the property "Text-based Metadata Payload Scheme ID" has the value of <DM_XML_Document>.
@@ -318,11 +318,11 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] A <Program Segmentation Track> is a <Timeline Track> that contains a <Sequence> that is composed of zero or more <Filler> objects and one or more <DM Segment> objects.
                     [A] Each <DM Segment> object in the <Program Segmentation Track> represents, and aligns with, a region of program content in the <Source Essence>.
                     [A] Each <Filler> object in the <Program Segmentation Track> represents, and aligns with, a region of non-program content in the <Source Essence>.
-                    [N] N038
+                    [N] Track Name
                         [A] The "Track Name" property of the <Program Segmentation Track> does not identify the segmentation metadata scheme. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <DM Scheme> used in the track, e.g.  "AS_11_Segmentation".
-                    [N] N040
+                    [N] Determining SOM and EOM
                         [A] The start and end timecodes for program regions, commonly referred to as "start of material" (som) and "end of material" (eom), can be determined based on the location of <DM Segment> objects on the <Program Segmentation Track> relative to the adjacent <Timecode Track> in the <Material Package> that contains the <Program Segmentation Track>.
-                    [N] N048
+                    [N] Non-Programme Content
                         [A] Examples of non-programme content include: black, ident, clock.
             [A] This <Track> is in the <Material Package>.
             [A] Each <DM Segment> object in the <Track> strongly references an instance of <DM_AS_11_Segmentation>.
@@ -336,9 +336,9 @@ There are two special types of Block which allow the value of one Block to be se
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Groups.xml
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Elements.xml
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Types.xml
-            [N] N049
+            [N] Implementation Notes
                 [A] The <Track> can be identified by an MXF reader by the presence of <DM Segment> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <DM Framework>.
-            [N] N051
+            [N] Repetition of Header Metadata
                 [A] Repetition of Header Metadata in the Footer Partition is not considered to be another instance of any of the components of that Header Metadata.
         [B] Specification Identification
             Conformance: mandatory
@@ -402,14 +402,14 @@ There are two special types of Block which allow the value of one Block to be se
             [B] Timecode Track Presence
                 Conformance: mandatory
                 [A] The <Material Package> contains exactly one <Timecode Track>.
-                [N] N021
+                [N] Implementation Notes
                     [A] The Timecode properties must always properly match the content of the MXF file. This means that "Rounded Timecode Base" and "Drop Frame" need to be set appropriately.
-                [N] N024
-                    [A] This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.
+                        
+                        This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.
             [B] Timecode Track Precedence
                 Conformance: mandatory
                 [A] The <Timecode Track> in the <Material Package> defines the authoritative program timecode.
-                [N] N022
+                [N] Implementation Notes
                     [A] The authority of the Timecode Track in the Material Package needs to be respected by all components of a system that handles the file.
         [N] Implementation Notes
             [A] ## Essence Container Label
