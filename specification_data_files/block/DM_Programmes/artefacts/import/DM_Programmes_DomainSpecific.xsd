@@ -183,6 +183,11 @@
           <xs:documentation xml:lang="en">Indicates that the content is a Side-by-Side Frame Compatible spatial multiplex of the left and right views of a stereoscopic 3D pair, as defined by ETSI TS 101 547-2</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="Top and bottom">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicates that the content is a Top-and-Bottom Frame Compatible spatial multiplex of the left and right views of a stereoscopic 3D pair, as defined by ETSI TS 101 547-2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Left eye only">
         <xs:annotation>
           <xs:documentation xml:lang="en">Indicates that the content is for the left view of a stereoscopic 3D pair</xs:documentation>
