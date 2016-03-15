@@ -148,6 +148,10 @@
   .dl-horizontal dt img:last-of-type{
     margin-right: 0.5em;
   } 
+
+  .alert-auto {
+    display: inline-block; /* make alert take the width of its content */
+  }
   </style>
   
 </head>
@@ -252,7 +256,7 @@
         <button class="btn btn-default" type="button" id="tree_expand_all">Fully expand tree</button>
         <button class="btn btn-default" type="button" id="tree_collapse_all">Fully collapse tree</button>
     </div>
-  <div id="jstree_loading">Loading Specification Block Tree &hellip;</div>
+  <div id="jstree_loading" class="alert alert-info alert-auto" role="alert">Loading Specification Block Tree &hellip;</div>
   <div id="jstree">
 
 <ul>
@@ -2082,9 +2086,10 @@ project are available from the <a href="http://amwa.tv/">AMWA</a></p>
         });
 
         $("#jstree").on('ready.jstree', function() {
-            $('#jstree').jstree('open_node', '.jstree-anchor:first');   /* open the first level of the tree */
-            $('#jstree_loading').hide();                                /* Hide the "tree loading" message */
-            $("#jstree").show();                                        /* show the whole tree (it was hidden) */ 
+            $('#jstree').jstree('open_node', '.jstree-anchor:first', function(e, data) {   /* open the first level of the tree */
+                $('#jstree_loading').hide();                                               /* Hide the "tree loading" message */
+                $("#jstree").show();                                                       /* show the whole tree (it was hidden) */
+            } ); 
         });
         
         $(document).on('click', 'a', function(event){
