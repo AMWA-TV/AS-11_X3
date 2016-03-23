@@ -1469,6 +1469,8 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/1.xml>
                         [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/2.md>
+                [A] The mean data rate of the Picture Essence is greater than or equal to 50,000,000 bits per second.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/artefacts/2.md>
                 [N] TODO: Repetition of parameter sets
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T1/>
                     [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]
@@ -1477,6 +1479,10 @@ There are two special types of Block which allow the value of one Block to be se
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/>
                     [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/artefacts/1.md>
+                [N] Data rate calculation
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E35/>
+                    [A] The mean data rate (in bits per second) can be calculated by taking the total size of the Picture Essence stored in the file (in number of bits), dividing by the number of Edit Units in the file (which might be more than the length of the Material Package or Top Level File Package) and then multiplying the result by the Edit Rate.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E35/artefacts/1.md>
             [N] Implementation Notes
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E20/>
                 [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 4.1 or 4.2.

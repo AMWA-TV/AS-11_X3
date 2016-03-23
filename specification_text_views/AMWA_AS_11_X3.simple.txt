@@ -440,10 +440,13 @@ There are two special types of Block which allow the value of one Block to be se
                     [B] AVC High 4:2:2 constraints
                         [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
                         [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
+                [A] The mean data rate of the Picture Essence is greater than or equal to 50,000,000 bits per second.
                 [N] TODO: Repetition of parameter sets
                     [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]
                 [N] TODO: GOP structure
                     [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
+                [N] Data rate calculation
+                    [A] The mean data rate (in bits per second) can be calculated by taking the total size of the Picture Essence stored in the file (in number of bits), dividing by the number of Edit Units in the file (which might be more than the length of the Material Package or Top Level File Package) and then multiplying the result by the Edit Rate.
             [N] Implementation Notes
                 [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 4.1 or 4.2.
     [V] File Format Specification Identification Label
