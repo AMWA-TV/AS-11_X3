@@ -33,4 +33,11 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="BCP47_language_tag">
+    <xs:annotation>
+      <xs:documentation>A valid language tag according to IETF BCP 47</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:language"/>
+  </xs:simpleType>
+
 </xs:schema>

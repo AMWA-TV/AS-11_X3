@@ -116,7 +116,7 @@
             </xs:annotation>
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="Programme_Text_Language" type="xs:language" minOccurs="1" maxOccurs="1">
+                <xs:element name="Programme_Text_Language" type="cmn:BCP47_language_tag" minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                     <xs:documentation xml:lang="en">
                       A code to identify the main language used for text overlays (or similar) in the video of the main programme content.

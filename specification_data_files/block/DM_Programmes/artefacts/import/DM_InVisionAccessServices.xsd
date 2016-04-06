@@ -35,7 +35,7 @@
 
   <xs:complexType name="Open_Captions_type">
     <xs:sequence>
-      <xs:element name="Caption_Language" type="xs:language" minOccurs="1" maxOccurs="1">
+      <xs:element name="Caption_Language" type="cmn:BCP47_language_tag" minOccurs="1" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             A code to identify the main language used in the open captions.
@@ -54,7 +54,7 @@
 
   <xs:complexType name="Signing_type">
     <xs:sequence>
-      <xs:element name="Signing_Language" type="xs:language" minOccurs="1" maxOccurs="1">
+      <xs:element name="Signing_Language" type="cmn:BCP47_language_tag" minOccurs="1" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             A code to identify the main language and / or format of the visible (in-vision) signing contained in the programme.
