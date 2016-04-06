@@ -227,80 +227,88 @@
 
   <xs:simpleType name="Defined_Picture_Ratios_type">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="4/3">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 4/3 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+      <xs:enumeration value="1.33:1 centred pillarbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 1.33:1 (exact value: 4/3) picture with black bars. The picture is full height and centred horizontally ("pillarbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="14/9">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 14/9 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="1.56:1 centred pillarbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 1.56 (exact value: 14/9) picture with black bars. The picture is full height and centred horizontally ("pillarbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="15/9">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 15/9 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="1.56:1 centred letterbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 1.56 (exact value: 14/9) picture with black bars. The picture is full width and centred vertically ("letterbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="16/9">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 16/9 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="1.67:1 centred pillarbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 1.67:1 (exact value: 15/9) picture with black bars. The picture is full height and centred horizontally ("pillarbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="1.85:1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 1.85:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="1.67:1 centred letterbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 1.67:1 (exact value: 15/9) picture with black bars. The picture is full width and centred vertically ("letterbox")</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="1.90:1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 1.90:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="1.78:1 centred letterbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 1.78:1 (exact value: 16/9) picture with black bars. The picture is full width and centred vertically ("letterbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="21/9">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 21/9 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="1.85:1 centred letterbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 1.85:1 picture with black bars. The picture is full width and centred vertically ("letterbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="2.35:1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 2.35:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="2.33:1 centred letterbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 2.33:1 (exact value: 21/9) picture with black bars. The picture is full width and centred vertically ("letterbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="2.37:1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 2.37:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="2.35:1 centred letterbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 2.35:1 picture with black bars. The picture is full width and centred vertically ("letterbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="2.39:1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 2.39:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
+
+      <xs:enumeration value="2.39:1 centred letterbox">
+          <xs:annotation>
+              <xs:documentation xml:lang="en">A 2.39:1 (or 2.40:1) picture with black bars. The picture is full width and centred vertically ("letterbox").</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="2.40:1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A 2.40:1 picture with black bars. The picture is either full height and centred horizontally ("pillarbox") or full width and centred vertically ("letterbox")</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
+
       <xs:enumeration value="Centred letterbox">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The picture fills the full width of the frame, is vertically centered in the frame and there are black bars of unspecified height to the top and bottom of the picture</xs:documentation>
-        </xs:annotation>
+          <xs:annotation>
+              <xs:documentation xml:lang="en">The picture fills the full width of the frame, is vertically centred in the frame and there are black bars of unspecified (perhaps unknown) height to the top and bottom of the picture</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
+
       <xs:enumeration value="Centred pillarbox">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The picture fills the full height of the frame, is horizontally centered in the frame and has black bars of unspecified width to the left and right of the picture</xs:documentation>
-        </xs:annotation>
+          <xs:annotation>
+              <xs:documentation xml:lang="en">The picture fills the full height of the frame, is horizontally centred in the frame and has black bars of unspecified (perhaps unknown) width to the left and right of the picture</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
+
       <xs:enumeration value="Unspecified letterbox">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The picture fills the full width of the frame and there are black bars of unspecified height to the top and bottom of the picture. The black bars may not be of equal height (and so the "letterbox" may not be vertically centred)</xs:documentation>
-        </xs:annotation>
+          <xs:annotation>
+              <xs:documentation xml:lang="en">The picture fills the full width of the frame and there are black bars of unspecified (perhaps unknown) height to the top and bottom of the picture. The black bars may not be of equal height (and so the "letterbox" may not be vertically centred)</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
+
       <xs:enumeration value="Unspecified pillarbox">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The picture fills the full height of the frame and there are black bars of unspecified width to the left and right of the picture. The black bars may not be of equal width (and so the "pillarbox" may not be horizontally centred)</xs:documentation>
-        </xs:annotation>
+          <xs:annotation>
+              <xs:documentation xml:lang="en">The picture fills the full height of the frame and there are black bars of unspecified (perhaps unknown) width to the left and right of the picture. The black bars may not be of equal width (and so the "pillarbox" may not be horizontally centred)</xs:documentation>
+          </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
