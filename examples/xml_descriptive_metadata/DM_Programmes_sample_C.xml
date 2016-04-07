@@ -25,7 +25,7 @@
         <pg1:Contact_Telephone_Number>01234567890</pg1:Contact_Telephone_Number>
         <pg1:Picture_Ratio>
             <pg1:Not_Full_Frame>
-                <pg1:Defined_Picture>14/9</pg1:Defined_Picture>
+                <pg1:Defined_Picture>1.56:1 centred pillarbox</pg1:Defined_Picture>
             </pg1:Not_Full_Frame>
         </pg1:Picture_Ratio>
         <pg1:Product_Placement>false</pg1:Product_Placement>
