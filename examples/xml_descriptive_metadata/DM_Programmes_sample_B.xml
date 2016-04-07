@@ -16,9 +16,9 @@
         </id:Identifier>
     </id:Identifiers>
     <pg1:Programmes_DomainSpecific_DM>
-        <pg1:Series_Title>Series Title</pg1:Series_Title>
-        <pg1:Programme_Title>Programme Title - Post Watershed Version</pg1:Programme_Title>
-        <pg1:Episode_Title_Number>Test File</pg1:Episode_Title_Number>
+        <pg1:Title_1>Series Title</pg1:Title_1>
+        <pg1:Title_2>Programme Title - Post Watershed Version</pg1:Title_2>
+        <pg1:Title_3>Test File</pg1:Title_3>
         <pg1:Synopsis>An example of a "new style" AS-11 file</pg1:Synopsis>
         <pg1:Genre>Test material</pg1:Genre>
         <pg1:Completion_Date>2015-11-13</pg1:Completion_Date>

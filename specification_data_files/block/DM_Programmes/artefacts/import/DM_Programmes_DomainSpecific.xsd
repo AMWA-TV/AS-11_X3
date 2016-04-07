@@ -6,24 +6,24 @@
   <xs:element name="Programmes_DomainSpecific_DM">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Series_Title" type="cmn:token127" minOccurs="1" maxOccurs="1">
+        <xs:element name="Title_1" type="cmn:token127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The final name of a "group" of episodes to which the programme belongs. These episodes have a shared identification and branding and are linked by common characters, subject matter, style or story.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Programme_Title" type="cmn:token127">
+        <xs:element name="Title_2" type="cmn:token127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
-              The final name of the programme used to identify it as a version of an episode. This name indicates the specific purpose for which the version was created.
+              The final name of the programme used to identify it as an editorially distinct member of a series / season (in other words: an "episode"). This name may include a number (or consist only of a number) indicating the position of the episode within the series / season.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Episode_Title_Number" type="cmn:token127" minOccurs="1" maxOccurs="1">
+        <xs:element name="Title_3" type="cmn:token127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
-              The final name of the programme used to identify it as an editorially distinct member of a series i.e. an episode. This name may include a number (or consist only of a number) indicating the position of the episode within the series.
+              The final name of the programme including details of any specific purpose for which this programme was created (in other words: "version" information).
             </xs:documentation>
           </xs:annotation>
         </xs:element>
