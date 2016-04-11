@@ -324,6 +324,8 @@ There are two special types of Block which allow the value of one Block to be se
                         [A] The start and end timecodes for program regions, commonly referred to as "start of material" (som) and "end of material" (eom), can be determined based on the location of <DM Segment> objects on the <Program Segmentation Track> relative to the adjacent <Timecode Track> in the <Material Package> that contains the <Program Segmentation Track>.
                     [N] Non-Programme Content
                         [A] Examples of non-programme content include: black, ident, clock.
+                    [N] Track Composition
+                        [A] Constraints set out in <SMPTE ST 377-1:2011> and <SMPTE ST 378:2004> mean that the <Program Segmentation Track> is necessarily full from start to finish and is the same length as all other <Timeline Track>s in the <Material Package>.
             [A] This <Track> is in the <Material Package>.
             [A] Each <DM Segment> object in the <Track> strongly references an instance of <DM_AS_11_Segmentation>.
                 [B] DM_AS_11_Segmentation

@@ -1116,6 +1116,23 @@ There are two special types of Block which allow the value of one Block to be se
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/048/>
                         [A] Examples of non-programme content include: black, ident, clock.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/048/artefacts/1.md>
+                    [N] Track Composition
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/050/>
+                        [A] Constraints set out in <SMPTE ST 377-1:2011> and <SMPTE ST 378:2004> mean that the <Program Segmentation Track> is necessarily full from start to finish and is the same length as all other <Timeline Track>s in the <Material Package>.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/050/artefacts/1.xml>
+                            [R] SMPTE ST 377-1:2011
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/document/2011/>
+                            [R] SMPTE ST 378:2004
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0378/document/2004/>
+                            [T] Timeline Track
+                                A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timeline%20Track/>
+                                [T] Track
+                                    MXF data structure used to describe the content structure.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                            [T] Material Package
+                                An MXF data structure that describe an output timeline of the file.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
             [A] This <Track> is in the <Material Package>.
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/artefacts/531.xml>
                 [T] Track
