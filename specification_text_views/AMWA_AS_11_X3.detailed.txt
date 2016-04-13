@@ -1598,208 +1598,211 @@ There are two special types of Block which allow the value of one Block to be se
         Conformance: mandatory
         Associated Parameter Key: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/)
         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_8/>
-        [B] Audio Layout Mode 1
-            Conformance: optional
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/>
-            [A] "Channel Assignment Label" is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/1.xml>
-                [B] ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/>
-                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml>
-            [A] "MCA Labeling Present" is "true".
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/2.xml>
-            [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/3.xml>
-                [B] Default Audio Layout 'A'
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/>
-                    [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/1.xml>
-                        [T] Sound Track
-                            A type of <Essence Track> that references <Sound Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
-                            [T] Essence Track
-                                A type of <Track> that references <Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
-                                [T] Track
-                                    MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                            [T] Sound Essence
-                                A type of <Essence> containing sound data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                    [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/2.xml>
-                        [T] Sound Track
-                            A type of <Essence Track> that references <Sound Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
-                            [T] Essence Track
-                                A type of <Track> that references <Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
-                                [T] Track
-                                    MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                            [T] Sound Essence
-                                A type of <Essence> containing sound data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                    [A] The order of Descriptors, SubDescriptors, <Sound Track>s, <Audio Channel>s and <Sound Essence> is consistent and as stated here.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/3.xml>
-                        [T] Sound Track
-                            A type of <Essence Track> that references <Sound Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
-                            [T] Essence Track
-                                A type of <Track> that references <Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
-                                [T] Track
-                                    MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                            [T] Sound Essence
-                                A type of <Essence> containing sound data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                        [T] Audio Channel
-                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
-                        [T] Sound Essence
-                            A type of <Essence> containing sound data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
-                            [T] Essence
-                                A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                    [N] Implementation Notes
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/>
-                        [A] All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.
-                            
-                            Sound Tracks in this Default Audio Layout are identified by the order in which they appear.
-                            
-                            So, if you are using this Layout and want to deliver 5.1 Main Programme only (with no Stereo Main Programme) then your file will have to include two tracks, like so:
-                            
-                            * first Sound Track: 2-channel (silence is advised)
-                            * second Sound Track: 6-channel (5.1 Main Programme content)
-                            
-                            No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/artefacts/1.md>
-                    [N] Reg-XML Example
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/>
-                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml>
-        [B] Audio Layout Mode 2
-            Conformance: optional
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/>
-            [A] "Channel Assignment Label" is <Default_Audio_Layout_A_without_MCA_Labeling>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/1.xml>
-                [B] Default_Audio_Layout_A_without_MCA_Labeling
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/>
-                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml>
-            [A] "MCA Labeling Present" is "false".
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/2.xml>
-            [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/3.xml>
-                [B] Default Audio Layout 'A'
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/>
-                    [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/1.xml>
-                        [T] Sound Track
-                            A type of <Essence Track> that references <Sound Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
-                            [T] Essence Track
-                                A type of <Track> that references <Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
-                                [T] Track
-                                    MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                            [T] Sound Essence
-                                A type of <Essence> containing sound data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                    [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/2.xml>
-                        [T] Sound Track
-                            A type of <Essence Track> that references <Sound Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
-                            [T] Essence Track
-                                A type of <Track> that references <Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
-                                [T] Track
-                                    MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                            [T] Sound Essence
-                                A type of <Essence> containing sound data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                    [A] The order of Descriptors, SubDescriptors, <Sound Track>s, <Audio Channel>s and <Sound Essence> is consistent and as stated here.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/3.xml>
-                        [T] Sound Track
-                            A type of <Essence Track> that references <Sound Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
-                            [T] Essence Track
-                                A type of <Track> that references <Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
-                                [T] Track
-                                    MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                            [T] Sound Essence
-                                A type of <Essence> containing sound data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
-                                [T] Essence
-                                    A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                        [T] Audio Channel
-                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
-                        [T] Sound Essence
-                            A type of <Essence> containing sound data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
-                            [T] Essence
-                                A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                    [N] Implementation Notes
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/>
-                        [A] All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.
-                            
-                            Sound Tracks in this Default Audio Layout are identified by the order in which they appear.
-                            
-                            So, if you are using this Layout and want to deliver 5.1 Main Programme only (with no Stereo Main Programme) then your file will have to include two tracks, like so:
-                            
-                            * first Sound Track: 2-channel (silence is advised)
-                            * second Sound Track: 6-channel (5.1 Main Programme content)
-                            
-                            No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/artefacts/1.md>
-                    [N] Reg-XML Example
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/>
-                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml>
+        [B] Permitted Extra Audio Layout Modes
+            Conformance: mandatory
+            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_12/>
+            [A] The Extra Audio Layout Modes permitted are: <Audio Layout Mode 1> and <Audio Layout Mode 2>.
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_12/artefacts/1.xml>
+                [B] Audio Layout Mode 1
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/>
+                    [A] "Channel Assignment Label" is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/1.xml>
+                        [B] ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/>
+                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml>
+                    [A] "MCA Labeling Present" is "true".
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/2.xml>
+                    [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/3.xml>
+                        [B] Default Audio Layout 'A'
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/>
+                            [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/1.xml>
+                                [T] Sound Track
+                                    A type of <Essence Track> that references <Sound Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    [T] Essence Track
+                                        A type of <Track> that references <Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        [T] Track
+                                            MXF data structure used to describe the content structure.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    [T] Sound Essence
+                                        A type of <Essence> containing sound data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/2.xml>
+                                [T] Sound Track
+                                    A type of <Essence Track> that references <Sound Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    [T] Essence Track
+                                        A type of <Track> that references <Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        [T] Track
+                                            MXF data structure used to describe the content structure.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    [T] Sound Essence
+                                        A type of <Essence> containing sound data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            [A] The order of Descriptors, SubDescriptors, <Sound Track>s, <Audio Channel>s and <Sound Essence> is consistent and as stated here.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/3.xml>
+                                [T] Sound Track
+                                    A type of <Essence Track> that references <Sound Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    [T] Essence Track
+                                        A type of <Track> that references <Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        [T] Track
+                                            MXF data structure used to describe the content structure.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    [T] Sound Essence
+                                        A type of <Essence> containing sound data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                                [T] Sound Essence
+                                    A type of <Essence> containing sound data.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            [N] Implementation Notes
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/>
+                                [A] All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.
+                                    
+                                    Sound Tracks in this Default Audio Layout are identified by the order in which they appear.
+                                    
+                                    So, if you are using this Layout and want to deliver 5.1 Main Programme only (with no Stereo Main Programme) then your file will have to include two tracks, like so:
+                                    
+                                    * first Sound Track: 2-channel (silence is advised)
+                                    * second Sound Track: 6-channel (5.1 Main Programme content)
+                                    
+                                    No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/artefacts/1.md>
+                            [N] Reg-XML Example
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/>
+                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml>
+                [B] Audio Layout Mode 2
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/>
+                    [A] "Channel Assignment Label" is <Default_Audio_Layout_A_without_MCA_Labeling>.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/1.xml>
+                        [B] Default_Audio_Layout_A_without_MCA_Labeling
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/>
+                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml>
+                    [A] "MCA Labeling Present" is "false".
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/2.xml>
+                    [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/3.xml>
+                        [B] Default Audio Layout 'A'
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/>
+                            [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/1.xml>
+                                [T] Sound Track
+                                    A type of <Essence Track> that references <Sound Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    [T] Essence Track
+                                        A type of <Track> that references <Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        [T] Track
+                                            MXF data structure used to describe the content structure.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    [T] Sound Essence
+                                        A type of <Essence> containing sound data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/2.xml>
+                                [T] Sound Track
+                                    A type of <Essence Track> that references <Sound Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    [T] Essence Track
+                                        A type of <Track> that references <Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        [T] Track
+                                            MXF data structure used to describe the content structure.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    [T] Sound Essence
+                                        A type of <Essence> containing sound data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            [A] The order of Descriptors, SubDescriptors, <Sound Track>s, <Audio Channel>s and <Sound Essence> is consistent and as stated here.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/3.xml>
+                                [T] Sound Track
+                                    A type of <Essence Track> that references <Sound Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    [T] Essence Track
+                                        A type of <Track> that references <Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        [T] Track
+                                            MXF data structure used to describe the content structure.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    [T] Sound Essence
+                                        A type of <Essence> containing sound data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                                [T] Sound Essence
+                                    A type of <Essence> containing sound data.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            [N] Implementation Notes
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/>
+                                [A] All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.
+                                    
+                                    Sound Tracks in this Default Audio Layout are identified by the order in which they appear.
+                                    
+                                    So, if you are using this Layout and want to deliver 5.1 Main Programme only (with no Stereo Main Programme) then your file will have to include two tracks, like so:
+                                    
+                                    * first Sound Track: 2-channel (silence is advised)
+                                    * second Sound Track: 6-channel (5.1 Main Programme content)
+                                    
+                                    No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/artefacts/1.md>
+                            [N] Reg-XML Example
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/>
+                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml>
     [N] Audio Layout Modes summary
         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E14/>
         [A] A summary of the {Audio Layout Mode}s available in this Specification is in the table below. Note that every MXF file must use one of the listed modes.
