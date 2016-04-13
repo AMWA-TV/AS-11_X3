@@ -17,17 +17,17 @@
 
   <xs:complexType name="Identifier_Set_type">
     <xs:sequence>
-      <xs:element name="Identifier_Value" type="cmn:token250" minOccurs="1" maxOccurs="1">
+      <xs:element name="Identifier_Value" type="cmn:string250" minOccurs="1" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">The identifier itself</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Identifier_Type" type="cmn:token250" minOccurs="1" maxOccurs="1">
+      <xs:element name="Identifier_Type" type="cmn:string250" minOccurs="1" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">The type of identifier in Identifier_Value. Examples include Broadcaster ID, Production Number, ISAN, EIDR, and UMID</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Identifier_Authority" type="cmn:token250" minOccurs="0" maxOccurs="1">
+      <xs:element name="Identifier_Authority" type="cmn:string250" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">The entity responsible for issuing the identifier</xs:documentation>
         </xs:annotation>

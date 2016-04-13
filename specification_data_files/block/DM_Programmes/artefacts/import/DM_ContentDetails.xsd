@@ -6,14 +6,14 @@
   <xs:element name="Content_Details">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Audio_Comments" type="cmn:token127" minOccurs="0" maxOccurs="1">
+        <xs:element name="Audio_Comments" type="cmn:string127" minOccurs="0" maxOccurs="1">
           <xs:annotation>
              <xs:documentation xml:lang="en">
                A description of the subjective quality of the audio in the programme including notes on any global characteristics or audio treatments.
              </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Video_Comments" type="cmn:token127" minOccurs="0" maxOccurs="1">
+        <xs:element name="Video_Comments" type="cmn:string127" minOccurs="0" maxOccurs="1">
           <xs:annotation>
              <xs:documentation xml:lang="en">
                A description of the subjective quality of the video in the programme including notes on any global characteristics or video treatments.
@@ -54,7 +54,7 @@
                   </xs:annotation>
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Explanation" type="cmn:token250" minOccurs="1" maxOccurs="1">
+                      <xs:element name="Explanation" type="cmn:string250" minOccurs="1" maxOccurs="1">
                         <xs:annotation>
                           <xs:documentation xml:lang="en">An explanation for any failure to fully comply with all provisions of the indicated Audio Loudness Specification, such as the content being "intentionally quiet"</xs:documentation>
                         </xs:annotation>
@@ -78,7 +78,7 @@
 
   <xs:complexType name="PSE_Test_type">
     <xs:sequence>
-      <xs:element name="Test_Device" type="cmn:token250" minOccurs="1" maxOccurs="1">
+      <xs:element name="Test_Device" type="cmn:string250" minOccurs="1" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">The name of the device used to perform the test for compliance with PSE guidelines</xs:documentation>
         </xs:annotation>

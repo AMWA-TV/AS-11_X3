@@ -6,35 +6,35 @@
   <xs:element name="Programmes_DomainSpecific_DM">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Title_1" type="cmn:token127" minOccurs="1" maxOccurs="1">
+        <xs:element name="Title_1" type="cmn:string127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The final name of a "group" of episodes to which the programme belongs. These episodes have a shared identification and branding and are linked by common characters, subject matter, style or story.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Title_2" type="cmn:token127" minOccurs="1" maxOccurs="1">
+        <xs:element name="Title_2" type="cmn:string127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The final name of the programme used to identify it as an editorially distinct member of a series / season (in other words: an "episode"). This name may include a number (or consist only of a number) indicating the position of the episode within the series / season.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Title_3" type="cmn:token127" minOccurs="1" maxOccurs="1">
+        <xs:element name="Title_3" type="cmn:string127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The final name of the programme including details of any specific purpose for which this programme was created (in other words: "version" information).
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Synopsis" type="cmn:token250" minOccurs="1" maxOccurs="1">
+        <xs:element name="Synopsis" type="cmn:string250" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               A brief descriptive summary of the programme.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Genre" type="cmn:token127" minOccurs="0" maxOccurs="1">
+        <xs:element name="Genre" type="cmn:string127" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               A single style or category describing the whole programme.
@@ -55,28 +55,28 @@
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Originator" type="cmn:token127" minOccurs="1" maxOccurs="1">
+        <xs:element name="Originator" type="cmn:string127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The name of the person or organisation responsible for creating the programme.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Distributor" type="cmn:token127" minOccurs="0" maxOccurs="1">
+        <xs:element name="Distributor" type="cmn:string127" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The name of the person or organisation responsible for supplying the programme to the Broadcaster.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Contact_Email" type="cmn:token127" minOccurs="1" maxOccurs="1">
+        <xs:element name="Contact_Email" type="cmn:string127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The email address for the person or organisation responsible for supplying the programme file to the Broadcaster.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="Contact_Telephone_Number" type="cmn:token127" minOccurs="1" maxOccurs="1">
+        <xs:element name="Contact_Telephone_Number" type="cmn:string127" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The telephone number for the person or organisation responsible for supplying the programme file to the Broadcaster.
@@ -214,7 +214,7 @@
         <xs:complexType>
           <xs:choice>
             <xs:element name="Defined_Picture" type="pg1:Defined_Picture_Ratios_type"/>
-            <xs:element name="Custom_Picture" type="cmn:token250">
+            <xs:element name="Custom_Picture" type="cmn:string250">
               <xs:annotation>
                 <xs:documentation xml:lang="en">A free text description of the picture ratio following any "local" guidance, such as that from a broadcaster to whom the asset is being delivered</xs:documentation>
               </xs:annotation>
