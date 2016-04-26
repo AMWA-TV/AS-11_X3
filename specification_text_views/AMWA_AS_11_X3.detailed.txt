@@ -124,26 +124,6 @@ There are two special types of Block which allow the value of one Block to be se
                         
                         Late delivery of a file is the term used to describe a workflow where playout (broadcast) of a file starts before the file transfer from supplier to broadcaster has completed. To support late delivery a broadcaster must be able to trust the metadata that is contained at the beginning of the file.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/014/artefacts/1.md>
-            [B] Header Metadata KLV Fill
-                Conformance: recommended
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/030/>
-                [A] When first created, the file includes a <KLV Fill> item of at least 8192 bytes in total length following the <Header Metadata>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/030/artefacts/1.xml>
-                    [T] KLV Fill
-                        Refers to the well-defined means of inserting empty, "fill", data in an MXF file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/KLV%20Fill/>
-                    [T] Header Metadata
-                        MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Metadata/>
-                        [T] Essence
-                            A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
-                [N] Implementation Notes
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/002/>
-                    [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
-                        
-                        The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/002/artefacts/1.md>
             [B] RIP present
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/040/>
@@ -288,6 +268,30 @@ There are two special types of Block which allow the value of one Block to be se
                         
                         which is specified in Annex E of SMPTE ST 382:2007.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E19/artefacts/1.md>
+        [B] Header Metadata KLV Fill
+            Conformance: recommended
+            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/KLVF_B/>
+            [A] When first created, the file includes a <KLV Fill> item of at least 4 MB in total length following the <Header Metadata>.
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/KLVF_B/artefacts/1.xml>
+                [T] KLV Fill
+                    Refers to the well-defined means of inserting empty, "fill", data in an MXF file.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/KLV%20Fill/>
+                [T] Header Metadata
+                    MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Metadata/>
+                    [T] Essence
+                        A bitstream comprising picture, sound or data.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+            [N] Implementation Notes
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/002/>
+                [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
+                    
+                    The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/002/artefacts/1.md>
+            [N] Definition of megabyte
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E37/>
+                [A] The unit symbol "MB" refers to a megabyte, which is 1 000 000 bytes.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E37/artefacts/1.md>
         [B] MXF Indexing and Partitioning
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/Index_0/>

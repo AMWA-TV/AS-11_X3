@@ -87,13 +87,6 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of SMPTE ST 377-1:2011 for a full explanation.
                         
                         Late delivery of a file is the term used to describe a workflow where playout (broadcast) of a file starts before the file transfer from supplier to broadcaster has completed. To support late delivery a broadcaster must be able to trust the metadata that is contained at the beginning of the file.
-            [B] Header Metadata KLV Fill
-                Conformance: recommended
-                [A] When first created, the file includes a <KLV Fill> item of at least 8192 bytes in total length following the <Header Metadata>.
-                [N] Implementation Notes
-                    [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
-                        
-                        The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
             [B] RIP present
                 Conformance: mandatory
                 [A] The file has a <Random Index Pack>.
@@ -122,6 +115,15 @@ There are two special types of Block which allow the value of one Block to be se
                         * the mapping of audio channels from single-channel Sound Tracks in a Source Package to multi-channel Sound Tracks in the Material Package
                         
                         which is specified in Annex E of SMPTE ST 382:2007.
+        [B] Header Metadata KLV Fill
+            Conformance: recommended
+            [A] When first created, the file includes a <KLV Fill> item of at least 4 MB in total length following the <Header Metadata>.
+            [N] Implementation Notes
+                [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
+                    
+                    The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
+            [N] Definition of megabyte
+                [A] The unit symbol "MB" refers to a megabyte, which is 1 000 000 bytes.
         [B] MXF Indexing and Partitioning
             Conformance: mandatory
             [A] The file is in accordance with either of: <MXF Indexing and Partitioning strategy for VBE Essence> or <MXF Indexing and Partitioning strategy for CBE Essence>.
