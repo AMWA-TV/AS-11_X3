@@ -1311,7 +1311,7 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0291-1/term/VANC%20Data%20Packet/>
                         [T] ANC Frame Element
                             A KLV triplet containing one frame's worth of an <Essence Element> carrying ANC packets such as <VANC Data Packet>s.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436/term/ANC%20Frame%20Element/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436-1/term/ANC%20Frame%20Element/>
                             [T] Essence Element
                                 The entire essence stream of a single <Track>.
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Essence%20Element/>
@@ -1320,10 +1320,10 @@ There are two special types of Block which allow the value of one Block to be se
                                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
                         [B] Constrained Ancillary Data Mapping
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/402/>
-                            [A] The mapping of <VANC Data Packet>s into <ANC Frame Element>s is as specified in <SMPTE ST 436:2006> where "Payload Sample Coding" is "8-bit luma samples" (04h) and "Wrapping Type" is: "VANC Frame" (01h) (for interlaced or segmented progressive <Picture Essence>) or "VANC Progressive Frame" (04h) (for full-frame progressive <Picture Essence>).
+                            [A] The mapping of <VANC Data Packet>s into <ANC Frame Element>s is as specified in <SMPTE ST 436-1:2013> where "Payload Sample Coding" is "8-bit luma samples" (04h) and "Wrapping Type" is: "VANC Frame" (01h) (for interlaced or segmented progressive <Picture Essence>) or "VANC Progressive Frame" (04h) (for full-frame progressive <Picture Essence>).
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/402/artefacts/402.xml>
-                                [R] SMPTE ST 436:2006
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436/document/2006/>
+                                [R] SMPTE ST 436-1:2013
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436-1/document/2013/>
                                 [T] Picture Essence
                                     A type of <Essence> containing predominantly picture data.
                                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
@@ -1337,7 +1337,7 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0291-1/term/VANC%20Data%20Packet/>
                         [T] ANC Frame Element
                             A KLV triplet containing one frame's worth of an <Essence Element> carrying ANC packets such as <VANC Data Packet>s.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436/term/ANC%20Frame%20Element/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436-1/term/ANC%20Frame%20Element/>
                             [T] Essence Element
                                 The entire essence stream of a single <Track>.
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Essence%20Element/>
