@@ -144,7 +144,7 @@
         <xs:element name="Ident_Clock_Start" type="cmn:Timecode_type" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">
-              The timecode at which the initial "ident" or countdown clock begins.
+                The timecode at which the initial "ident" / slate / countdown clock begins.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
