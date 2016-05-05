@@ -26,7 +26,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020320.01000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>MPg</r1:MCATagSymbol>
+          <r1:MCATagSymbol>ggMPg</r1:MCATagSymbol>
           <r1:MCATagName>Main Program</r1:MCATagName>
           <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
         </r0:GroupOfSoundfieldGroupsLabelSubDescriptor>
@@ -34,7 +34,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020220.01000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>ST</r1:MCATagSymbol>
+          <r1:MCATagSymbol>sgST</r1:MCATagSymbol>
           <r1:MCATagName>Standard Stereo</r1:MCATagName>
           <r1:RFC5646SpokenLanguage>en</r1:RFC5646SpokenLanguage>
           <r1:GroupOfSoundfieldGroupsLinkID><!-- Same as xpath(../GroupOfSoundfieldGroupsLabelSubDescriptor/MCALinkID) --></r1:GroupOfSoundfieldGroupsLinkID>
@@ -44,7 +44,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020101.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>L</r1:MCATagSymbol>
+          <r1:MCATagSymbol>chL</r1:MCATagSymbol>
           <r1:MCATagName>Left</r1:MCATagName>
           <r1:MCAChannelID>1</r1:MCAChannelID>
           <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
@@ -54,7 +54,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020102.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>R</r1:MCATagSymbol>
+          <r1:MCATagSymbol>chR</r1:MCATagSymbol>
           <r1:MCATagName>Right</r1:MCATagName>
           <r1:MCAChannelID>2</r1:MCAChannelID>
           <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
@@ -83,7 +83,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020320.01000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>MPg</r1:MCATagSymbol>
+          <r1:MCATagSymbol>ggMPg</r1:MCATagSymbol>
           <r1:MCATagName>Main Program</r1:MCATagName>
           <!-- Some additional optional properties are permitted - refer to the specifications / standards -->
         </r0:GroupOfSoundfieldGroupsLabelSubDescriptor>
@@ -91,7 +91,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020201.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>51</r1:MCATagSymbol>
+          <r1:MCATagSymbol>sg51</r1:MCATagSymbol>
           <r1:MCATagName>5.1</r1:MCATagName>
           <r1:RFC5646SpokenLanguage>en</r1:RFC5646SpokenLanguage>
           <r1:GroupOfSoundfieldGroupsLinkID><!-- Same as xpath(../GroupOfSoundfieldGroupsLabelSubDescriptor/MCALinkID) --></r1:GroupOfSoundfieldGroupsLinkID>
@@ -101,7 +101,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020101.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>L</r1:MCATagSymbol>
+          <r1:MCATagSymbol>chL</r1:MCATagSymbol>
           <r1:MCATagName>Left</r1:MCATagName>
           <r1:MCAChannelID>1</r1:MCAChannelID>
           <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
@@ -111,7 +111,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020102.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>R</r1:MCATagSymbol>
+          <r1:MCATagSymbol>chR</r1:MCATagSymbol>
           <r1:MCATagName>R</r1:MCATagName>
           <r1:MCAChannelID>2</r1:MCAChannelID>
           <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
@@ -121,7 +121,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020103.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>C</r1:MCATagSymbol>
+          <r1:MCATagSymbol>chC</r1:MCATagSymbol>
           <r1:MCATagName>Center</r1:MCATagName>
           <r1:MCAChannelID>3</r1:MCAChannelID>
           <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
@@ -131,7 +131,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020104.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>LFE</r1:MCATagSymbol>
+          <r1:MCATagSymbol>chLFE</r1:MCATagSymbol>
           <r1:MCATagName>LFE</r1:MCATagName>
           <r1:MCAChannelID>4</r1:MCAChannelID>
           <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
@@ -141,7 +141,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020105.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>Ls</r1:MCATagSymbol>
+          <r1:MCATagSymbol>chLs</r1:MCATagSymbol>
           <r1:MCATagName>Left Surround</r1:MCATagName>
           <r1:MCAChannelID>5</r1:MCAChannelID>
           <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
@@ -151,7 +151,7 @@
           <r1:InstanceID><!-- unique ID --></r1:InstanceID>
           <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020106.00000000</r1:MCALabelDictionaryID>
           <r1:MCALinkID><!-- unique ID --></r1:MCALinkID>
-          <r1:MCATagSymbol>Rs</r1:MCATagSymbol>
+          <r1:MCATagSymbol>chRs</r1:MCATagSymbol>
           <r1:MCATagName>Right Surround</r1:MCATagName>
           <r1:MCAChannelID>6</r1:MCAChannelID>
           <r1:SoundfieldGroupLinkID><!-- Same as xpath(../SoundfieldGroupLabelSubDescriptor/MCALinkID) --></r1:SoundfieldGroupLinkID>
