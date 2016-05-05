@@ -65,7 +65,7 @@
               </xs:choice>
               <xs:element name="Programme_Loudness_Value" type="xs:float" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">The "Programme Loudness Value" in LUFS as measured in accordance with the indicated Audio Loudness Specification. This is intended to give an indication of the degree to which the content deviates from the indicated Audio Loudness Specification, rather than a precise measurement of the loudness of the content.</xs:documentation>
+                  <xs:documentation xml:lang="en">The "Programme Loudness Value" in LKFS (also knows as "LUFS") as measured in accordance with the indicated Audio Loudness Specification. This is intended to give an indication of the degree to which the content deviates from the indicated Audio Loudness Specification, rather than a precise measurement of the loudness of the content.</xs:documentation>
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
