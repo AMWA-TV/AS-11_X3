@@ -798,12 +798,6 @@ There are two special types of Block which allow the value of one Block to be se
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/>
                                 [A] This parameter lists "MCA Label Dictionary ID" Labels.
                                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/artefacts/1.md>
-                        [N] QUERY: Express some of these constraints using Python or Reg-XML instead of prose?
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Q9/>
-                        [N] QUERY: Recommend that other optional metadata fields are absent -- such as `MCA Title`?
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Q20/>
-                            [A] Do D-Cinema or IMF make any use of these? Or perhaps they prohibit their use?
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Q20/artefacts/1.md>
                         [N] Implementation Notes
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E6/>
                             [A] # Repetition of SubDescriptors

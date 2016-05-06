@@ -245,9 +245,6 @@ There are two special types of Block which allow the value of one Block to be se
                             [K] Labels for use in Multichannel Audio Labeling Framework
                                 Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_7/)
                                 [A] This parameter lists "MCA Label Dictionary ID" Labels.
-                        [N] QUERY: Express some of these constraints using Python or Reg-XML instead of prose?
-                        [N] QUERY: Recommend that other optional metadata fields are absent -- such as `MCA Title`?
-                            [A] Do D-Cinema or IMF make any use of these? Or perhaps they prohibit their use?
                         [N] Implementation Notes
                             [A] # Repetition of SubDescriptors
                                 
