@@ -219,7 +219,7 @@ There are two special types of Block which allow the value of one Block to be se
                 [A] The <Sound Essence> is mapped to the file as "Wave Audio Essence" using the method described by <SMPTE ST 382:2007>.
                 [A] In the {WAVEPCMDescriptor} the (ordinarily optional) "ElectrospatialFormulation" property is not present.
                 [A] In the {WAVEPCMDescriptor} the (ordinarily optional) "ChannelAssignment" property is present.
-                [A] In the {WAVEPCMDescriptor} the value of the "ChannelAssignment" property is the same for all <Sound Track>s..
+                [A] In the {WAVEPCMDescriptor} the value of the "ChannelAssignment" property is the same for all <Sound Track>s.
                 [N] Implementation Notes
                     [A] This prohibits the use of the "AES3 Audio Essence Descriptor" defined in <SMPTE ST 382:2007>.
             [B] Audio Layout Mode
