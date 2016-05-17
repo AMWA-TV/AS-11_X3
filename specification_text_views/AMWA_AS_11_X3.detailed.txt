@@ -2,10 +2,10 @@
 
 _This file is one rendering / view of this AMWA Specification and is a part of the Specification repository. Visit the AMWA [web page for this Specification](http://amwa.tv/projects/AS-11-X3.shtml) which has information about revisions and current development._
 
+
 # AS-11: Media Contribution File Formats
 
 The AMWA AS-11 Specifications define constrained media file formats for the delivery of finished media assets to a broadcaster or publisher. Each Specification is developed for a particular business purpose.
-
 
 
 # Purpose of the AS-11 X3 Specification
@@ -77,47 +77,47 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/000/>
                 [A] The file conforms to <SMPTE ST 377-1:2011>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/000/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/000/artefacts/1.md>
                     [R] SMPTE ST 377-1:2011
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/document/2011/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-1-2011/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/001/>
                     [A] Section 5.2.1 of <SMPTE ST 377-1:2011> sets out a non-exhaustive list of changes from <SMPTE ST 377:2004>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/001/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/001/artefacts/1.md>
                         [R] SMPTE ST 377-1:2011
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/document/2011/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-1-2011/>
                         [R] SMPTE ST 377:2004
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/document/2004/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-1-2004/>
             [B] Operational pattern 1a
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/010/>
                 [A] The file conforms to <SMPTE ST 378:2004>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/010/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/010/artefacts/1.md>
                     [R] SMPTE ST 378:2004
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0378/document/2004/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20378-2004/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/011/>
                     [A] The file must be labelled as OP1a in the Operational Pattern property of all Partition Packs and the Preface Set, as required by <SMPTE ST 377-1:2011> in Section 7.1 and Annex A, respectively.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/011/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/011/artefacts/1.md>
                         [R] SMPTE ST 377-1:2011
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/document/2011/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-1-2011/>
             [B] Closed Complete Header
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/020/>
                 [A] The <Header Partition> is "Closed" and "Complete".
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/020/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/020/artefacts/1.md>
                     [T] Header Partition
                         The first <Partition> in the MXF file. This <Partition> always contains a copy of the <Header Metadata>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Partition/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Header%20Partition/>
                         [T] Partition
                             A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Partition/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Partition/>
                         [T] Header Metadata
                             MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Metadata/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Header%20Metadata/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/014/>
                     [A] Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of SMPTE ST 377-1:2011 for a full explanation.
@@ -128,137 +128,137 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/040/>
                 [A] The file has a <Random Index Pack>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/040/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/040/artefacts/1.md>
                     [T] Random Index Pack
                         A table that contains the byte offsets of all <Partition>s.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Random%20Index%20Pack/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Random%20Index%20Pack/>
                         [T] Partition
                             A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Partition/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Partition/>
             [B] KAG size of 1
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/050/>
                 [A] Every <Partition> in the file uses a <KLV Alignment Grid> of 1.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/050/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/050/artefacts/1.md>
                     [T] Partition
                         A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Partition/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Partition/>
                     [T] KLV Alignment Grid
                         A notional byte spacing which may be used to align KLV items within a <Partition>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/KLV%20Alignment%20Grid/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/KLV%20Alignment%20Grid/>
             [B] Generic Container
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/090/>
                 [A] The file uses the <Generic Container>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/090/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/090/artefacts/1.md>
                     [T] Generic Container
                         MXF data structure used to store <Essence> data in an MXF file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Generic%20Container/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Container/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
             [B] Internal Essence
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/100/>
                 [A] The <Generic Container> is internal to the file.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/100/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/100/artefacts/1.md>
                     [T] Generic Container
                         MXF data structure used to store <Essence> data in an MXF file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Generic%20Container/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Container/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
             [B] Strict Frame Wrapping
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/110/>
                 [A] The <Generic Container> uses <Frame Wrapping>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/110/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/110/artefacts/1.md>
                     [T] Generic Container
                         MXF data structure used to store <Essence> data in an MXF file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Generic%20Container/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Container/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [T] Frame Wrapping
                         A method for dividing and interleaving <Essence Element>s for each frame of <Picture Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Frame%20Wrapping/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Frame%20Wrapping/>
                         [T] Essence Element
                             The entire essence stream of a single <Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Essence%20Element/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Element/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                         [T] Picture Essence
                             A type of <Essence> containing predominantly picture data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                 [A] If the <Generic Container> contains <Picture Essence> then the related <Edit Unit> duration is equal to the duration of a video frame of the <Picture Essence>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/110/artefacts/2.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/110/artefacts/2.md>
                     [T] Generic Container
                         MXF data structure used to store <Essence> data in an MXF file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Generic%20Container/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Container/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [T] Edit Unit
                         A temporal division of a <Track>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Edit%20Unit/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Edit%20Unit/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E8/>
                     [A] For example, this means that if the <Picture Essence> is field-encoded then each <Edit Unit> contains the data assosiated with both of the video fields for a video frame.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E8/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E8/artefacts/1.md>
                         [T] Picture Essence
                             A type of <Essence> containing predominantly picture data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [T] Edit Unit
                             A temporal division of a <Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Edit%20Unit/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Edit%20Unit/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
             [B] One-to-one Track mapping
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/120/>
                 [A] Each <Essence Track> in the <Top-Level File Package> is referenced by exactly one <Essence Track> in the <Material Package>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/120/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/120/artefacts/1.md>
                     [T] Essence Track
                         A type of <Track> that references <Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [T] Top-Level File Package
                         A <Source Package> that is internal to the file and which is directly referenced by a <Material Package> of the file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Top-Level%20File%20Package/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Top-Level%20File%20Package/>
                         [T] Source Package
                             MXF data structure that describes source <Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Source%20Package/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Package/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [T] Material Package
                             An MXF data structure that describe an output timeline of the file.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
                     [T] Material Package
                         An MXF data structure that describe an output timeline of the file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
                 [N] No division/combination of Audio Channels between Sound Tracks
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E19/>
                     [A] This prohibits:
@@ -272,16 +272,16 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: recommended
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/KLVF_B/>
             [A] When first created, the file includes a <KLV Fill> item of at least 4 MB in total length following the <Header Metadata>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/KLVF_B/artefacts/1.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/KLVF_B/artefacts/1.md>
                 [T] KLV Fill
                     Refers to the well-defined means of inserting empty, "fill", data in an MXF file.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/KLV%20Fill/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/KLV%20Fill/>
                 [T] Header Metadata
                     MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Metadata/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Header%20Metadata/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
             [N] Implementation Notes
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/002/>
                 [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
@@ -296,26 +296,26 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/Index_0/>
             [A] The file is in accordance with either of: <MXF Indexing and Partitioning strategy for VBE Essence> or <MXF Indexing and Partitioning strategy for CBE Essence>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/Index_0/artefacts/1.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/Index_0/artefacts/1.md>
                 [B] MXF Indexing and Partitioning strategy for VBE Essence
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MXF_Inter/>
                     [B] Segment the Essence Container
                         Conformance: mandatory
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/101b/>
                         [A] The <Essence Container> is segmented into <Partition>s after every X minutes of <Essence> where X is between one and ten inclusive.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/101b/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/101b/artefacts/1.md>
                             [T] Essence Container
                                 A part of an MXF file that carries one or more <Essence> streams.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Container/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Container/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Partition
                                 A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Partition/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Partition/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [N] Essence partitioning
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E12/>
                             [A] # Explanation of Essence Segmenting and Partitions
@@ -333,51 +333,51 @@ There are two special types of Block which allow the value of one Block to be se
                         Conformance: mandatory
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/060b/>
                         [A] Each <Essence Container> segment is indexed by <Index Table Segment>(s) that occur after it but before the next <Essence Container> segment.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/060b/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/060b/artefacts/1.md>
                             [T] Essence Container
                                 A part of an MXF file that carries one or more <Essence> streams.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Container/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Container/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Index Table Segment
                                 A part of an <Index Table>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Index%20Table%20Segment/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Index%20Table%20Segment/>
                                 [T] Index Table
                                     A structure in an MXF file used to efficiently access <Essence> data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Index%20Table/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Index%20Table/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [A] These <Index Table Segment>(s) index every <Edit Unit> of every <Essence Element> in the <Essence Container> segment.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/060b/artefacts/2.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/060b/artefacts/2.md>
                             [T] Index Table Segment
                                 A part of an <Index Table>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Index%20Table%20Segment/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Index%20Table%20Segment/>
                                 [T] Index Table
                                     A structure in an MXF file used to efficiently access <Essence> data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Index%20Table/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Index%20Table/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Edit Unit
                                 A temporal division of a <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Edit%20Unit/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Edit%20Unit/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Essence Element
                                 The entire essence stream of a single <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Essence%20Element/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Element/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Essence Container
                                 A part of an MXF file that carries one or more <Essence> streams.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Container/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Container/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [N] Indexing and Partitions
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E13/>
                             [A] # Index Table Segment details
@@ -402,53 +402,53 @@ There are two special types of Block which allow the value of one Block to be se
                         Conformance: mandatory
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/060/>
                         [A] The file contains a complete <Index Table> before the <Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/060/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/060/artefacts/1.md>
                             [T] Index Table
                                 A structure in an MXF file used to efficiently access <Essence> data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Index%20Table/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Index%20Table/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [B] Index all Essence
                         Conformance: mandatory
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/070/>
                         [A] The <Index Table> indexes every <Edit Unit> of every <Essence Element> in the file.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/070/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/070/artefacts/1.md>
                             [T] Index Table
                                 A structure in an MXF file used to efficiently access <Essence> data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Index%20Table/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Index%20Table/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Edit Unit
                                 A temporal division of a <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Edit%20Unit/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Edit%20Unit/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Essence Element
                                 The entire essence stream of a single <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Essence%20Element/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Element/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                     [B] Single Essence Partition
                         Conformance: mandatory
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/101/>
                         [A] The <Generic Container> is entirely contained in exactly one <Partition>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/101/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/101/artefacts/1.md>
                             [T] Generic Container
                                 MXF data structure used to store <Essence> data in an MXF file.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Generic%20Container/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Container/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Partition
                                 A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Partition/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Partition/>
                     [N] Indexing and Partitions
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/007/>
                         [A] It's generally considered good MXF practice to have one 'thing' per Partition, so you'd have separate Partitions for Header Metadata, Essence, and Index Tables. This isn't a requirement but following best practice is encouraged.
@@ -462,79 +462,79 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/180/>
                 [A] The <Material Package> contains exactly one <Picture Track>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/180/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/180/artefacts/1.md>
                     [T] Material Package
                         An MXF data structure that describe an output timeline of the file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
                     [T] Picture Track
                         A type of <Essence Track> that references <Picture Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Track/>
                         [T] Essence Track
                             A type of <Track> that references <Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [T] Picture Essence
                             A type of <Essence> containing predominantly picture data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
             [B] AVC Byte Stream Format Picture Essence
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/P_AVC/>
                 [A] The <Picture Essence> is <AVC> and uses the <Byte Stream Format>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/P_AVC/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/P_AVC/artefacts/1.md>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [T] AVC
                         Advanced Video Coding. A DCT-based video compression format.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/AVC/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AVC/>
                     [T] Byte Stream Format
                         The format defined by Annex B of <ITU-T Rec H.264-201402>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/Byte%20Stream%20Format/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Byte%20Stream%20Format/>
                         [R] ITU-T Rec H.264-201402
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/document/201402/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20T-Rec-H.264-201402/>
             [B] ST 381-3 mapping
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/>
                 [A] The <Picture Essence> is mapped to the file as specified in <SMPTE ST 381-3:2013>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/artefacts/1.md>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [R] SMPTE ST 381-3:2013
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0381-3/document/2013/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20381-3-2013/>
                 [A] The value of Byte 15 of the "Essence Container" label is 60h.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/artefacts/2.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/artefacts/2.md>
                 [A] The <Picture Essence Descriptor> used is the {CDCIDescriptor}.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/artefacts/3.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PM1/artefacts/3.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence%20Descriptor/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence%20Descriptor/>
                         [T] Picture Essence
                             A type of <Essence> containing predominantly picture data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                 [N] Use of the AVC Sub Descriptor
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E11/>
                     [A] <SMPTE ST 381-3:2013> defines the AVC Sub Descriptor and states that it "should" be used. This Block places no additional constraints on the use of the AVC Sub Descriptor. Therefore, as far as this Block is concerned its use is regarded as optional but recommended. However, note that <SMPTE ST 381-3:2013> does mandate how the values of the AVC Sub Descriptor are populated -- for certain AVC streams it would not be possible to fulfil these requirements and so in such cases there is no choice but to omit the AVC Sub Descriptor.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E11/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E11/artefacts/1.md>
                         [R] SMPTE ST 381-3:2013
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0381-3/document/2013/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20381-3-2013/>
                 [N] AVC has no external dependencies
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E7/>
                     [A] Everything to be displayed during the Material Package Picture Track needs to be decodable without references to external dependencies. For example, this means that:
@@ -563,236 +563,236 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/220b/>
                 [A] Each <Sound Track> represents all of the <Audio Channel>s for exactly one <Soundfield Group>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/220b/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/220b/artefacts/1.md>
                     [T] Sound Track
                         A type of <Essence Track> that references <Sound Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                         [T] Essence Track
                             A type of <Track> that references <Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [T] Sound Essence
                             A type of <Essence> containing sound data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [T] Audio Channel
                         A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                     [T] Soundfield Group
                         A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Soundfield%20Group/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
             [B] Uncompressed 24-bit PCM audio at 48 kHz
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/230/>
                 [A] For each <Audio Channel> the <Sound Essence> is "uncompressed PCM audio data" per <SMPTE ST 382:2007>, sampled at 48 kHz with 24 bits per sample.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/230/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/230/artefacts/1.md>
                     [T] Audio Channel
                         A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                     [T] Sound Essence
                         A type of <Essence> containing sound data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [R] SMPTE ST 382:2007
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0382/document/2007/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20382-2007/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/029/>
                     [A] As per Section 6 of <SMPTE ST 382:2007> samples are stored as little-endian integers.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/029/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/029/artefacts/1.md>
                         [R] SMPTE ST 382:2007
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0382/document/2007/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20382-2007/>
             [B] Constrained ST 382 Wave PCM mapping
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/>
                 [A] The <Sound Essence> is mapped to the file as "Wave Audio Essence" using the method described by <SMPTE ST 382:2007>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/artefacts/1.md>
                     [T] Sound Essence
                         A type of <Essence> containing sound data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [R] SMPTE ST 382:2007
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0382/document/2007/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20382-2007/>
                 [A] In the {WAVEPCMDescriptor} the (ordinarily optional) "ElectrospatialFormulation" property is not present.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/artefacts/2.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/artefacts/2.md>
                 [A] In the {WAVEPCMDescriptor} the (ordinarily optional) "ChannelAssignment" property is present.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/artefacts/3.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/artefacts/3.md>
                 [A] In the {WAVEPCMDescriptor} the value of the "ChannelAssignment" property is the same for all <Sound Track>s.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/artefacts/4.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/240b/artefacts/4.md>
                     [T] Sound Track
                         A type of <Essence Track> that references <Sound Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                         [T] Essence Track
                             A type of <Track> that references <Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [T] Sound Essence
                             A type of <Essence> containing sound data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/006b/>
                     [A] This prohibits the use of the "AES3 Audio Essence Descriptor" defined in <SMPTE ST 382:2007>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/006b/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/006b/artefacts/1.md>
                         [R] SMPTE ST 382:2007
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0382/document/2007/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20382-2007/>
             [B] Audio Layout Mode
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/>
                 [A] An {Audio Layout Mode} specifies a value for each of the following: "Channel Assignment Label", "MCA Labeling Present", "Default Audio Layout".
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/0.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/0.md>
                 [A] The value of "Channel Assignment Label" is a SMPTE Universal Label that is used as the value of the "ChannelAssignment" property in the {WAVEPCMDescriptor}.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/1.md>
                 [A] If "MCA Labeling Present" is "true" then <Constrained Multichannel Audio Labeling Framework> is used. Otherwise the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012> is not used.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/2.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/2.md>
                     [B] Constrained Multichannel Audio Labeling Framework
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/>
                         [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/1.md>
                             [R] SMPTE ST 377-4:2012
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/document/2012/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-4-2012/>
                         [A] The "SubDescriptors" property of the {SoundDescriptor} that describes a <Sound Track> strongly references all instances of {AudioChannelLabelSubDescriptor}, {SoundfieldGroupLabelSubDescriptor} and {GroupOfSoundfieldGroupsLabelSubDescriptor} that are pertinent to the <Audio Channel>s represented by that <Sound Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/2.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/2.md>
                             [T] Sound Track
                                 A type of <Essence Track> that references <Sound Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                 [T] Essence Track
                                     A type of <Track> that references <Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                     [T] Track
                                         MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Sound Essence
                                     A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Audio Channel
                                 A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                         [A] There is exactly one {AudioChannelLabelSubDescriptor} for each <Audio Channel>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/3.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/3.md>
                             [T] Audio Channel
                                 A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                         [A] There is exactly one {SoundfieldGroupLabelSubDescriptor} for each <Sound Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/4.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/4.md>
                             [T] Sound Track
                                 A type of <Essence Track> that references <Sound Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                 [T] Essence Track
                                     A type of <Track> that references <Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                     [T] Track
                                         MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Sound Essence
                                     A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [A] There is one or more {GroupOfSoundfieldGroupsLabelSubDescriptor}(s) for each <Sound Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/5.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/5.md>
                             [T] Sound Track
                                 A type of <Essence Track> that references <Sound Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                 [T] Essence Track
                                     A type of <Track> that references <Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                     [T] Track
                                         MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Sound Essence
                                     A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [A] The {AudioChannelLabelSubDescriptor} for an <Audio Channel> references the {SoundfieldGroupLabelSubDescriptor} for the <Sound Track> that represents the  <Audio Channel>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/6.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/6.md>
                             [T] Audio Channel
                                 A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                             [T] Sound Track
                                 A type of <Essence Track> that references <Sound Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                 [T] Essence Track
                                     A type of <Track> that references <Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                     [T] Track
                                         MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Sound Essence
                                     A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [A] The {SoundfieldGroupLabelSubDescriptor} for a <Sound Track> references one or more {GroupOfSoundfieldGroupsLabelSubDescriptor}(s).
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/7.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/7.md>
                             [T] Sound Track
                                 A type of <Essence Track> that references <Sound Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                 [T] Essence Track
                                     A type of <Track> that references <Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                     [T] Track
                                         MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Sound Essence
                                     A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [A] In each {AudioChannelLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name", "MCA Channel ID".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/8.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/8.md>
                         [A] In each {AudioChannelLabelSubDescriptor} the following (ordinarily optional) properties are not present: "RFC 5646 Spoken Language".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/9.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/9.md>
                         [A] In each {SoundfieldGroupLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name", "RFC 5646 Spoken Language".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/10.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/10.md>
                         [A] In each {SoundfieldGroupLabelSubDescriptor} the following (ordinarily optional) properties are not present: "MCA Channel ID".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/11.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/11.md>
                         [A] In each {GroupOfSoundfieldGroupsLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/12.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/12.md>
                         [A] In each {GroupOfSoundfieldGroupsLabelSubDescriptor} the following (ordinarily optional) properties are not present: "MCA Channel ID", "RFC 5646 Spoken Language".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/13.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/13.md>
                         [A] Any device or system that reads, writes or otherwise processes the file supports all of the "MCA Label Dictionary ID" Labels specified by <Labels for use in Multichannel Audio Labeling Framework>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/15.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/15.md>
                             [K] Labels for use in Multichannel Audio Labeling Framework
                                 Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_7/)
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/>
@@ -819,36 +819,36 @@ There are two special types of Block which allow the value of one Block to be se
                                 Note that no constraint is placed on which "MCA Label Dictionary ID" Labels can be used in the file. The stated constraint simply means that implementations that comply with this Block must be able to support all of the specified Labels. In practice this means that for most real Sound Tracks the specified Labels ought to be used but alternative Labels can be used if the need arises (for example to support the delivery of additional specialist Sound Tracks for which Labels have been privately agreed between the supplier and the broadcaster).
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E6/artefacts/1.md>
                     [R] SMPTE ST 377-4:2012
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/document/2012/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-4-2012/>
                 [A] The value of "Default Audio Layout" defines any static properties of <Audio Channel>s and <Sound Track>s in the file.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/3.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/3.md>
                     [T] Audio Channel
                         A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                     [T] Sound Track
                         A type of <Essence Track> that references <Sound Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                         [T] Essence Track
                             A type of <Track> that references <Essence>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [T] Sound Essence
                             A type of <Essence> containing sound data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                 [A] The {Audio Layout Mode} used is either: <Audio Layout Mode 0> or an {Audio Layout Mode} specified in <Extra Audio Layout Modes>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/4.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/4.md>
                     [B] Audio Layout Mode 0
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/>
                         [A] "Channel Assignment Label" is <ConstrainedMultichannelAudioLabelingFramework(Label)>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/1.md>
                             [B] ConstrainedMultichannelAudioLabelingFramework(Label)
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/>
                                 [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/artefacts/Labels.xml
@@ -858,9 +858,9 @@ There are two special types of Block which allow the value of one Block to be se
                                     [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml
                                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml>
                         [A] "MCA Labeling Present" is "true".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/2.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/2.md>
                         [A] "Default Audio Layout" is not set (no assumptions can be made about audio layout).
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/3.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/3.md>
                     [K] Extra Audio Layout Modes
                         Associated Parameter Value: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_8/)
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/>
@@ -874,7 +874,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM0/>
             [A] Each XML document identified by <List of Embedded XML Documents> is embedded in the file using <XML Document in Header Metadata Carriage>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM0/artefacts/1.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM0/artefacts/1.md>
                 [K] List of Embedded XML Documents
                     Associated Parameter Value: "List of Embedded XML Documents" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_0/)
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param0/>
@@ -887,101 +887,101 @@ There are two special types of Block which allow the value of one Block to be se
                 [B] XML Document in Header Metadata Carriage
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/>
                     [A] The XML document is a complete XML document (with a single root element) that is UTF-8 encoded without a "Byte-Order Mark" (BOM).
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/0.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/0.md>
                     [A] The XML document is carried in the <Header Metadata> according to <SMPTE RP 2057:2011>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/1.md>
                         [T] Header Metadata
                             MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Metadata/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Header%20Metadata/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [R] SMPTE RP 2057:2011
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/RP2057/document/2011/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20RP%202057-2011/>
                     [A] The instance of "Text-Based DM Framework" is strongly referenced from a <Constrained Static DM Track>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/2.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/2.md>
                         [B] Constrained Static DM Track
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/056/>
                             [A] A <Constrained Static DM Track> is a <Static Track (DM)> in the <Material Package> that contains a <Sequence>, which contains exactly one <DM Segment>, which strongly references an instance of a <DM Framework>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/056/artefacts/1.xml>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/056/artefacts/1.md>
                                 [T] Static Track (DM)
                                     A <Track> carrying unchanging <Descriptive Metadata>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Static%20Track%20%28DM%29/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Static%20Track%20(DM)/>
                                     [T] Track
                                         MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                     [T] Descriptive Metadata
                                         Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Material Package
                                     An MXF data structure that describe an output timeline of the file.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
                                 [T] Sequence
                                     A Structural Metadata Class that is a Subclass of Structural Component.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sequence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sequence/>
                                 [T] DM Segment
                                     An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Segment/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Segment/>
                                     [T] Descriptive Metadata
                                         Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                     [T] Track
                                         MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                 [T] DM Framework
                                     A <Descriptive Metadata> Class that is a Subclass of Descriptive Framework.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Framework/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Framework/>
                                     [T] Descriptive Metadata
                                         Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [N] Track Name
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/039/>
                                 [A] The "Track Name" property of an <Constrained Static DM Track> does not identify the <DM Scheme> whose <DM Framework> it references. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <DM Scheme> used in the track, e.g. "AS_11_Core", "AS_11_UKDPP".
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/039/artefacts/1.xml>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/039/artefacts/1.md>
                                     [T] DM Scheme
                                         A mechanism for defining collections of <Descriptive Metadata>.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Scheme/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Scheme/>
                                         [T] Descriptive Metadata
                                             Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                             [T] Essence
                                                 A bitstream comprising picture, sound or data.
-                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                     [T] DM Framework
                                         A <Descriptive Metadata> Class that is a Subclass of Descriptive Framework.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Framework/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Framework/>
                                         [T] Descriptive Metadata
                                             Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                             [T] Essence
                                                 A bitstream comprising picture, sound or data.
-                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [A] The XML document is carried in the "UTF-8 Text Data" property of the "UTF-8 Text-based Set".
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/3.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/3.md>
                     [A] In the "UTF-8 Text-based Set" the property "Text-based Metadata Payload Scheme ID" has the value of <DM_XML_Document>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/4.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/4.md>
                         [B] DM_XML_Document
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XMLDMLabel/>
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XMLDMLabel/artefacts/Labels.xml
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XMLDMLabel/artefacts/Labels.xml>
                     [A] In the "UTF-8 Text-based Set" the property "Text Data Description" is present and has a value equal to the namespace of the root element of the XML document.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/5.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/5.md>
                     [A] <2-byte Local Length Encoding> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/6.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/6.md>
                         [T] 2-byte Local Length Encoding
                             The syntax encoding defined in <SMPTE ST 377-1:2011> for "Local Sets" that uses 2-byte Tags and 2-byte Lengths.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/2-byte%20Local%20Length%20Encoding/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/2-byte%20Local%20Length%20Encoding/>
                             [R] SMPTE ST 377-1:2011
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/document/2011/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-1-2011/>
                     [N] ST 2057 Implementation Notes
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E9/>
                         [A] ## XML Document size limits
@@ -994,122 +994,122 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/>
             [A] The file contains exactly one <Program Segmentation Track>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/artefacts/530.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/artefacts/530.md>
                 [B] Program Segmentation Track
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/532/>
                     [A] A <Program Segmentation Track> is a <Timeline Track> that contains a <Sequence> that is composed of zero or more <Filler> objects and one or more <DM Segment> objects.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/532/artefacts/532.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/532/artefacts/532.md>
                         [T] Timeline Track
                             A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timeline%20Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timeline%20Track/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                         [T] Sequence
                             A Structural Metadata Class that is a Subclass of Structural Component.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sequence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sequence/>
                         [T] Filler
                             An MXF structure used to describe empty space on a <Timeline Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Filler/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Filler/>
                         [T] DM Segment
                             An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Segment/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Segment/>
                             [T] Descriptive Metadata
                                 Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                     [A] Each <DM Segment> object in the <Program Segmentation Track> represents, and aligns with, a region of program content in the <Source Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/532/artefacts/534.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/532/artefacts/534.md>
                         [T] DM Segment
                             An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Segment/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Segment/>
                             [T] Descriptive Metadata
                                 Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                         [T] Source Essence
                             <Essence> data referenced by a <Source Package>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Source%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Source Package
                                 MXF data structure that describes source <Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Source%20Package/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Package/>
                     [A] Each <Filler> object in the <Program Segmentation Track> represents, and aligns with, a region of non-program content in the <Source Essence>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/532/artefacts/536.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/532/artefacts/536.md>
                         [T] Filler
                             An MXF structure used to describe empty space on a <Timeline Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Filler/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Filler/>
                             [T] Timeline Track
                                 A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timeline%20Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timeline%20Track/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                         [T] Source Essence
                             <Essence> data referenced by a <Source Package>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Source%20Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Essence/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Source Package
                                 MXF data structure that describes source <Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Source%20Package/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Package/>
                     [N] Track Name
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/038/>
                         [A] The "Track Name" property of the <Program Segmentation Track> does not identify the segmentation metadata scheme. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <DM Scheme> used in the track, e.g.  "AS_11_Segmentation".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/038/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/038/artefacts/1.md>
                             [T] DM Scheme
                                 A mechanism for defining collections of <Descriptive Metadata>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Scheme/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Scheme/>
                                 [T] Descriptive Metadata
                                     Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [N] Determining SOM and EOM
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/040/>
                         [A] The start and end timecodes for program regions, commonly referred to as "start of material" (som) and "end of material" (eom), can be determined based on the location of <DM Segment> objects on the <Program Segmentation Track> relative to the adjacent <Timecode Track> in the <Material Package> that contains the <Program Segmentation Track>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/040/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/040/artefacts/1.md>
                             [T] DM Segment
                                 An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Segment/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Segment/>
                                 [T] Descriptive Metadata
                                     Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Timecode Track
                                 An MXF <Track> that stores one or more <Timecode Component>s.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode%20Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Track/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                 [T] Timecode Component
                                     An MXF structure that stores <Timecode> information.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode%20Component/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Component/>
                                     [T] Timecode
                                         An annotation of elapsed time along a <Track>.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode/>
                             [T] Material Package
                                 An MXF data structure that describe an output timeline of the file.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
                     [N] Non-Programme Content
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/048/>
                         [A] Examples of non-programme content include: black, ident, clock.
@@ -1117,65 +1117,65 @@ There are two special types of Block which allow the value of one Block to be se
                     [N] Track Composition
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/050/>
                         [A] Constraints set out in <SMPTE ST 377-1:2011> and <SMPTE ST 378:2004> mean that the <Program Segmentation Track> is necessarily full from start to finish and is the same length as all other <Timeline Track>s in the <Material Package>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/050/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/050/artefacts/1.md>
                             [R] SMPTE ST 377-1:2011
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/document/2011/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-1-2011/>
                             [R] SMPTE ST 378:2004
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0378/document/2004/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20378-2004/>
                             [T] Timeline Track
                                 A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timeline%20Track/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timeline%20Track/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                             [T] Material Package
                                 An MXF data structure that describe an output timeline of the file.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
             [A] This <Track> is in the <Material Package>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/artefacts/531.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/artefacts/531.md>
                 [T] Track
                     MXF data structure used to describe the content structure.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                 [T] Material Package
                     An MXF data structure that describe an output timeline of the file.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
             [A] Each <DM Segment> object in the <Track> strongly references an instance of <DM_AS_11_Segmentation>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/artefacts/538.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/530/artefacts/538.md>
                 [T] DM Segment
                     An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Segment/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Segment/>
                     [T] Descriptive Metadata
                         Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                 [T] Track
                     MXF data structure used to describe the content structure.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                 [B] DM_AS_11_Segmentation
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505S/>
                     [A] This <DM Scheme> is identified by <DM_AS_11_Segmentation> (the <DM Scheme Label>) and has the following members: <DM_AS_11_Segmentation_Framework> (the <DM Framework>).
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505S/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505S/artefacts/1.md>
                         [T] DM Scheme
                             A mechanism for defining collections of <Descriptive Metadata>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Scheme/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Scheme/>
                             [T] Descriptive Metadata
                                 Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                         [B] DM_AS_11_Segmentation
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505L/>
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505L/artefacts/Labels.xml
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505L/artefacts/Labels.xml>
                         [T] DM Scheme Label
                             An identifier for a <DM Scheme>. It is stored in an MXF file's Preface::DMSchemes property to signify the use of that <DM Scheme> in the file.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Scheme%20Label/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Scheme%20Label/>
                         [B] DM_AS_11_Segmentation_Framework
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/>
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Groups.xml
@@ -1186,38 +1186,38 @@ There are two special types of Block which allow the value of one Block to be se
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Types.xml>
                         [T] DM Framework
                             A <Descriptive Metadata> Class that is a Subclass of Descriptive Framework.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Framework/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Framework/>
                             [T] Descriptive Metadata
                                 Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
             [N] Implementation Notes
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/049/>
                 [A] The <Track> can be identified by an MXF reader by the presence of <DM Segment> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <DM Framework>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/049/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/049/artefacts/1.md>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                     [T] DM Segment
                         An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Segment/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Segment/>
                         [T] Descriptive Metadata
                             Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [T] DM Framework
                         A <Descriptive Metadata> Class that is a Subclass of Descriptive Framework.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/DM%20Framework/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/DM%20Framework/>
                         [T] Descriptive Metadata
                             Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Descriptive%20Metadata/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Descriptive%20Metadata/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
             [N] Repetition of Header Metadata
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/051/>
                 [A] Repetition of Header Metadata in the Footer Partition is not considered to be another instance of any of the components of that Header Metadata.
@@ -1226,7 +1226,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_1/>
             [A] The <Specification_Identifiers> Element is present in the <Preface> of the <Header Partition>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_1/artefacts/1.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_1/artefacts/1.md>
                 [B] Specification_Identifiers
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID/>
                     [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID/artefacts/Elements.xml
@@ -1239,27 +1239,27 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Specification_Identification_E/artefacts/Elements.xml>
                 [T] Preface
                     The root of the Strong Reference tree of the <Header Metadata>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Preface/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Preface/>
                     [T] Header Metadata
                         MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Metadata/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Header%20Metadata/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                 [T] Header Partition
                     The first <Partition> in the MXF file. This <Partition> always contains a copy of the <Header Metadata>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Partition/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Header%20Partition/>
                     [T] Partition
                         A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Partition/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Partition/>
                     [T] Header Metadata
                         MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Header%20Metadata/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Header%20Metadata/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
             [A] The value of this Element includes the Label <Blocks_FF_0> and the Label(s) specified by <File Format Specification Identification Label>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_1/artefacts/2.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_1/artefacts/2.md>
                 [B] Blocks_FF_0
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L0/>
                     [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L0/artefacts/Labels.xml
@@ -1277,67 +1277,67 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: optional
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DAM/>
             [A] The <Dolby E Audio Metadata Serial Bitstream> that describes an <Audio Program> is included in the file using <Dolby E Audio Metadata Serial Bitstream Carriage>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DAM/artefacts/1.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DAM/artefacts/1.md>
                 [T] Dolby E Audio Metadata Serial Bitstream
                     A serial communication protocol that is used to transfer audio metadata between various products manufactured by Dolby, as defined in <SMPTE RDD 6:2008>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/RDD6/term/Dolby%20E%20Audio%20Metadata%20Serial%20Bitstream/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Dolby%20E%20Audio%20Metadata%20Serial%20Bitstream/>
                     [R] SMPTE RDD 6:2008
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/RDD6/document/2008/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20RDD%206-2008/>
                 [T] Audio Program
                     A collection of one or more audio channels.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST2020-1/term/Audio%20Program/>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Program/>
                 [B] Dolby E Audio Metadata Serial Bitstream Carriage
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/400/>
                     [A] The mapping of a <Dolby E Audio Metadata Serial Bitstream> into <VANC Data Packet>s conforms to <SMPTE 2020-B>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/400/artefacts/401.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/400/artefacts/401.md>
                         [T] VANC Data Packet
                             An ancillary data packet in the vertical ancillary data space (VANC).
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0291-1/term/VANC%20Data%20Packet/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/VANC%20Data%20Packet/>
                         [T] SMPTE 2020-B
                             "Method B" for mapping audio metadata into vertical ancillary data as defined in <SMPTE ST 2020-1:2008>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST2020-1/term/SMPTE%202020-B/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SMPTE%202020-B/>
                             [R] SMPTE ST 2020-1:2008
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST2020-1/document/2008/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%202020-1-2008/>
                     [A] The mapping of <VANC Data Packet>s into <ANC Frame Element>s is as specified in <Constrained Ancillary Data Mapping>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/400/artefacts/402.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/400/artefacts/402.md>
                         [T] VANC Data Packet
                             An ancillary data packet in the vertical ancillary data space (VANC).
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0291-1/term/VANC%20Data%20Packet/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/VANC%20Data%20Packet/>
                         [T] ANC Frame Element
                             A KLV triplet containing one frame's worth of an <Essence Element> carrying ANC packets such as <VANC Data Packet>s.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436-1/term/ANC%20Frame%20Element/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/ANC%20Frame%20Element/>
                             [T] Essence Element
                                 The entire essence stream of a single <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Essence%20Element/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Element/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                         [B] Constrained Ancillary Data Mapping
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/402/>
                             [A] The mapping of <VANC Data Packet>s into <ANC Frame Element>s is as specified in <SMPTE ST 436-1:2013> where "Payload Sample Coding" is "8-bit luma samples" (04h) and "Wrapping Type" is: "VANC Frame" (01h) (for interlaced or segmented progressive <Picture Essence>) or "VANC Progressive Frame" (04h) (for full-frame progressive <Picture Essence>).
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/402/artefacts/402.xml>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/402/artefacts/402.md>
                                 [R] SMPTE ST 436-1:2013
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436-1/document/2013/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20436-1-2013/>
                                 [T] Picture Essence
                                     A type of <Essence> containing predominantly picture data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [A] The "Line Number" used for each field's <VANC Data Packet> in the <ANC Frame Element> is the same for all <VANC Data Packet>s for that field for the identified <Audio Program>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/400/artefacts/403.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/400/artefacts/403.md>
                         [T] VANC Data Packet
                             An ancillary data packet in the vertical ancillary data space (VANC).
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0291-1/term/VANC%20Data%20Packet/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/VANC%20Data%20Packet/>
                         [T] ANC Frame Element
                             A KLV triplet containing one frame's worth of an <Essence Element> carrying ANC packets such as <VANC Data Packet>s.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0436-1/term/ANC%20Frame%20Element/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/ANC%20Frame%20Element/>
                             [T] Essence Element
                                 The entire essence stream of a single <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0379-2/term/Essence%20Element/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Element/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                     [N] Implementation Notes
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E2/>
                         [A] # Use of Dolby E Audio Metadata Serial Bitstream Carriage
@@ -1378,22 +1378,22 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/280/>
                 [A] The <Material Package> contains exactly one <Timecode Track>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/280/artefacts/280.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/280/artefacts/280.md>
                     [T] Material Package
                         An MXF data structure that describe an output timeline of the file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
                     [T] Timecode Track
                         An MXF <Track> that stores one or more <Timecode Component>s.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode%20Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Track/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                         [T] Timecode Component
                             An MXF structure that stores <Timecode> information.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode%20Component/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Component/>
                             [T] Timecode
                                 An annotation of elapsed time along a <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/021/>
                     [A] The Timecode properties must always properly match the content of the MXF file. This means that "Rounded Timecode Base" and "Drop Frame" need to be set appropriately.
@@ -1404,22 +1404,22 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/290/>
                 [A] The <Timecode Track> in the <Material Package> defines the authoritative program timecode.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/290/artefacts/290.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/290/artefacts/290.md>
                     [T] Timecode Track
                         An MXF <Track> that stores one or more <Timecode Component>s.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode%20Track/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Track/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                         [T] Timecode Component
                             An MXF structure that stores <Timecode> information.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode%20Component/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Component/>
                             [T] Timecode
                                 An annotation of elapsed time along a <Track>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Timecode/>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode/>
                     [T] Material Package
                         An MXF data structure that describe an output timeline of the file.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Material%20Package/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/022/>
                     [A] The authority of the Timecode Track in the Material Package needs to be respected by all components of a system that handles the file.
@@ -1437,7 +1437,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML_DM_Programmes/>
             [A] The namespace of the document's root element is <Programmes Descriptive Metadata>; the name of the document's root element is "Programmes_DM"; the Media type (MIME type) for the document is "application/xml"
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML_DM_Programmes/artefacts/1.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML_DM_Programmes/artefacts/1.md>
                 [B] Programmes Descriptive Metadata
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes/>
                     [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes/artefacts/DM_Programmes.xsd
@@ -1453,15 +1453,15 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/>
                 [A] The decoded <Picture Essence> conforms to the specifications for the "active video" of <ITU-R Recommendation ITU-R BT.709-6> where: "Transport" is "Progressive"; "Frame frequency (Hz)" is "25" or "50"; "Coded signal" is "Y, Cb, Cr"; "Coding format" is "10 bits/component".
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/2.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE5/artefacts/2.md>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Picture%20Essence/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                     [R] ITU-R Recommendation ITU-R BT.709-6
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/R-Rec-BT.709/document/6/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20R-Rec-BT.709-6/>
                 [N] Active Video
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E23/>
                     [A] The "active video" of BT.709 is taken to be the 1920x1080 CIF frame, excluding any blanking or synchronizing signals.
@@ -1474,14 +1474,14 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/>
                 [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/artefacts/1.xml>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/artefacts/1.md>
                     [T] AVC
                         Advanced Video Coding. A DCT-based video compression format.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/AVC/>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AVC/>
                     [B] AVC High 4:2:2 constraints
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/>
                         [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/1.xml>
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/1.md>
                         [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/2.md>
                 [A] The mean data rate of the Picture Essence is greater than or equal to 50,000,000 bits per second.
@@ -1600,90 +1600,90 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_12/>
             [A] The Extra Audio Layout Modes permitted are: <Audio Layout Mode 1> and <Audio Layout Mode 2>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_12/artefacts/1.xml>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_12/artefacts/1.md>
                 [B] Audio Layout Mode 1
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/>
                     [A] "Channel Assignment Label" is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/1.md>
                         [B] ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/>
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml>
                     [A] "MCA Labeling Present" is "true".
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/2.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/2.md>
                     [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/3.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/3.md>
                         [B] Default Audio Layout 'A'
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/>
                             [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/1.xml>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/1.md>
                                 [T] Sound Track
                                     A type of <Essence Track> that references <Sound Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                     [T] Essence Track
                                         A type of <Track> that references <Essence>.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                         [T] Track
                                             MXF data structure used to describe the content structure.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                     [T] Sound Essence
                                         A type of <Essence> containing sound data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/2.xml>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/2.md>
                                 [T] Sound Track
                                     A type of <Essence Track> that references <Sound Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                     [T] Essence Track
                                         A type of <Track> that references <Essence>.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                         [T] Track
                                             MXF data structure used to describe the content structure.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                     [T] Sound Essence
                                         A type of <Essence> containing sound data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [A] The order of Descriptors, SubDescriptors, <Sound Track>s, <Audio Channel>s and <Sound Essence> is consistent and as stated here.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/3.xml>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/3.md>
                                 [T] Sound Track
                                     A type of <Essence Track> that references <Sound Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                     [T] Essence Track
                                         A type of <Track> that references <Essence>.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                         [T] Track
                                             MXF data structure used to describe the content structure.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                     [T] Sound Essence
                                         A type of <Essence> containing sound data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Audio Channel
                                     A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                                 [T] Sound Essence
                                     A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [N] Implementation Notes
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/>
                                 [A] All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.
@@ -1704,86 +1704,86 @@ There are two special types of Block which allow the value of one Block to be se
                 [B] Audio Layout Mode 2
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/>
                     [A] "Channel Assignment Label" is <Default_Audio_Layout_A_without_MCA_Labeling>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/1.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/1.md>
                         [B] Default_Audio_Layout_A_without_MCA_Labeling
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/>
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml>
                     [A] "MCA Labeling Present" is "false".
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/2.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/2.md>
                     [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/3.xml>
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/3.md>
                         [B] Default Audio Layout 'A'
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/>
                             [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/1.xml>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/1.md>
                                 [T] Sound Track
                                     A type of <Essence Track> that references <Sound Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                     [T] Essence Track
                                         A type of <Track> that references <Essence>.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                         [T] Track
                                             MXF data structure used to describe the content structure.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                     [T] Sound Essence
                                         A type of <Essence> containing sound data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/2.xml>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/2.md>
                                 [T] Sound Track
                                     A type of <Essence Track> that references <Sound Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                     [T] Essence Track
                                         A type of <Track> that references <Essence>.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                         [T] Track
                                             MXF data structure used to describe the content structure.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                     [T] Sound Essence
                                         A type of <Essence> containing sound data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [A] The order of Descriptors, SubDescriptors, <Sound Track>s, <Audio Channel>s and <Sound Essence> is consistent and as stated here.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/3.xml>
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/artefacts/3.md>
                                 [T] Sound Track
                                     A type of <Essence Track> that references <Sound Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Track/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
                                     [T] Essence Track
                                         A type of <Track> that references <Essence>.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence%20Track/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
                                         [T] Track
                                             MXF data structure used to describe the content structure.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Track/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                     [T] Sound Essence
                                         A type of <Essence> containing sound data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                                 [T] Audio Channel
                                     A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                                 [T] Sound Essence
                                     A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [N] Implementation Notes
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E28/>
                                 [A] All of the Sound Tracks defined by this Default Audio Layout are optional, so there could be zero Sound Tracks.

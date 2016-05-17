@@ -10,7 +10,7 @@ The principal rendering / view of the Specification is a web page that contains 
 
 ## Specification Development and Implementation
 
-Information on the further development and implementation of this and other AMWA AS-11 rules based Specifications are in a [separate GitHub project](https://github.com/AMWA-TV/AS-11_Overview). Examples include:
+Information on the further development and implementation of this and other AMWA AS-11 rules based Specifications are in a [separate GitHub project](https://github.com/AMWA-TV/AS-11_Overview/). Examples include:
 * Issue tracking
 * Sample MXF files
 
@@ -27,3 +27,4 @@ The full Specification history is available [here](https://github.com/AMWA-TV/AS
 * [examples/xml_descriptive_metadata](examples/xml_descriptive_metadata) -- A directory of examples of XML Descriptive Metadata files that could be embedded in an MXF file compliant with this Specification.
 * [LICENSE.txt](LICENSE.txt) -- Details the license terms under which this Specification is made available.
 * include -- A directory of files (images, JavaScript etc) required by the web page to be able to render correctly. These files are not directly useful to Specification readers.
+* [githashes.json](githashes.json) -- Contains information about how this package was built. This file might not be present.

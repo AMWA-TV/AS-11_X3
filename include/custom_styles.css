@@ -1,0 +1,137 @@
+  
+  .jstree-default .jstree-anchor {
+    height: auto;
+  }
+  
+  .jstree-icon {
+    display: block;
+    float: left !important;
+  }
+
+  .jstree-anchor {
+    display: block;
+  }
+    
+  .content_container {
+    display: block;
+    margin-left: 55px;
+  }
+
+  .content_container > :first-child {
+    margin-top: 0px;
+  }
+  
+  .content_container hr {
+    border-top-width: medium;
+  }
+
+  #jstree {
+    display: none;
+  }
+
+  .container {
+    padding-bottom: 60px;
+  }
+  
+  .info {
+    //background-color: #f5f5f5;
+    border: 0px solid;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 2px;
+    font-size: 80%;
+    line-height: 120%;
+    display: inline;
+  }
+  
+  .infoBig {
+    //background-color: #f5f5f5;
+    border: 0px solid;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 2px;
+    font-size: 90%;
+    line-height: 120%;
+    display: inline;
+  }
+  
+  .param_info_no_link {
+    font-weight: bold;
+    color: #CC0000;
+  }
+  
+  blockquote {
+    font-size: inherit;
+    font-weight: bold;
+  }
+  
+  .tInfo {
+    display: none;
+  }
+  
+  .rInfo {
+    display: none;
+  }
+
+  tr:target {
+    background-color: #d9edf7;
+  }
+  
+  h4 span:target {
+    background-color: #d9edf7;
+  }
+  
+  .smpte_registers_class_registers_note {
+    font-style: italic;
+    font-size: small;
+  }
+  
+  .smpte_registers_class_definition_column {
+   white-space: normal;
+   min-width: 350px;
+  }
+  
+  .table {
+    width: initial;
+  }
+
+  td > p {
+    margin-bottom: 0px;
+  }
+  
+  .definition-table td:first-child {
+    white-space: nowrap;
+  }
+
+  .control_buttons_group {
+    margin-bottom: 20px;
+  }
+  
+  a[data-toggle=tooltip] {
+    white-space: nowrap;
+  }
+  
+  @-moz-document url-prefix() {
+    fieldset { display: table-cell; }
+  }
+  
+ .dl-horizontal dt{
+    text-align: left;
+    margin-bottom: 0.1em;
+    width: auto;
+    padding-right: 1em;
+  }
+  
+  .dl-horizontal dt img:last-of-type{
+    margin-right: 0.5em;
+  } 
+
+  .alert-auto {
+    display: inline-block; /* make alert take the width of its content */
+  }
