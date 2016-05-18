@@ -1451,8 +1451,6 @@ There are two special types of Block which allow the value of one Block to be se
                     [K] Labels for use in Multichannel Audio Labeling Framework
                         Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_7/)
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/>
-                        [A] This parameter lists "MCA Label Dictionary ID" Labels.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/artefacts/1.md>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E40/>
                     [A] # "MCA Label Dictionary ID" Labels Used
@@ -1929,8 +1927,6 @@ There are two special types of Block which allow the value of one Block to be se
                 [K] File Format Specification Identification Label
                     Associated Parameter Value: "File Format Specification Identification Label" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_12/)
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param3/>
-                    [A] Specifies one or more SMPTE Labels that identify the file format Specification(s) to which the file conforms.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param3/artefacts/1.md>
         [B] Dolby Audio Metadata
             Conformance: optional
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DAM/>
