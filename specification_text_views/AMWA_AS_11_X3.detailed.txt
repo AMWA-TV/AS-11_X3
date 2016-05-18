@@ -2183,8 +2183,8 @@ There are two special types of Block which allow the value of one Block to be se
                  `RightAudioChannel`                       | Right                         | `chR`
                  `CenterAudioChannel`                      | Center                        | `chC`
                  `LFEAudioChannel`                         | LFE                           | `chLFE`
-                 `LeftSurroundAudioChannel`                | Left                          | `chLs`
-                 `RightSurroundAudioChannel`               | Right                         | `chRs`
+                 `LeftSurroundAudioChannel`                | Left Surround                 | `chLs`
+                 `RightSurroundAudioChannel`               | Right Surround                | `chRs`
                  `VisuallyImpairedNarrativeAudioChannel`   | Visually Impaired Narrative   | `chVIN`
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/ch.md>
                 [T] AudioChannelLabelSubDescriptor
