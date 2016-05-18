@@ -222,33 +222,75 @@ There are two special types of Block which allow the value of one Block to be se
                 [A] In the {WAVEPCMDescriptor} the value of the "ChannelAssignment" property is the same for all <Sound Track>s.
                 [N] Implementation Notes
                     [A] This prohibits the use of the "AES3 Audio Essence Descriptor" defined in <SMPTE ST 382:2007>.
-            [B] Audio Layout Mode
+            [B] Audio Layout
                 Conformance: mandatory
-                [A] An {Audio Layout Mode} specifies a value for each of the following: "Channel Assignment Label", "MCA Labeling Present", "Default Audio Layout".
-                [A] The value of "Channel Assignment Label" is a SMPTE Universal Label that is used as the value of the "ChannelAssignment" property in the {WAVEPCMDescriptor}.
-                [A] If "MCA Labeling Present" is "true" then <Constrained Multichannel Audio Labeling Framework> is used. Otherwise the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012> is not used.
+                [A] An <Audio Layout Mode> is used with the properties set as specified by <Audio Layout Mode 0> or one of the <Audio Layout Mode>s specified by <Extra Audio Layout Modes>.
+                    [B] Audio Layout Mode
+                        [A] The value of <Channel Assignment Label> is a SMPTE Universal Label that is used as the value of the "ChannelAssignment" property in the {WAVEPCMDescriptor}.
+                        [A] If <MCA Labeling Present> is "true" then <Constrained Multichannel Audio Labeling Framework> is used. Otherwise the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012> is not used.
+                            [B] Constrained Multichannel Audio Labeling Framework
+                                [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
+                                [A] There is exactly one <AudioChannelLabelSubDescriptor> for each <Audio Channel>. This <AudioChannelLabelSubDescriptor> is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of the <Sound Track> that contains the <Audio Channel>.
+                                [A] There is exactly one <SoundfieldGroupLabelSubDescriptor> for each <Soundfield Group>. This <SoundfieldGroupLabelSubDescriptor> is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of a <Sound Track> in the <Soundfield Group>.
+                                [A] There is one or more <GroupOfSoundfieldGroupsLabelSubDescriptor>(s) for each <Soundfield Group>. Each of these <GroupOfSoundfieldGroupsLabelSubDescriptor>s is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of a <Sound Track> in the <Soundfield Group>.
+                                [A] Each <AudioChannelLabelSubDescriptor> references exactly one <SoundfieldGroupLabelSubDescriptor>.
+                                [A] Each <SoundfieldGroupLabelSubDescriptor> references all of the <GroupOfSoundfieldGroupsLabelSubDescriptor>(s) for the <Soundfield Group> it relates to.
+                                [A] In each <AudioChannelLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name", "MCA Channel ID".
+                                [A] In each <AudioChannelLabelSubDescriptor> the following (ordinarily optional) properties are not present: "RFC 5646 Spoken Language".
+                                [A] In each <SoundfieldGroupLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name", "RFC 5646 Spoken Language".
+                                [A] In each <SoundfieldGroupLabelSubDescriptor> the following (ordinarily optional) properties are not present: "MCA Channel ID".
+                                [A] In each <GroupOfSoundfieldGroupsLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name".
+                                [A] In each <GroupOfSoundfieldGroupsLabelSubDescriptor> the following (ordinarily optional) properties are not present: "MCA Channel ID", "RFC 5646 Spoken Language".
+                                [N] Implementation Notes
+                                    [A] # Distribution and Repetition of SubDescriptors
+                                        
+                                        <SoundfieldGroupLabelSubDescriptor>s and <GroupOfSoundfieldGroupsLabelSubDescriptor>s could all be on one <Sound Track> or distributed. Hence, even the <GroupOfSoundfieldGroupsLabelSubDescriptor>s might not be on the same <Sound Track>.
+                                        
+                                        If several <Soundfield Group>s reference a single <Group of Soundfield Groups> then there will be more than one <GroupOfSoundfieldGroupsLabelSubDescriptor> for that <Group of Soundfield Groups>. That is, it is repeated for each <Soundfield Group> that references it.
+                                        
+                                        
+                                        # Type of RFC5646SpokenLanguage property
+                                        
+                                        The value of this property is encoded as a US-ASCII string with one byte per character.
+                                        
+                                        Details:
+                                        
+                                        * The `RFC5646SpokenLanguage` property of the {MCALabelSubDescriptor} is defined in SMPTE ST 377-4:2012 as having the type "ISO-8String". This type is undefined.
+                                        
+                                        * However, the entry for `RFC5646SpokenLanguage` in the SMPTE Elements Register correctly lists the type as "ISO7", which refers to "ISO/IEC 646:1991, Information technology -- ISO 7-bit coded character set for information interchange.". That is the same character repertoire referenced by IETF RFC 5646.
+                                        
+                        [A] The value of <Default Audio Layout> defines any static properties of <Audio Channel>s and <Sound Track>s in the file.
+                    [B] Audio Layout Mode 0
+                        [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework(Label)>.
+                            [B] ConstrainedMultichannelAudioLabelingFramework(Label)
+                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/artefacts/Labels.xml
+                                [N] SMPTE Registers Node: SoundChannelLabeling
+                                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml
+                        [A] <MCA Labeling Present> is "true".
+                        [A] <Default Audio Layout> is not set (no assumptions can be made about audio layout).
+                    [K] Extra Audio Layout Modes
+                        Associated Parameter Value: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_8/)
+                [A] If <Constrained Multichannel Audio Labeling Framework> is used then any device or system that reads, writes or otherwise processes the file supports <Labels for use in Multichannel Audio Labeling Framework>.
                     [B] Constrained Multichannel Audio Labeling Framework
                         [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
-                        [A] The "SubDescriptors" property of the {SoundDescriptor} that describes a <Sound Track> strongly references all instances of {AudioChannelLabelSubDescriptor}, {SoundfieldGroupLabelSubDescriptor} and {GroupOfSoundfieldGroupsLabelSubDescriptor} that are pertinent to the <Audio Channel>s represented by that <Sound Track>.
-                        [A] There is exactly one {AudioChannelLabelSubDescriptor} for each <Audio Channel>.
-                        [A] There is exactly one {SoundfieldGroupLabelSubDescriptor} for each <Sound Track>.
-                        [A] There is one or more {GroupOfSoundfieldGroupsLabelSubDescriptor}(s) for each <Sound Track>.
-                        [A] The {AudioChannelLabelSubDescriptor} for an <Audio Channel> references the {SoundfieldGroupLabelSubDescriptor} for the <Sound Track> that represents the  <Audio Channel>.
-                        [A] The {SoundfieldGroupLabelSubDescriptor} for a <Sound Track> references one or more {GroupOfSoundfieldGroupsLabelSubDescriptor}(s).
-                        [A] In each {AudioChannelLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name", "MCA Channel ID".
-                        [A] In each {AudioChannelLabelSubDescriptor} the following (ordinarily optional) properties are not present: "RFC 5646 Spoken Language".
-                        [A] In each {SoundfieldGroupLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name", "RFC 5646 Spoken Language".
-                        [A] In each {SoundfieldGroupLabelSubDescriptor} the following (ordinarily optional) properties are not present: "MCA Channel ID".
-                        [A] In each {GroupOfSoundfieldGroupsLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name".
-                        [A] In each {GroupOfSoundfieldGroupsLabelSubDescriptor} the following (ordinarily optional) properties are not present: "MCA Channel ID", "RFC 5646 Spoken Language".
-                        [A] Any device or system that reads, writes or otherwise processes the file supports all of the "MCA Label Dictionary ID" Labels specified by <Labels for use in Multichannel Audio Labeling Framework>.
-                            [K] Labels for use in Multichannel Audio Labeling Framework
-                                Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_7/)
-                                [A] This parameter lists "MCA Label Dictionary ID" Labels.
+                        [A] There is exactly one <AudioChannelLabelSubDescriptor> for each <Audio Channel>. This <AudioChannelLabelSubDescriptor> is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of the <Sound Track> that contains the <Audio Channel>.
+                        [A] There is exactly one <SoundfieldGroupLabelSubDescriptor> for each <Soundfield Group>. This <SoundfieldGroupLabelSubDescriptor> is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of a <Sound Track> in the <Soundfield Group>.
+                        [A] There is one or more <GroupOfSoundfieldGroupsLabelSubDescriptor>(s) for each <Soundfield Group>. Each of these <GroupOfSoundfieldGroupsLabelSubDescriptor>s is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of a <Sound Track> in the <Soundfield Group>.
+                        [A] Each <AudioChannelLabelSubDescriptor> references exactly one <SoundfieldGroupLabelSubDescriptor>.
+                        [A] Each <SoundfieldGroupLabelSubDescriptor> references all of the <GroupOfSoundfieldGroupsLabelSubDescriptor>(s) for the <Soundfield Group> it relates to.
+                        [A] In each <AudioChannelLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name", "MCA Channel ID".
+                        [A] In each <AudioChannelLabelSubDescriptor> the following (ordinarily optional) properties are not present: "RFC 5646 Spoken Language".
+                        [A] In each <SoundfieldGroupLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name", "RFC 5646 Spoken Language".
+                        [A] In each <SoundfieldGroupLabelSubDescriptor> the following (ordinarily optional) properties are not present: "MCA Channel ID".
+                        [A] In each <GroupOfSoundfieldGroupsLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name".
+                        [A] In each <GroupOfSoundfieldGroupsLabelSubDescriptor> the following (ordinarily optional) properties are not present: "MCA Channel ID", "RFC 5646 Spoken Language".
                         [N] Implementation Notes
-                            [A] # Repetition of SubDescriptors
+                            [A] # Distribution and Repetition of SubDescriptors
                                 
-                                A {GroupOfSoundfieldGroupsLabelSubDescriptor} instance will be repeated in each Sound Track containing a Soundfield Group from this Group of Soundfield Groups.
+                                <SoundfieldGroupLabelSubDescriptor>s and <GroupOfSoundfieldGroupsLabelSubDescriptor>s could all be on one <Sound Track> or distributed. Hence, even the <GroupOfSoundfieldGroupsLabelSubDescriptor>s might not be on the same <Sound Track>.
+                                
+                                If several <Soundfield Group>s reference a single <Group of Soundfield Groups> then there will be more than one <GroupOfSoundfieldGroupsLabelSubDescriptor> for that <Group of Soundfield Groups>. That is, it is repeated for each <Soundfield Group> that references it.
+                                
                                 
                                 # Type of RFC5646SpokenLanguage property
                                 
@@ -260,26 +302,23 @@ There are two special types of Block which allow the value of one Block to be se
                                 
                                 * However, the entry for `RFC5646SpokenLanguage` in the SMPTE Elements Register correctly lists the type as "ISO7", which refers to "ISO/IEC 646:1991, Information technology -- ISO 7-bit coded character set for information interchange.". That is the same character repertoire referenced by IETF RFC 5646.
                                 
-                                # "MCA Label Dictionary ID" Labels Used
-                                
-                                Note that no constraint is placed on which "MCA Label Dictionary ID" Labels can be used in the file. The stated constraint simply means that implementations that comply with this Block must be able to support all of the specified Labels. In practice this means that for most real Sound Tracks the specified Labels ought to be used but alternative Labels can be used if the need arises (for example to support the delivery of additional specialist Sound Tracks for which Labels have been privately agreed between the supplier and the broadcaster).
-                [A] The value of "Default Audio Layout" defines any static properties of <Audio Channel>s and <Sound Track>s in the file.
-                [A] The {Audio Layout Mode} used is either: <Audio Layout Mode 0> or an {Audio Layout Mode} specified in <Extra Audio Layout Modes>.
-                    [B] Audio Layout Mode 0
-                        [A] "Channel Assignment Label" is <ConstrainedMultichannelAudioLabelingFramework(Label)>.
-                            [B] ConstrainedMultichannelAudioLabelingFramework(Label)
-                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/artefacts/Labels.xml
-                                [N] SMPTE Registers Node: SoundChannelLabeling
-                                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml
-                        [A] "MCA Labeling Present" is "true".
-                        [A] "Default Audio Layout" is not set (no assumptions can be made about audio layout).
-                    [K] Extra Audio Layout Modes
-                        Associated Parameter Value: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_8/)
-                        [A] Specifies values for:
-                            
-                            1. "Channel Assigment Label"
-                            2. "MCA Labeling Present"
-                            3. "Default Audio Layout"
+                    [K] Labels for use in Multichannel Audio Labeling Framework
+                        Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_7/)
+                        [A] This parameter lists "MCA Label Dictionary ID" Labels.
+                [N] Implementation Notes
+                    [A] # "MCA Label Dictionary ID" Labels Used
+                        
+                        Note that no constraint is placed on which "MCA Label Dictionary ID" Labels can be used in the file. The stated constraint simply means that implementations that comply with this Block must be able to support all of the specified Labels. In practice this means that for most real Sound Tracks the specified Labels ought to be used but alternative Labels can be used if the need arises (for example to support the delivery of additional specialist Sound Tracks for which Labels have been privately agreed between the supplier and the broadcaster).
+            [N] Implementation Notes
+                [A] # Multichannel Audio Labeling Framework
+                    
+                    Each <Sound Track> will have:
+                    
+                    * one <AudioChannelLabelSubDescriptor> for each of its <Audio Channel>s
+                    * one <SoundfieldGroupLabelSubDescriptor>
+                    * one or more <GroupOfSoundfieldGroupsLabelSubDescriptor>s
+                    
+                    If two (or more) <Soundfield Group>s belong to the same <Group of Soundfield Groups> then the <GroupOfSoundfieldGroupsLabelSubDescriptor> will be repeated on each <Sound Track> that uses it.
         [B] Embedded XML Documents
             Conformance: mandatory
             [A] Each XML document identified by <List of Embedded XML Documents> is embedded in the file using <XML Document in Header Metadata Carriage>.
@@ -459,9 +498,7 @@ There are two special types of Block which allow the value of one Block to be se
         [B] Multichannel Audio Labels Collection 0
             Conformance: mandatory
             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/Labels.xml
-            [A] This table contains information that completes the specification of the Audio Channel Labels for which SMPTE Metadata Registers Entries are defined here.
-                
-                This table also lists the MCA Tag Name and MCA Tag Symbol to be used for each Audio Channel Label that is used here but defined elsewhere.
+            [A] <AudioChannelLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name                  | MCA Tag Symbol
                  ------------------------------------------|-------------------------------|----------------
@@ -473,18 +510,14 @@ There are two special types of Block which allow the value of one Block to be se
                  `LeftSurroundAudioChannel`                | Left                          | `chLs`
                  `RightSurroundAudioChannel`               | Right                         | `chRs`
                  `VisuallyImpairedNarrativeAudioChannel`   | Visually Impaired Narrative   | `chVIN`
-            [A] This table contains information that completes the specification of the Soundfield Group Labels for which SMPTE Metadata Registers Entries are defined here.
-                
-                This table also lists the constituent Audio Channels, and the MCA Tag Name and MCA Tag Symbol to be used for each Soundfield Group Label that is used here but defined elsewhere.
+            [A] <SoundfieldGroupLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name      | MCA Tag Symbol | Constituent Audio Channels (in no particular order)
                  ------------------------------------------|-------------------|----------------|----------------------------
                  `AudioDescriptionStudioSignal`            | AD Studio Signal  | `sgADSS`       | `chVIN`, `chADSSdc`
                  `_51SoundfieldGroup`                      | 5.1               | `sg51`         | `chL`, `chR`, `chC`, `chLFE`, `chLs`, `chRs`
                  `SMPTEST20678StandardStereo`              | Standard Stereo   | `sgST`         | `chL`, `chR`
-            [A] This table contains information that completes the specification of the Group of Soundfield Groups Labels for which SMPTE Metadata Registers Entries are defined here.
-                
-                This table also lists the MCA Tag Name and MCA Tag Symbol to be used for each Group of Soundfield Groups Label that is used here but defined elsewhere.
+            [A] <GroupOfSoundfieldGroupsLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name                    | MCA Tag Symbol
                  ------------------------------------------|---------------------------------|----------------
@@ -519,13 +552,13 @@ There are two special types of Block which allow the value of one Block to be se
         Associated Parameter Key: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/)
         [B] Permitted Extra Audio Layout Modes
             Conformance: mandatory
-            [A] The Extra Audio Layout Modes permitted are: <Audio Layout Mode 1> and <Audio Layout Mode 2>.
+            [A] The following are permitted: <Audio Layout Mode 1>, <Audio Layout Mode 2>.
                 [B] Audio Layout Mode 1
-                    [A] "Channel Assignment Label" is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
+                    [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
                         [B] ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml
-                    [A] "MCA Labeling Present" is "true".
-                    [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
+                    [A] <MCA Labeling Present> is "true".
+                    [A] <Default Audio Layout> is <Default Audio Layout 'A'>.
                         [B] Default Audio Layout 'A'
                             [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
                             [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.
@@ -544,11 +577,11 @@ There are two special types of Block which allow the value of one Block to be se
                             [N] Reg-XML Example
                                 [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
                 [B] Audio Layout Mode 2
-                    [A] "Channel Assignment Label" is <Default_Audio_Layout_A_without_MCA_Labeling>.
+                    [A] <Channel Assignment Label> is <Default_Audio_Layout_A_without_MCA_Labeling>.
                         [B] Default_Audio_Layout_A_without_MCA_Labeling
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml
-                    [A] "MCA Labeling Present" is "false".
-                    [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
+                    [A] <MCA Labeling Present> is "false".
+                    [A] <Default Audio Layout> is <Default Audio Layout 'A'>.
                         [B] Default Audio Layout 'A'
                             [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
                             [A] If there are at least two <Sound Track>s then the second one is {5.1 Main Programme} and the channels are in the following order (from first to last): left, right, centre, LFE, left surround, right surround.

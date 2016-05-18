@@ -653,23 +653,470 @@ There are two special types of Block which allow the value of one Block to be se
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/006b/artefacts/1.md>
                         [R] SMPTE ST 382:2007
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20382-2007/>
-            [B] Audio Layout Mode
+            [B] Audio Layout
                 Conformance: mandatory
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/>
-                [A] An {Audio Layout Mode} specifies a value for each of the following: "Channel Assignment Label", "MCA Labeling Present", "Default Audio Layout".
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/0.md>
-                [A] The value of "Channel Assignment Label" is a SMPTE Universal Label that is used as the value of the "ChannelAssignment" property in the {WAVEPCMDescriptor}.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/1.md>
-                [A] If "MCA Labeling Present" is "true" then <Constrained Multichannel Audio Labeling Framework> is used. Otherwise the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012> is not used.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/2.md>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL/>
+                [A] An <Audio Layout Mode> is used with the properties set as specified by <Audio Layout Mode 0> or one of the <Audio Layout Mode>s specified by <Extra Audio Layout Modes>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL/artefacts/4.md>
+                    [B] Audio Layout Mode
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/>
+                        [A] The value of <Channel Assignment Label> is a SMPTE Universal Label that is used as the value of the "ChannelAssignment" property in the {WAVEPCMDescriptor}.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/1.md>
+                            [T] Channel Assignment Label
+                                A property of an Audio Layout Mode
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Channel%20Assignment%20Label/>
+                        [A] If <MCA Labeling Present> is "true" then <Constrained Multichannel Audio Labeling Framework> is used. Otherwise the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012> is not used.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/2.md>
+                            [T] MCA Labeling Present
+                                A property of an Audio Layout Mode
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCA%20Labeling%20Present/>
+                            [B] Constrained Multichannel Audio Labeling Framework
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/>
+                                [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/1.md>
+                                    [R] SMPTE ST 377-4:2012
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-4-2012/>
+                                [A] There is exactly one <AudioChannelLabelSubDescriptor> for each <Audio Channel>. This <AudioChannelLabelSubDescriptor> is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of the <Sound Track> that contains the <Audio Channel>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/2.md>
+                                    [T] AudioChannelLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] Audio Channel
+                                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] Generic Sound Essence Descriptor
+                                        A Subclass of the File Descriptor. It is designed to provide generic parametric information which describes the <Sound Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Sound%20Essence%20Descriptor/>
+                                        [T] Sound Essence
+                                            A type of <Essence> containing sound data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                    [T] Sound Track
+                                        A type of <Essence Track> that references <Sound Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
+                                        [T] Essence Track
+                                            A type of <Track> that references <Essence>.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
+                                            [T] Track
+                                                MXF data structure used to describe the content structure.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                        [T] Sound Essence
+                                            A type of <Essence> containing sound data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                [A] There is exactly one <SoundfieldGroupLabelSubDescriptor> for each <Soundfield Group>. This <SoundfieldGroupLabelSubDescriptor> is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of a <Sound Track> in the <Soundfield Group>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/4.md>
+                                    [T] SoundfieldGroupLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Soundfield Group
+                                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                            [T] Audio Channel
+                                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] Soundfield Group
+                                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] Generic Sound Essence Descriptor
+                                        A Subclass of the File Descriptor. It is designed to provide generic parametric information which describes the <Sound Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Sound%20Essence%20Descriptor/>
+                                        [T] Sound Essence
+                                            A type of <Essence> containing sound data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                    [T] Sound Track
+                                        A type of <Essence Track> that references <Sound Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
+                                        [T] Essence Track
+                                            A type of <Track> that references <Essence>.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
+                                            [T] Track
+                                                MXF data structure used to describe the content structure.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                        [T] Sound Essence
+                                            A type of <Essence> containing sound data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                [A] There is one or more <GroupOfSoundfieldGroupsLabelSubDescriptor>(s) for each <Soundfield Group>. Each of these <GroupOfSoundfieldGroupsLabelSubDescriptor>s is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of a <Sound Track> in the <Soundfield Group>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/5.md>
+                                    [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Group of Soundfield Groups
+                                            A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                            [T] Soundfield Group
+                                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                                [T] Audio Channel
+                                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] Soundfield Group
+                                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] Generic Sound Essence Descriptor
+                                        A Subclass of the File Descriptor. It is designed to provide generic parametric information which describes the <Sound Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Sound%20Essence%20Descriptor/>
+                                        [T] Sound Essence
+                                            A type of <Essence> containing sound data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                    [T] Sound Track
+                                        A type of <Essence Track> that references <Sound Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
+                                        [T] Essence Track
+                                            A type of <Track> that references <Essence>.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
+                                            [T] Track
+                                                MXF data structure used to describe the content structure.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                        [T] Sound Essence
+                                            A type of <Essence> containing sound data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                            [T] Essence
+                                                A bitstream comprising picture, sound or data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                [A] Each <AudioChannelLabelSubDescriptor> references exactly one <SoundfieldGroupLabelSubDescriptor>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/6.md>
+                                    [T] AudioChannelLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] SoundfieldGroupLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Soundfield Group
+                                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                            [T] Audio Channel
+                                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [A] Each <SoundfieldGroupLabelSubDescriptor> references all of the <GroupOfSoundfieldGroupsLabelSubDescriptor>(s) for the <Soundfield Group> it relates to.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/7.md>
+                                    [T] SoundfieldGroupLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Soundfield Group
+                                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                            [T] Audio Channel
+                                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Group of Soundfield Groups
+                                            A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                            [T] Soundfield Group
+                                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                                [T] Audio Channel
+                                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                    [T] Soundfield Group
+                                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [A] In each <AudioChannelLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name", "MCA Channel ID".
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/8.md>
+                                    [T] AudioChannelLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [A] In each <AudioChannelLabelSubDescriptor> the following (ordinarily optional) properties are not present: "RFC 5646 Spoken Language".
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/9.md>
+                                    [T] AudioChannelLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [A] In each <SoundfieldGroupLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name", "RFC 5646 Spoken Language".
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/10.md>
+                                    [T] SoundfieldGroupLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Soundfield Group
+                                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                            [T] Audio Channel
+                                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [A] In each <SoundfieldGroupLabelSubDescriptor> the following (ordinarily optional) properties are not present: "MCA Channel ID".
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/11.md>
+                                    [T] SoundfieldGroupLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Soundfield Group
+                                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                            [T] Audio Channel
+                                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [A] In each <GroupOfSoundfieldGroupsLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name".
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/12.md>
+                                    [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Group of Soundfield Groups
+                                            A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                            [T] Soundfield Group
+                                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                                [T] Audio Channel
+                                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [A] In each <GroupOfSoundfieldGroupsLabelSubDescriptor> the following (ordinarily optional) properties are not present: "MCA Channel ID", "RFC 5646 Spoken Language".
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/13.md>
+                                    [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                        A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                        [T] MCALabelSubDescriptor
+                                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                        [T] Group of Soundfield Groups
+                                            A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                            [T] Soundfield Group
+                                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                                [T] Audio Channel
+                                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [N] Implementation Notes
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E6/>
+                                    [A] # Distribution and Repetition of SubDescriptors
+                                        
+                                        <SoundfieldGroupLabelSubDescriptor>s and <GroupOfSoundfieldGroupsLabelSubDescriptor>s could all be on one <Sound Track> or distributed. Hence, even the <GroupOfSoundfieldGroupsLabelSubDescriptor>s might not be on the same <Sound Track>.
+                                        
+                                        If several <Soundfield Group>s reference a single <Group of Soundfield Groups> then there will be more than one <GroupOfSoundfieldGroupsLabelSubDescriptor> for that <Group of Soundfield Groups>. That is, it is repeated for each <Soundfield Group> that references it.
+                                        
+                                        
+                                        # Type of RFC5646SpokenLanguage property
+                                        
+                                        The value of this property is encoded as a US-ASCII string with one byte per character.
+                                        
+                                        Details:
+                                        
+                                        * The `RFC5646SpokenLanguage` property of the {MCALabelSubDescriptor} is defined in SMPTE ST 377-4:2012 as having the type "ISO-8String". This type is undefined.
+                                        
+                                        * However, the entry for `RFC5646SpokenLanguage` in the SMPTE Elements Register correctly lists the type as "ISO7", which refers to "ISO/IEC 646:1991, Information technology -- ISO 7-bit coded character set for information interchange.". That is the same character repertoire referenced by IETF RFC 5646.
+                                        
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E6/artefacts/1.md>
+                                        [T] SoundfieldGroupLabelSubDescriptor
+                                            A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                            [T] MCALabelSubDescriptor
+                                                An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                            [T] Soundfield Group
+                                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                                [T] Audio Channel
+                                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                        [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                            A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                            [T] MCALabelSubDescriptor
+                                                An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                            [T] Group of Soundfield Groups
+                                                A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                                [T] Soundfield Group
+                                                    A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                                    [T] Audio Channel
+                                                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                        [T] Sound Track
+                                            A type of <Essence Track> that references <Sound Essence>.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
+                                            [T] Essence Track
+                                                A type of <Track> that references <Essence>.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
+                                                [T] Track
+                                                    MXF data structure used to describe the content structure.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                                                [T] Essence
+                                                    A bitstream comprising picture, sound or data.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                            [T] Sound Essence
+                                                A type of <Essence> containing sound data.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                                [T] Essence
+                                                    A bitstream comprising picture, sound or data.
+                                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                        [T] Soundfield Group
+                                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                            [T] Audio Channel
+                                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                        [T] Group of Soundfield Groups
+                                            A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                            [R] SMPTE ST 377-4:2012
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-4-2012/>
+                        [A] The value of <Default Audio Layout> defines any static properties of <Audio Channel>s and <Sound Track>s in the file.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/3.md>
+                            [T] Default Audio Layout
+                                A property of an Audio Layout Mode
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Default%20Audio%20Layout/>
+                            [T] Audio Channel
+                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] Sound Track
+                                A type of <Essence Track> that references <Sound Essence>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
+                                [T] Essence Track
+                                    A type of <Track> that references <Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
+                                    [T] Track
+                                        MXF data structure used to describe the content structure.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                [T] Sound Essence
+                                    A type of <Essence> containing sound data.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                    [B] Audio Layout Mode 0
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/>
+                        [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework(Label)>.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/1.md>
+                            [T] Channel Assignment Label
+                                A property of an Audio Layout Mode
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Channel%20Assignment%20Label/>
+                            [B] ConstrainedMultichannelAudioLabelingFramework(Label)
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/>
+                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/artefacts/Labels.xml
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/artefacts/Labels.xml>
+                                [N] SMPTE Registers Node: SoundChannelLabeling
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/>
+                                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml>
+                        [A] <MCA Labeling Present> is "true".
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/2.md>
+                            [T] MCA Labeling Present
+                                A property of an Audio Layout Mode
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCA%20Labeling%20Present/>
+                        [A] <Default Audio Layout> is not set (no assumptions can be made about audio layout).
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/3.md>
+                            [T] Default Audio Layout
+                                A property of an Audio Layout Mode
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Default%20Audio%20Layout/>
+                    [K] Extra Audio Layout Modes
+                        Associated Parameter Value: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_8/)
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/>
+                [A] If <Constrained Multichannel Audio Labeling Framework> is used then any device or system that reads, writes or otherwise processes the file supports <Labels for use in Multichannel Audio Labeling Framework>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL/artefacts/5.md>
                     [B] Constrained Multichannel Audio Labeling Framework
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/>
                         [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/1.md>
                             [R] SMPTE ST 377-4:2012
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-4-2012/>
-                        [A] The "SubDescriptors" property of the {SoundDescriptor} that describes a <Sound Track> strongly references all instances of {AudioChannelLabelSubDescriptor}, {SoundfieldGroupLabelSubDescriptor} and {GroupOfSoundfieldGroupsLabelSubDescriptor} that are pertinent to the <Audio Channel>s represented by that <Sound Track>.
+                        [A] There is exactly one <AudioChannelLabelSubDescriptor> for each <Audio Channel>. This <AudioChannelLabelSubDescriptor> is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of the <Sound Track> that contains the <Audio Channel>.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/2.md>
+                            [T] AudioChannelLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] Audio Channel
+                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] Generic Sound Essence Descriptor
+                                A Subclass of the File Descriptor. It is designed to provide generic parametric information which describes the <Sound Essence>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Sound%20Essence%20Descriptor/>
+                                [T] Sound Essence
+                                    A type of <Essence> containing sound data.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Sound Track
                                 A type of <Essence Track> that references <Sound Essence>.
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
@@ -688,16 +1135,35 @@ There are two special types of Block which allow the value of one Block to be se
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
                                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
-                            [T] Audio Channel
-                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
-                        [A] There is exactly one {AudioChannelLabelSubDescriptor} for each <Audio Channel>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/3.md>
-                            [T] Audio Channel
-                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
-                        [A] There is exactly one {SoundfieldGroupLabelSubDescriptor} for each <Sound Track>.
+                        [A] There is exactly one <SoundfieldGroupLabelSubDescriptor> for each <Soundfield Group>. This <SoundfieldGroupLabelSubDescriptor> is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of a <Sound Track> in the <Soundfield Group>.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/4.md>
+                            [T] SoundfieldGroupLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Soundfield Group
+                                    A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                    [T] Audio Channel
+                                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] Soundfield Group
+                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] Generic Sound Essence Descriptor
+                                A Subclass of the File Descriptor. It is designed to provide generic parametric information which describes the <Sound Essence>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Sound%20Essence%20Descriptor/>
+                                [T] Sound Essence
+                                    A type of <Essence> containing sound data.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Sound Track
                                 A type of <Essence Track> that references <Sound Essence>.
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
@@ -716,8 +1182,38 @@ There are two special types of Block which allow the value of one Block to be se
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
                                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
-                        [A] There is one or more {GroupOfSoundfieldGroupsLabelSubDescriptor}(s) for each <Sound Track>.
+                        [A] There is one or more <GroupOfSoundfieldGroupsLabelSubDescriptor>(s) for each <Soundfield Group>. Each of these <GroupOfSoundfieldGroupsLabelSubDescriptor>s is strongly referenced by the "SubDescriptors" property of the <Generic Sound Essence Descriptor> of a <Sound Track> in the <Soundfield Group>.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/5.md>
+                            [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Group of Soundfield Groups
+                                    A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                    [T] Soundfield Group
+                                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] Soundfield Group
+                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] Generic Sound Essence Descriptor
+                                A Subclass of the File Descriptor. It is designed to provide generic parametric information which describes the <Sound Essence>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Sound%20Essence%20Descriptor/>
+                                [T] Sound Essence
+                                    A type of <Essence> containing sound data.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
                             [T] Sound Track
                                 A type of <Essence Track> that references <Sound Essence>.
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
@@ -736,73 +1232,156 @@ There are two special types of Block which allow the value of one Block to be se
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
                                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
-                        [A] The {AudioChannelLabelSubDescriptor} for an <Audio Channel> references the {SoundfieldGroupLabelSubDescriptor} for the <Sound Track> that represents the  <Audio Channel>.
+                        [A] Each <AudioChannelLabelSubDescriptor> references exactly one <SoundfieldGroupLabelSubDescriptor>.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/6.md>
-                            [T] Audio Channel
-                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
-                            [T] Sound Track
-                                A type of <Essence Track> that references <Sound Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
-                                [T] Essence Track
-                                    A type of <Track> that references <Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
-                                    [T] Track
-                                        MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
-                                    [T] Essence
-                                        A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
-                                [T] Sound Essence
-                                    A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
-                                    [T] Essence
-                                        A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
-                        [A] The {SoundfieldGroupLabelSubDescriptor} for a <Sound Track> references one or more {GroupOfSoundfieldGroupsLabelSubDescriptor}(s).
+                            [T] AudioChannelLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] SoundfieldGroupLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Soundfield Group
+                                    A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                    [T] Audio Channel
+                                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                        [A] Each <SoundfieldGroupLabelSubDescriptor> references all of the <GroupOfSoundfieldGroupsLabelSubDescriptor>(s) for the <Soundfield Group> it relates to.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/7.md>
-                            [T] Sound Track
-                                A type of <Essence Track> that references <Sound Essence>.
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
-                                [T] Essence Track
-                                    A type of <Track> that references <Essence>.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
-                                    [T] Track
-                                        MXF data structure used to describe the content structure.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
-                                    [T] Essence
-                                        A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
-                                [T] Sound Essence
-                                    A type of <Essence> containing sound data.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
-                                    [T] Essence
-                                        A bitstream comprising picture, sound or data.
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
-                        [A] In each {AudioChannelLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name", "MCA Channel ID".
+                            [T] SoundfieldGroupLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Soundfield Group
+                                    A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                    [T] Audio Channel
+                                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Group of Soundfield Groups
+                                    A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                    [T] Soundfield Group
+                                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                            [T] Soundfield Group
+                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                        [A] In each <AudioChannelLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name", "MCA Channel ID".
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/8.md>
-                        [A] In each {AudioChannelLabelSubDescriptor} the following (ordinarily optional) properties are not present: "RFC 5646 Spoken Language".
+                            [T] AudioChannelLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                        [A] In each <AudioChannelLabelSubDescriptor> the following (ordinarily optional) properties are not present: "RFC 5646 Spoken Language".
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/9.md>
-                        [A] In each {SoundfieldGroupLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name", "RFC 5646 Spoken Language".
+                            [T] AudioChannelLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Audio Channel
+                                    A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                        [A] In each <SoundfieldGroupLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name", "RFC 5646 Spoken Language".
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/10.md>
-                        [A] In each {SoundfieldGroupLabelSubDescriptor} the following (ordinarily optional) properties are not present: "MCA Channel ID".
+                            [T] SoundfieldGroupLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Soundfield Group
+                                    A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                    [T] Audio Channel
+                                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                        [A] In each <SoundfieldGroupLabelSubDescriptor> the following (ordinarily optional) properties are not present: "MCA Channel ID".
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/11.md>
-                        [A] In each {GroupOfSoundfieldGroupsLabelSubDescriptor} the following (ordinarily optional) properties are present: "MCA Tag Name".
+                            [T] SoundfieldGroupLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Soundfield Group
+                                    A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                    [T] Audio Channel
+                                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                        [A] In each <GroupOfSoundfieldGroupsLabelSubDescriptor> the following (ordinarily optional) properties are present: "MCA Tag Name".
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/12.md>
-                        [A] In each {GroupOfSoundfieldGroupsLabelSubDescriptor} the following (ordinarily optional) properties are not present: "MCA Channel ID", "RFC 5646 Spoken Language".
+                            [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Group of Soundfield Groups
+                                    A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                    [T] Soundfield Group
+                                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                        [A] In each <GroupOfSoundfieldGroupsLabelSubDescriptor> the following (ordinarily optional) properties are not present: "MCA Channel ID", "RFC 5646 Spoken Language".
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/13.md>
-                        [A] Any device or system that reads, writes or otherwise processes the file supports all of the "MCA Label Dictionary ID" Labels specified by <Labels for use in Multichannel Audio Labeling Framework>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SN2/artefacts/15.md>
-                            [K] Labels for use in Multichannel Audio Labeling Framework
-                                Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_7/)
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/>
-                                [A] This parameter lists "MCA Label Dictionary ID" Labels.
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/artefacts/1.md>
+                            [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                [T] MCALabelSubDescriptor
+                                    An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                [T] Group of Soundfield Groups
+                                    A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                    [T] Soundfield Group
+                                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
                         [N] Implementation Notes
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E6/>
-                            [A] # Repetition of SubDescriptors
+                            [A] # Distribution and Repetition of SubDescriptors
                                 
-                                A {GroupOfSoundfieldGroupsLabelSubDescriptor} instance will be repeated in each Sound Track containing a Soundfield Group from this Group of Soundfield Groups.
+                                <SoundfieldGroupLabelSubDescriptor>s and <GroupOfSoundfieldGroupsLabelSubDescriptor>s could all be on one <Sound Track> or distributed. Hence, even the <GroupOfSoundfieldGroupsLabelSubDescriptor>s might not be on the same <Sound Track>.
+                                
+                                If several <Soundfield Group>s reference a single <Group of Soundfield Groups> then there will be more than one <GroupOfSoundfieldGroupsLabelSubDescriptor> for that <Group of Soundfield Groups>. That is, it is repeated for each <Soundfield Group> that references it.
+                                
                                 
                                 # Type of RFC5646SpokenLanguage property
                                 
@@ -814,17 +1393,84 @@ There are two special types of Block which allow the value of one Block to be se
                                 
                                 * However, the entry for `RFC5646SpokenLanguage` in the SMPTE Elements Register correctly lists the type as "ISO7", which refers to "ISO/IEC 646:1991, Information technology -- ISO 7-bit coded character set for information interchange.". That is the same character repertoire referenced by IETF RFC 5646.
                                 
-                                # "MCA Label Dictionary ID" Labels Used
-                                
-                                Note that no constraint is placed on which "MCA Label Dictionary ID" Labels can be used in the file. The stated constraint simply means that implementations that comply with this Block must be able to support all of the specified Labels. In practice this means that for most real Sound Tracks the specified Labels ought to be used but alternative Labels can be used if the need arises (for example to support the delivery of additional specialist Sound Tracks for which Labels have been privately agreed between the supplier and the broadcaster).
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E6/artefacts/1.md>
-                    [R] SMPTE ST 377-4:2012
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-4-2012/>
-                [A] The value of "Default Audio Layout" defines any static properties of <Audio Channel>s and <Sound Track>s in the file.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/3.md>
-                    [T] Audio Channel
-                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [T] SoundfieldGroupLabelSubDescriptor
+                                    A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                                    [T] MCALabelSubDescriptor
+                                        An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                    [T] Soundfield Group
+                                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                        [T] Audio Channel
+                                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                                    A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                                    [T] MCALabelSubDescriptor
+                                        An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                                    [T] Group of Soundfield Groups
+                                        A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                                        [T] Soundfield Group
+                                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                            [T] Audio Channel
+                                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [T] Sound Track
+                                    A type of <Essence Track> that references <Sound Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
+                                    [T] Essence Track
+                                        A type of <Track> that references <Essence>.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
+                                        [T] Track
+                                            MXF data structure used to describe the content structure.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                    [T] Sound Essence
+                                        A type of <Essence> containing sound data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Essence/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                [T] Soundfield Group
+                                    A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                                    [T] Audio Channel
+                                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                                [T] Group of Soundfield Groups
+                                    A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                    [K] Labels for use in Multichannel Audio Labeling Framework
+                        Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_7/)
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/>
+                        [A] This parameter lists "MCA Label Dictionary ID" Labels.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/artefacts/1.md>
+                [N] Implementation Notes
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E40/>
+                    [A] # "MCA Label Dictionary ID" Labels Used
+                        
+                        Note that no constraint is placed on which "MCA Label Dictionary ID" Labels can be used in the file. The stated constraint simply means that implementations that comply with this Block must be able to support all of the specified Labels. In practice this means that for most real Sound Tracks the specified Labels ought to be used but alternative Labels can be used if the need arises (for example to support the delivery of additional specialist Sound Tracks for which Labels have been privately agreed between the supplier and the broadcaster).
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E40/artefacts/1.md>
+            [N] Implementation Notes
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E60/>
+                [A] # Multichannel Audio Labeling Framework
+                    
+                    Each <Sound Track> will have:
+                    
+                    * one <AudioChannelLabelSubDescriptor> for each of its <Audio Channel>s
+                    * one <SoundfieldGroupLabelSubDescriptor>
+                    * one or more <GroupOfSoundfieldGroupsLabelSubDescriptor>s
+                    
+                    If two (or more) <Soundfield Group>s belong to the same <Group of Soundfield Groups> then the <GroupOfSoundfieldGroupsLabelSubDescriptor> will be repeated on each <Sound Track> that uses it.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E60/artefacts/1.md>
                     [T] Sound Track
                         A type of <Essence Track> that references <Sound Essence>.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Sound%20Track/>
@@ -843,33 +1489,45 @@ There are two special types of Block which allow the value of one Block to be se
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
-                [A] The {Audio Layout Mode} used is either: <Audio Layout Mode 0> or an {Audio Layout Mode} specified in <Extra Audio Layout Modes>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM/artefacts/4.md>
-                    [B] Audio Layout Mode 0
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/>
-                        [A] "Channel Assignment Label" is <ConstrainedMultichannelAudioLabelingFramework(Label)>.
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/1.md>
-                            [B] ConstrainedMultichannelAudioLabelingFramework(Label)
-                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/>
-                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/artefacts/Labels.xml
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/artefacts/Labels.xml>
-                                [N] SMPTE Registers Node: SoundChannelLabeling
-                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/>
-                                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml
-                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml>
-                        [A] "MCA Labeling Present" is "true".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/2.md>
-                        [A] "Default Audio Layout" is not set (no assumptions can be made about audio layout).
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM0/artefacts/3.md>
-                    [K] Extra Audio Layout Modes
-                        Associated Parameter Value: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_8/)
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/>
-                        [A] Specifies values for:
-                            
-                            1. "Channel Assigment Label"
-                            2. "MCA Labeling Present"
-                            3. "Default Audio Layout"
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/artefacts/1.md>
+                    [T] AudioChannelLabelSubDescriptor
+                        A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                        [T] MCALabelSubDescriptor
+                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                        [T] Audio Channel
+                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                    [T] Audio Channel
+                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+                    [T] SoundfieldGroupLabelSubDescriptor
+                        A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                        [T] MCALabelSubDescriptor
+                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                        [T] Soundfield Group
+                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                    [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                        A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                        [T] MCALabelSubDescriptor
+                            An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                        [T] Group of Soundfield Groups
+                            A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                            [T] Soundfield Group
+                                A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                    [T] Soundfield Group
+                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                    [T] Group of Soundfield Groups
+                        A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
         [B] Embedded XML Documents
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM0/>
@@ -1520,9 +2178,7 @@ There are two special types of Block which allow the value of one Block to be se
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/>
             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/Labels.xml
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/Labels.xml>
-            [A] This table contains information that completes the specification of the Audio Channel Labels for which SMPTE Metadata Registers Entries are defined here.
-                
-                This table also lists the MCA Tag Name and MCA Tag Symbol to be used for each Audio Channel Label that is used here but defined elsewhere.
+            [A] <AudioChannelLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name                  | MCA Tag Symbol
                  ------------------------------------------|-------------------------------|----------------
@@ -1534,20 +2190,37 @@ There are two special types of Block which allow the value of one Block to be se
                  `LeftSurroundAudioChannel`                | Left                          | `chLs`
                  `RightSurroundAudioChannel`               | Right                         | `chRs`
                  `VisuallyImpairedNarrativeAudioChannel`   | Visually Impaired Narrative   | `chVIN`
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/AC.md>
-            [A] This table contains information that completes the specification of the Soundfield Group Labels for which SMPTE Metadata Registers Entries are defined here.
-                
-                This table also lists the constituent Audio Channels, and the MCA Tag Name and MCA Tag Symbol to be used for each Soundfield Group Label that is used here but defined elsewhere.
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/ch.md>
+                [T] AudioChannelLabelSubDescriptor
+                    A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/AudioChannelLabelSubDescriptor/>
+                    [T] MCALabelSubDescriptor
+                        An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                    [T] Audio Channel
+                        A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+            [A] <SoundfieldGroupLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name      | MCA Tag Symbol | Constituent Audio Channels (in no particular order)
                  ------------------------------------------|-------------------|----------------|----------------------------
                  `AudioDescriptionStudioSignal`            | AD Studio Signal  | `sgADSS`       | `chVIN`, `chADSSdc`
                  `_51SoundfieldGroup`                      | 5.1               | `sg51`         | `chL`, `chR`, `chC`, `chLFE`, `chLs`, `chRs`
                  `SMPTEST20678StandardStereo`              | Standard Stereo   | `sgST`         | `chL`, `chR`
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/SG.md>
-            [A] This table contains information that completes the specification of the Group of Soundfield Groups Labels for which SMPTE Metadata Registers Entries are defined here.
-                
-                This table also lists the MCA Tag Name and MCA Tag Symbol to be used for each Group of Soundfield Groups Label that is used here but defined elsewhere.
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/sg.md>
+                [T] SoundfieldGroupLabelSubDescriptor
+                    A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/SoundfieldGroupLabelSubDescriptor/>
+                    [T] MCALabelSubDescriptor
+                        An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                    [T] Soundfield Group
+                        A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                        [T] Audio Channel
+                            A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
+            [A] <GroupOfSoundfieldGroupsLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name                    | MCA Tag Symbol
                  ------------------------------------------|---------------------------------|----------------
@@ -1556,7 +2229,22 @@ There are two special types of Block which allow the value of one Block to be se
                  `AudioDescription`                        | Audio Description               | `ggAD`
                  `AudioDescriptionProgramMix`              | Audio Description Programme Mix | `ggADPgMx`
                  `SMPTEST20678MainProgram`                 | Main Program                    | `ggMPg`
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/GSG.md>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/gg.md>
+                [T] GroupOfSoundfieldGroupsLabelSubDescriptor
+                    A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
+                    [T] MCALabelSubDescriptor
+                        An abstract superclass used in the Multichannel Audio Labeling Framework, derived from the MXF SubDescriptor.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCALabelSubDescriptor/>
+                    [T] Group of Soundfield Groups
+                        A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Group%20of%20Soundfield%20Groups/>
+                        [T] Soundfield Group
+                            A collection of <Audio Channel>s meant to be played out simultaneously through a given Soundfield Configuration.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Soundfield%20Group/>
+                            [T] Audio Channel
+                                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Audio%20Channel/>
             [N] SMPTE Registers Node: InterpretiveSoundEssence
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/InterpretiveSoundEssence/>
                 [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/InterpretiveSoundEssence/artefacts/Labels.xml
@@ -1599,20 +2287,29 @@ There are two special types of Block which allow the value of one Block to be se
         [B] Permitted Extra Audio Layout Modes
             Conformance: mandatory
             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_12/>
-            [A] The Extra Audio Layout Modes permitted are: <Audio Layout Mode 1> and <Audio Layout Mode 2>.
+            [A] The following are permitted: <Audio Layout Mode 1>, <Audio Layout Mode 2>.
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_12/artefacts/1.md>
                 [B] Audio Layout Mode 1
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/>
-                    [A] "Channel Assignment Label" is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
+                    [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/1.md>
+                        [T] Channel Assignment Label
+                            A property of an Audio Layout Mode
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Channel%20Assignment%20Label/>
                         [B] ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/>
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml>
-                    [A] "MCA Labeling Present" is "true".
+                    [A] <MCA Labeling Present> is "true".
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/2.md>
-                    [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
+                        [T] MCA Labeling Present
+                            A property of an Audio Layout Mode
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCA%20Labeling%20Present/>
+                    [A] <Default Audio Layout> is <Default Audio Layout 'A'>.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM1/artefacts/3.md>
+                        [T] Default Audio Layout
+                            A property of an Audio Layout Mode
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Default%20Audio%20Layout/>
                         [B] Default Audio Layout 'A'
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/>
                             [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
@@ -1703,16 +2400,25 @@ There are two special types of Block which allow the value of one Block to be se
                                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml>
                 [B] Audio Layout Mode 2
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/>
-                    [A] "Channel Assignment Label" is <Default_Audio_Layout_A_without_MCA_Labeling>.
+                    [A] <Channel Assignment Label> is <Default_Audio_Layout_A_without_MCA_Labeling>.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/1.md>
+                        [T] Channel Assignment Label
+                            A property of an Audio Layout Mode
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Channel%20Assignment%20Label/>
                         [B] Default_Audio_Layout_A_without_MCA_Labeling
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/>
                             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml>
-                    [A] "MCA Labeling Present" is "false".
+                    [A] <MCA Labeling Present> is "false".
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/2.md>
-                    [A] "Default Audio Layout" is <Default Audio Layout 'A'>.
+                        [T] MCA Labeling Present
+                            A property of an Audio Layout Mode
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/MCA%20Labeling%20Present/>
+                    [A] <Default Audio Layout> is <Default Audio Layout 'A'>.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/ALM2/artefacts/3.md>
+                        [T] Default Audio Layout
+                            A property of an Audio Layout Mode
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Default%20Audio%20Layout/>
                         [B] Default Audio Layout 'A'
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_A/>
                             [A] If there is at least one <Sound Track> then the first one is {Stereo Main Programme} and the channels are in the following order (from first to last): left, right.
