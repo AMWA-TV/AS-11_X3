@@ -181,7 +181,7 @@ There are two special types of Block which allow the value of one Block to be se
                 [A] The <Material Package> contains exactly one <Picture Track>.
             [B] AVC Byte Stream Format Picture Essence
                 Conformance: mandatory
-                [A] The <Picture Essence> is <AVC> and uses the <Byte Stream Format>.
+                [A] The <Picture Essence> is <AVC> and uses the <AVC Byte Stream Format>.
             [B] ST 381-3 mapping
                 Conformance: mandatory
                 [A] The <Picture Essence> is mapped to the file as specified in <SMPTE ST 381-3:2013>.
