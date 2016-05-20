@@ -482,6 +482,9 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
                 [N] Data rate calculation
                     [A] The mean data rate (in bits per second) can be calculated by taking the total size of the Picture Essence stored in the file (in number of bits), dividing by the number of Edit Units in the file (which might be more than the length of the Material Package or Top Level File Package) and then multiplying the result by the Edit Rate.
+            [B] AVC Video Usability Information - Timing Info
+                Conformance: mandatory
+                [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
             [N] Implementation Notes
                 [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 4.1 or 4.2.
     [V] File Format Specification Identification Label

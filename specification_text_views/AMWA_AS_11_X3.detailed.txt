@@ -2144,6 +2144,14 @@ There are two special types of Block which allow the value of one Block to be se
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E35/>
                     [A] The mean data rate (in bits per second) can be calculated by taking the total size of the Picture Essence stored in the file (in number of bits), dividing by the number of Edit Units in the file (which might be more than the length of the Material Package or Top Level File Package) and then multiplying the result by the Edit Rate.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E35/artefacts/1.md>
+            [B] AVC Video Usability Information - Timing Info
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/>
+                [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/artefacts/1.md>
+                    [T] fixed_frame_rate_flag
+                        An AVC syntax element that indicates that constraints apply to the temporal distance between the output times of any two consecutive pictures.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/fixed_frame_rate_flag/>
             [N] Implementation Notes
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E20/>
                 [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 4.1 or 4.2.
