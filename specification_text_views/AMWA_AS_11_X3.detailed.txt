@@ -121,8 +121,6 @@ There are two special types of Block which allow the value of one Block to be se
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/014/>
                     [A] Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of SMPTE ST 377-1:2011 for a full explanation.
-                        
-                        Late delivery of a file is the term used to describe a workflow where playout (broadcast) of a file starts before the file transfer from supplier to broadcaster has completed. To support late delivery a broadcaster must be able to trust the metadata that is contained at the beginning of the file.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/014/artefacts/1.md>
             [B] RIP present
                 Conformance: mandatory
