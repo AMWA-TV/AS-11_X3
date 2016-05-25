@@ -445,14 +445,16 @@ There are two special types of Block which allow the value of one Block to be se
                         [A] The value of the "Edit Rate" property of this <Timecode Track> is the same as the value of the "Edit Rate" property of the <Picture Track> in the same <Package>.
                         [A] There is exactly one <Timecode Component> in this <Timecode Track>.
                         [A] The value of the "Rounded Timecode Base" property of the <Timecode Component> is the "Edit Rate" of this <Timecode Track> rounded to the nearest integer.
-                        [A] The value of the "Drop Frame" property of the <Timecode Component> is "False" except in any of the following scenarios (in which case it is "True"):
-                            
-                            * The "Rounded Timecode Base" property of the <Timecode Component> is `60` and the "Edit Rate" of this <Timecode Track> is mathematically equal to `60000/1001`
-                            * The "Rounded Timecode Base" property of the <Timecode Component> is `30` and the "Edit Rate" of this <Timecode Track> is mathematically equal to `30000/1001`
-                        [N] Rational Numbers
-                            [A] Care must be taken when dealing with numbers expressed as a ratio of two integers ("rationals"). They are often used to represent temporal rates or image aspect ratios.
-                                
-                                When making comparisons of these values, it is insufficient to simply compare each of the numerators and each of the denominators. For example, `7/5` is mathematically equal to `14/10`.
+            [B] Drop Frame Timecode
+                Conformance: recommended
+                [A] The value of the "Drop Frame" property of the <Timecode Component> in the <Timecode Track> in the <Material Package> is "False" except in any of the following scenarios (in which case it is "True"):
+                    
+                    * The "Rounded Timecode Base" property of the <Timecode Component> is `60` and the "Edit Rate" of the <Timecode Track> is mathematically equal to `60000/1001`
+                    * The "Rounded Timecode Base" property of the <Timecode Component> is `30` and the "Edit Rate" of the <Timecode Track> is mathematically equal to `30000/1001`
+                [N] Rational Numbers
+                    [A] Care must be taken when dealing with numbers expressed as a ratio of two integers ("rationals"). They are often used to represent temporal rates or image aspect ratios.
+                        
+                        When making comparisons of these values, it is insufficient to simply compare each of the numerators and each of the denominators. For example, `7/5` is mathematically equal to `14/10`.
             [B] Timecode Track Precedence
                 Conformance: mandatory
                 [A] The <Timecode Track> in the <Material Package> defines the authoritative program timecode.
