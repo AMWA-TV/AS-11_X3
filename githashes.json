@@ -5,12 +5,12 @@
             "commit": "0b9b15e21a18fb8d2d9ac967d91d35996011ed8a"
         }, 
         {
-            "repo_url": "git@gitlab.com:thomas.heritage/rules-processor.git", 
-            "commit": "d0e779f2d778a82210d946f83b27e434426406f8"
+            "repo_url": "git@gitlab.com:mglanville/rules-revision-ideas.git", 
+            "commit": "22f70a166a078217b5112c418a34b1dcd83c5cd1"
         }, 
         {
-            "repo_url": "git@gitlab.com:mglanville/rules-revision-ideas.git", 
-            "commit": "e1bab6a0559b2cde274dc60df68d9a5d1f0d400f"
+            "repo_url": "git@gitlab.com:thomas.heritage/rules-processor.git", 
+            "commit": "d0e779f2d778a82210d946f83b27e434426406f8"
         }
     ]
 }

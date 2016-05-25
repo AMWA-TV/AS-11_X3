@@ -2040,10 +2040,101 @@ There are two special types of Block which allow the value of one Block to be se
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode/>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/021/>
-                    [A] The Timecode properties must always properly match the content of the MXF file. This means that "Rounded Timecode Base" and "Drop Frame" need to be set appropriately.
-                        
-                        This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.
+                    [A] This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/021/artefacts/1.md>
+            [B] Constrained Timecode Track in Material Package
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/TTC_MP/>
+                [A] The <Timecode Track> in the <Material Package> is a <Constrained Timecode Track>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/TTC_MP/artefacts/1.md>
+                    [T] Timecode Track
+                        An MXF <Track> that stores one or more <Timecode Component>s.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Track/>
+                        [T] Track
+                            MXF data structure used to describe the content structure.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                        [T] Timecode Component
+                            An MXF structure that stores <Timecode> information.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Component/>
+                            [T] Timecode
+                                An annotation of elapsed time along a <Track>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode/>
+                    [T] Material Package
+                        An MXF data structure that describe an output timeline of the file.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Material%20Package/>
+                    [B] Constrained Timecode Track
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/TTC/>
+                        [A] A <Constrained Timecode Track> is a <Timecode Track>.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/TTC/artefacts/0.md>
+                        [A] The value of the "Edit Rate" property of this <Timecode Track> is the same as the value of the "Edit Rate" property of the <Picture Track> in the same <Package>.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/TTC/artefacts/1.md>
+                            [T] Picture Track
+                                A type of <Essence Track> that references <Picture Essence>.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Track/>
+                                [T] Essence Track
+                                    A type of <Track> that references <Essence>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence%20Track/>
+                                    [T] Track
+                                        MXF data structure used to describe the content structure.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                                [T] Picture Essence
+                                    A type of <Essence> containing predominantly picture data.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Picture%20Essence/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Essence/>
+                            [T] Package
+                                An MXF structure that aggregates one or more <Track>s.
+                                
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Package/>
+                                [T] Track
+                                    MXF data structure used to describe the content structure.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                        [A] There is exactly one <Timecode Component> in this <Timecode Track>.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/TTC/artefacts/2.md>
+                            [T] Timecode Component
+                                An MXF structure that stores <Timecode> information.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Component/>
+                                [T] Timecode
+                                    An annotation of elapsed time along a <Track>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode/>
+                                    [T] Track
+                                        MXF data structure used to describe the content structure.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                        [A] The value of the "Rounded Timecode Base" property of the <Timecode Component> is the "Edit Rate" of this <Timecode Track> rounded to the nearest integer.
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/TTC/artefacts/3.md>
+                            [T] Timecode Component
+                                An MXF structure that stores <Timecode> information.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Component/>
+                                [T] Timecode
+                                    An annotation of elapsed time along a <Track>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode/>
+                                    [T] Track
+                                        MXF data structure used to describe the content structure.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                        [A] The value of the "Drop Frame" property of the <Timecode Component> is "False" except in any of the following scenarios (in which case it is "True"):
+                            
+                            * The "Rounded Timecode Base" property of the <Timecode Component> is `60` and the "Edit Rate" of this <Timecode Track> is mathematically equal to `60000/1001`
+                            * The "Rounded Timecode Base" property of the <Timecode Component> is `30` and the "Edit Rate" of this <Timecode Track> is mathematically equal to `30000/1001`
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/TTC/artefacts/4.md>
+                            [T] Timecode Component
+                                An MXF structure that stores <Timecode> information.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode%20Component/>
+                                [T] Timecode
+                                    An annotation of elapsed time along a <Track>.
+                                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Timecode/>
+                                    [T] Track
+                                        MXF data structure used to describe the content structure.
+                                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Track/>
+                        [N] Rational Numbers
+                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E69/>
+                            [A] Care must be taken when dealing with numbers expressed as a ratio of two integers ("rationals"). They are often used to represent temporal rates or image aspect ratios.
+                                
+                                When making comparisons of these values, it is insufficient to simply compare each of the numerators and each of the denominators. For example, `7/5` is mathematically equal to `14/10`.
+                                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E69/artefacts/1.md>
             [B] Timecode Track Precedence
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/290/>

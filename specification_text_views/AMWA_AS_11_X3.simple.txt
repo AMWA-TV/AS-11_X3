@@ -436,9 +436,23 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 [A] The <Material Package> contains exactly one <Timecode Track>.
                 [N] Implementation Notes
-                    [A] The Timecode properties must always properly match the content of the MXF file. This means that "Rounded Timecode Base" and "Drop Frame" need to be set appropriately.
-                        
-                        This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.
+                    [A] This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.
+            [B] Constrained Timecode Track in Material Package
+                Conformance: mandatory
+                [A] The <Timecode Track> in the <Material Package> is a <Constrained Timecode Track>.
+                    [B] Constrained Timecode Track
+                        [A] A <Constrained Timecode Track> is a <Timecode Track>.
+                        [A] The value of the "Edit Rate" property of this <Timecode Track> is the same as the value of the "Edit Rate" property of the <Picture Track> in the same <Package>.
+                        [A] There is exactly one <Timecode Component> in this <Timecode Track>.
+                        [A] The value of the "Rounded Timecode Base" property of the <Timecode Component> is the "Edit Rate" of this <Timecode Track> rounded to the nearest integer.
+                        [A] The value of the "Drop Frame" property of the <Timecode Component> is "False" except in any of the following scenarios (in which case it is "True"):
+                            
+                            * The "Rounded Timecode Base" property of the <Timecode Component> is `60` and the "Edit Rate" of this <Timecode Track> is mathematically equal to `60000/1001`
+                            * The "Rounded Timecode Base" property of the <Timecode Component> is `30` and the "Edit Rate" of this <Timecode Track> is mathematically equal to `30000/1001`
+                        [N] Rational Numbers
+                            [A] Care must be taken when dealing with numbers expressed as a ratio of two integers ("rationals"). They are often used to represent temporal rates or image aspect ratios.
+                                
+                                When making comparisons of these values, it is insufficient to simply compare each of the numerators and each of the denominators. For example, `7/5` is mathematically equal to `14/10`.
             [B] Timecode Track Precedence
                 Conformance: mandatory
                 [A] The <Timecode Track> in the <Material Package> defines the authoritative program timecode.
