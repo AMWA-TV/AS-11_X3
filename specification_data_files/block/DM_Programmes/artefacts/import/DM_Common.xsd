@@ -9,7 +9,7 @@
 
   <xs:simpleType name="Duration_type">
     <xs:restriction base="xs:string">
-      <xs:pattern value="(\d+:\d{1,2}:\d{1,2}:\d+)?"/>
+      <xs:pattern value="\d+:\d{1,2}:\d{1,2}[;:]\d{1,5}"/>
     </xs:restriction>
   </xs:simpleType>
 
