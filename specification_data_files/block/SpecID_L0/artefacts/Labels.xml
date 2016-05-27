@@ -26,7 +26,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       <Kind>LEAF</Kind>
       <Name>Blocks File Format 0 WIP</Name>
       <Definition>Blocks File Format 0 (Work in Progress)</Definition>
-      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
   </Entries>

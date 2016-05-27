@@ -26,7 +26,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       <Kind>LEAF</Kind>
       <Name>Constrained Multichannel Audio Labeling Framework</Name>
       <Definition>Identifies a specific application of the MXF Multichannel Audio Framework</Definition>
-      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
   </Entries>

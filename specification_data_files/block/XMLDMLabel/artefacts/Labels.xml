@@ -26,7 +26,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       <Kind>LEAF</Kind>
       <Name>DM_XML_Document</Name>
       <Definition>Descriptive Metadata XML Document in Header Metadata</Definition>
-      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
   </Entries>

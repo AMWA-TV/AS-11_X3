@@ -26,7 +26,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       <Kind>LEAF</Kind>
       <Name>Specification Identifiers</Name>
       <Definition>A set of AUIDs that each identify a file format Specification to which the file conforms</Definition>
-      <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
+      <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
       <ContextScope>UnknownContext</ContextScope>
       <Type>urn:smpte:ul:060e2b34.01040101.04030100.00000000</Type>
