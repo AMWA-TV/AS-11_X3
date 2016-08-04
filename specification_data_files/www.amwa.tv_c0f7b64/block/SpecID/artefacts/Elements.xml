@@ -20,12 +20,12 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   <Entries>
     <Entry>
       <Register>Elements</Register>
-      <NamespaceName>http://www.smpte-ra.org/reg/335/2012/13/1/amwa/as11</NamespaceName>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012/13/1/amwa/rules</NamespaceName>
       <Symbol>Specification_Identifiers</Symbol>
       <UL>urn:smpte:ul:060e2b34.01010101.0d010801.01010000</UL>
       <Kind>LEAF</Kind>
       <Name>Specification Identifiers</Name>
-      <Definition>A set of AUIDs that each identify a file format Specification to which the file conforms</Definition>
+      <Definition>A set of AUIDs where each AUID identifies a "file format" "Block" to which the MXF file conforms. A "file format" "Block" is a "Block" (a Rules Framework Component) that is usually at (or close to) the root of a Rules-based Specification.</Definition>
       <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
       <ContextScope>UnknownContext</ContextScope>
