@@ -21,11 +21,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     <Entry>
       <Register>Labels</Register>
       <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
-      <Symbol>Blocks_FF_0_WIP</Symbol>
-      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.03010000</UL>
+      <Symbol>Blocks_FF_0</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.05010000</UL>
       <Kind>LEAF</Kind>
-      <Name>Blocks File Format 0 WIP</Name>
-      <Definition>Blocks File Format 0 (Work in Progress)</Definition>
+      <Name>Blocks File Format 0</Name>
+      <Definition>Blocks File Format 0</Definition>
       <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>

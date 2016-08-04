@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific/" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common/" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific/" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg1="http://www.amwa.tv/projects/rules/01/block/DM_Programmes_DomainSpecific/" xmlns:cmn="http://www.amwa.tv/projects/rules/01/block/DM_Common/" targetNamespace="http://www.amwa.tv/projects/rules/01/block/DM_Programmes_DomainSpecific/" elementFormDefault="qualified">
 
-  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common/" schemaLocation="DM_Common.xsd"/>
+  <xs:import namespace="http://www.amwa.tv/projects/rules/01/block/DM_Common/" schemaLocation="DM_Common.xsd"/>
 
   <xs:element name="Programmes_DomainSpecific_DM">
     <xs:complexType>

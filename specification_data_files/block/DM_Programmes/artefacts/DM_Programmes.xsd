@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg0="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes/" xmlns:cmn="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common/" xmlns:cd="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentDetails/" xmlns:acs="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_InVisionAccessServices/" xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification/" xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific/" xmlns:ex="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Extras/" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes/" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pg0="http://www.amwa.tv/projects/rules/01/block/DM_Programmes/" xmlns:cmn="http://www.amwa.tv/projects/rules/01/block/DM_Common/" xmlns:cd="http://www.amwa.tv/projects/rules/01/block/DM_ContentDetails/" xmlns:acs="http://www.amwa.tv/projects/rules/01/block/DM_InVisionAccessServices/" xmlns:id="http://www.amwa.tv/projects/rules/01/block/DM_Identification/" xmlns:pg1="http://www.amwa.tv/projects/rules/01/block/DM_Programmes_DomainSpecific/" xmlns:ex="http://www.amwa.tv/projects/rules/01/block/DM_Extras/" targetNamespace="http://www.amwa.tv/projects/rules/01/block/DM_Programmes/" elementFormDefault="qualified">
 
-  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification/" schemaLocation="import/DM_Identification.xsd"/>
-  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific/" schemaLocation="import/DM_Programmes_DomainSpecific.xsd"/>
-  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_InVisionAccessServices/" schemaLocation="import/DM_InVisionAccessServices.xsd"/>
-  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentDetails/" schemaLocation="import/DM_ContentDetails.xsd"/>
-  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Common/" schemaLocation="import/DM_Common.xsd"/>
-  <xs:import namespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Extras/" schemaLocation="import/DM_Extras.xsd"/>
+  <xs:import namespace="http://www.amwa.tv/projects/rules/01/block/DM_Identification/" schemaLocation="import/DM_Identification.xsd"/>
+  <xs:import namespace="http://www.amwa.tv/projects/rules/01/block/DM_Programmes_DomainSpecific/" schemaLocation="import/DM_Programmes_DomainSpecific.xsd"/>
+  <xs:import namespace="http://www.amwa.tv/projects/rules/01/block/DM_InVisionAccessServices/" schemaLocation="import/DM_InVisionAccessServices.xsd"/>
+  <xs:import namespace="http://www.amwa.tv/projects/rules/01/block/DM_ContentDetails/" schemaLocation="import/DM_ContentDetails.xsd"/>
+  <xs:import namespace="http://www.amwa.tv/projects/rules/01/block/DM_Common/" schemaLocation="import/DM_Common.xsd"/>
+  <xs:import namespace="http://www.amwa.tv/projects/rules/01/block/DM_Extras/" schemaLocation="import/DM_Extras.xsd"/>
 
   <xs:element name="Programmes_DM">
     <xs:complexType>

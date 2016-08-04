@@ -261,13 +261,13 @@ There are two special types of Block which allow the value of one Block to be se
                     [B] Audio Layout Mode 0
                         [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework(Label)>.
                             [B] ConstrainedMultichannelAudioLabelingFramework(Label)
-                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L0/artefacts/Labels.xml
+                                [A] http://www.amwa.tv/projects/rules/01/block/CA_L0/artefacts/Labels.xml
                                 [N] SMPTE Registers Node: SoundChannelLabeling
-                                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundChannelLabeling/artefacts/Labels.xml
+                                    [A] http://www.amwa.tv/projects/rules/01/note/SoundChannelLabeling/artefacts/Labels.xml
                         [A] <MCA Labeling Present> is "true".
                         [A] <Default Audio Layout> is not set (no assumptions can be made about audio layout).
                     [K] Extra Audio Layout Modes
-                        Associated Parameter Value: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_8/)
+                        Associated Parameter Value: "Extra Audio Layout Modes" (http://www.amwa.tv/projects/rules/01/block/param_link_8/)
                 [A] If <Constrained Multichannel Audio Labeling Framework> is used then any device or system that reads, writes or otherwise processes the file supports <Labels for use in Multichannel Audio Labeling Framework>.
                     [B] Constrained Multichannel Audio Labeling Framework
                         [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
@@ -301,7 +301,7 @@ There are two special types of Block which allow the value of one Block to be se
                                 * However, the entry for `RFC5646SpokenLanguage` in the SMPTE Elements Register correctly lists the type as "ISO7", which refers to "ISO/IEC 646:1991, Information technology -- ISO 7-bit coded character set for information interchange.". That is the same character repertoire referenced by IETF RFC 5646.
                                 
                     [K] Labels for use in Multichannel Audio Labeling Framework
-                        Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_7/)
+                        Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://www.amwa.tv/projects/rules/01/block/param_link_7/)
                 [N] Implementation Notes
                     [A] # "MCA Label Dictionary ID" Labels Used
                         
@@ -320,7 +320,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             [A] Each XML document identified by <List of Embedded XML Documents> is embedded in the file using <XML Document in Header Metadata Carriage>.
                 [K] List of Embedded XML Documents
-                    Associated Parameter Value: "List of Embedded XML Documents" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_0/)
+                    Associated Parameter Value: "List of Embedded XML Documents" (http://www.amwa.tv/projects/rules/01/block/param_link_0/)
                     [A] Lists XML documents to be embedded, defined in terms of:
                         
                         * the namespace of the document's root element
@@ -337,7 +337,7 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] The XML document is carried in the "UTF-8 Text Data" property of the "UTF-8 Text-based Set".
                     [A] In the "UTF-8 Text-based Set" the property "Text-based Metadata Payload Scheme ID" has the value of <DM_XML_Document>.
                         [B] DM_XML_Document
-                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XMLDMLabel/artefacts/Labels.xml
+                            [A] http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/artefacts/Labels.xml
                     [A] In the "UTF-8 Text-based Set" the property "Text Data Description" is present and has a value equal to the namespace of the root element of the XML document.
                     [A] <2-byte Local Length Encoding> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".
                     [N] ST 2057 Implementation Notes
@@ -366,11 +366,11 @@ There are two special types of Block which allow the value of one Block to be se
                 [B] DM_AS_11_Segmentation
                     [A] This <DM Scheme> is identified by <DM_AS_11_Segmentation> (the <DM Scheme Label>) and has the following members: <DM_AS_11_Segmentation_Framework> (the <DM Framework>).
                         [B] DM_AS_11_Segmentation
-                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505L/artefacts/Labels.xml
+                            [A] http://www.amwa.tv/projects/rules/01/block/505L/artefacts/Labels.xml
                         [B] DM_AS_11_Segmentation_Framework
-                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Groups.xml
-                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Elements.xml
-                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Types.xml
+                            [A] http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Groups.xml
+                            [A] http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Elements.xml
+                            [A] http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Types.xml
             [N] Implementation Notes
                 [A] The <Track> can be identified by an MXF reader by the presence of <DM Segment> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <DM Framework>.
             [N] Repetition of Header Metadata
@@ -379,15 +379,15 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: mandatory
             [A] The <Specification_Identifiers> Element is present in the <Preface> of the <Header Partition>.
                 [B] Specification_Identifiers
-                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID/artefacts/Elements.xml
-                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID/artefacts/Types.xml
+                    [A] http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Elements.xml
+                    [A] http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Types.xml
                     [N] SMPTE Registers Node: Specification_Identification (Elements Register)
-                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Specification_Identification_E/artefacts/Elements.xml
+                        [A] http://www.amwa.tv/projects/rules/01/note/Specification_Identification_E/artefacts/Elements.xml
             [A] The value of this Element includes the Label <Blocks_FF_0> and the Label(s) specified by <File Format Specification Identification Label>.
                 [B] Blocks_FF_0
-                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L0/artefacts/Labels.xml
+                    [A] http://www.amwa.tv/projects/rules/01/block/SpecID_L0/artefacts/Labels.xml
                     [N] SMPTE Registers Node: Specification_Identification (Labels Register)
-                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Specification_Identification_L/artefacts/Labels.xml
+                        [A] http://www.amwa.tv/projects/rules/01/note/Specification_Identification_L/artefacts/Labels.xml
                 [K] File Format Specification Identification Label
                     Associated Parameter Value: "File Format Specification Identification Label" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_12/)
         [B] Dolby Audio Metadata
@@ -465,15 +465,15 @@ There are two special types of Block which allow the value of one Block to be se
                 The stated constraints mean that the <Essence Container Label> used to identify the <Picture Essence> mapping is always urn:smpte:ul:060e2b34.0401010a.0d010301.02106001 (MXFGCAVCByteStreamWithVideoStream0SIDFrameWrapped)
     [V] List of Embedded XML Documents
         Conformance: mandatory
-        Associated Parameter Key: "List of Embedded XML Documents" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param0/)
+        Associated Parameter Key: "List of Embedded XML Documents" (http://www.amwa.tv/projects/rules/01/block/param0/)
         [B] XML DM for Programmes
             Conformance: mandatory
             [A] The namespace of the document's root element is <Programmes Descriptive Metadata>; the name of the document's root element is "Programmes_DM"; the Media type (MIME type) for the document is "application/xml"
                 [B] Programmes Descriptive Metadata
-                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes/artefacts/DM_Programmes.xsd
+                    [A] http://www.amwa.tv/projects/rules/01/block/DM_Programmes/artefacts/DM_Programmes.xsd
     [V] Picture Essence Constraints
         Conformance: mandatory
-        Associated Parameter Key: "Picture Essence Constraints" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param2/)
+        Associated Parameter Key: "Picture Essence Constraints" (http://www.amwa.tv/projects/rules/01/block/param2/)
         [B] Picture Essence Bitstream and Mapping Constraints
             Conformance: mandatory
             [B] Picture format constraints
@@ -503,16 +503,16 @@ There are two special types of Block which allow the value of one Block to be se
                 [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 4.1 or 4.2.
     [V] File Format Specification Identification Label
         Conformance: mandatory
-        Associated Parameter Key: "File Format Specification Identification Label" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param3/)
+        Associated Parameter Key: "File Format Specification Identification Label" (http://www.amwa.tv/projects/rules/01/block/param3/)
         [B] Blocks_FF_5
             Conformance: mandatory
             [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L5/artefacts/Labels.xml
     [V] Labels for use in Multichannel Audio Labeling Framework
         Conformance: mandatory
-        Associated Parameter Key: "Labels for use in Multichannel Audio Labeling Framework" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param4/)
+        Associated Parameter Key: "Labels for use in Multichannel Audio Labeling Framework" (http://www.amwa.tv/projects/rules/01/block/param4/)
         [B] Multichannel Audio Labels Collection 0
             Conformance: mandatory
-            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MCAL_Labels_Set_0/artefacts/Labels.xml
+            [A] http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0/artefacts/Labels.xml
             [A] <AudioChannelLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name                  | MCA Tag Symbol
@@ -542,13 +542,13 @@ There are two special types of Block which allow the value of one Block to be se
                  `AudioDescriptionProgramMix`              | Audio Description Programme Mix | `ggADPgMx`
                  `SMPTEST20678MainProgram`                 | Main Program                    | `ggMPg`
             [N] SMPTE Registers Node: InterpretiveSoundEssence
-                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/InterpretiveSoundEssence/artefacts/Labels.xml
+                [A] http://www.amwa.tv/projects/rules/01/note/InterpretiveSoundEssence/artefacts/Labels.xml
             [N] SMPTE Registers Node: AudioChannel
-                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AudioChannel/artefacts/Labels.xml
+                [A] http://www.amwa.tv/projects/rules/01/note/AudioChannel/artefacts/Labels.xml
             [N] SMPTE Registers Node: SoundfieldGroup
-                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/SoundfieldGroup/artefacts/Labels.xml
+                [A] http://www.amwa.tv/projects/rules/01/note/SoundfieldGroup/artefacts/Labels.xml
             [N] SMPTE Registers Node: GroupOfSoundfieldGroups
-                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/GroupOfSoundfieldGroups/artefacts/Labels.xml
+                [A] http://www.amwa.tv/projects/rules/01/note/GroupOfSoundfieldGroups/artefacts/Labels.xml
             [N] MCA Tag Symbol prefixes
                 [A] The MCA Tag Symbols for labels that are used here but defined elsewhere have had prefixes applied to the values specified in their defining documents.
                     
@@ -564,14 +564,14 @@ There are two special types of Block which allow the value of one Block to be se
                     Other valid combinations of "Soundfield Group" and "Group of Soundfield Groups" Labels are also possible.
     [V] Extra Audio Layout Modes
         Conformance: mandatory
-        Associated Parameter Key: "Extra Audio Layout Modes" (http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param1/)
+        Associated Parameter Key: "Extra Audio Layout Modes" (http://www.amwa.tv/projects/rules/01/block/param1/)
         [B] Permitted Extra Audio Layout Modes
             Conformance: mandatory
             [A] The following are permitted: <Audio Layout Mode 1>, <Audio Layout Mode 2>.
                 [B] Audio Layout Mode 1
                     [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
                         [B] ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A
-                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L1/artefacts/Labels.xml
+                            [A] http://www.amwa.tv/projects/rules/01/block/CA_L1/artefacts/Labels.xml
                     [A] <MCA Labeling Present> is "true".
                     [A] <Default Audio Layout> is <Default Audio Layout 'A'>.
                         [B] Default Audio Layout 'A'
@@ -590,11 +590,11 @@ There are two special types of Block which allow the value of one Block to be se
                                     
                                     No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.
                             [N] Reg-XML Example
-                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
+                                [A] http://www.amwa.tv/projects/rules/01/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
                 [B] Audio Layout Mode 2
                     [A] <Channel Assignment Label> is <Default_Audio_Layout_A_without_MCA_Labeling>.
                         [B] Default_Audio_Layout_A_without_MCA_Labeling
-                            [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/CA_L2/artefacts/Labels.xml
+                            [A] http://www.amwa.tv/projects/rules/01/block/CA_L2/artefacts/Labels.xml
                     [A] <MCA Labeling Present> is "false".
                     [A] <Default Audio Layout> is <Default Audio Layout 'A'>.
                         [B] Default Audio Layout 'A'
@@ -613,7 +613,7 @@ There are two special types of Block which allow the value of one Block to be se
                                     
                                     No mechanism is provided here for signaling that the first Sound Track does not actually contain Stereo Main Programme.
                             [N] Reg-XML Example
-                                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
+                                [A] http://www.amwa.tv/projects/rules/01/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
     [N] Audio Layout Modes summary
         [A] A summary of the {Audio Layout Mode}s available in this Specification is in the table below. Note that every MXF file must use one of the listed modes.
             
