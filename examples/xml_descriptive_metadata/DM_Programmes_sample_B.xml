@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pg0:Programmes_DM xmlns:cd="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_ContentDetails/"
-                     xmlns:pg0="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes/"
-                     xmlns:pg1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes_DomainSpecific/"
-                     xmlns:id="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Identification/"
-                     xmlns:acs="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_InVisionAccessServices/">
+<pg0:Programmes_DM xmlns:cd="http://www.amwa.tv/projects/rules/01/block/DM_ContentDetails/"
+                     xmlns:pg0="http://www.amwa.tv/projects/rules/01/block/DM_Programmes/"
+                     xmlns:pg1="http://www.amwa.tv/projects/rules/01/block/DM_Programmes_DomainSpecific/"
+                     xmlns:id="http://www.amwa.tv/projects/rules/01/block/DM_Identification/"
+                     xmlns:acs="http://www.amwa.tv/projects/rules/01/block/DM_InVisionAccessServices/">
     <id:Identifiers>
         <id:Identifier>
             <id:Identifier_Value>DRAZ855R/01</id:Identifier_Value>
