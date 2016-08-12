@@ -2217,34 +2217,81 @@ There are two special types of Block which allow the value of one Block to be se
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E31/>
                     [A] The combinations of Transport and Frame Frequency listed here fall under the "25/P" and "50/P" Systems defined in BT.709.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E31/artefacts/1.md>
-            [B] Constrained AVC long-GOP coding (4:2:2)
+            [B] AVC High 4:2:2 constraints
                 Conformance: mandatory
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/>
-                [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/artefacts/1.md>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/>
+                [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/1.md>
                     [T] AVC
                         Advanced Video Coding. A DCT-based video compression format.
                         <URL: http://www.amwa.tv/projects/rules/01/term/AVC/>
-                    [B] AVC High 4:2:2 constraints
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/>
-                        [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/1.md>
-                        [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/2.md>
-                [A] The mean data rate of the Picture Essence is greater than or equal to 50,000,000 bits per second.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L_122/artefacts/2.md>
-                [N] TODO: Repetition of parameter sets
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T1/>
-                    [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T1/artefacts/1.md>
-                [N] TODO: GOP structure
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/>
-                    [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
-                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/artefacts/1.md>
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/2.md>
+            [B] AVC GOP Structure
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/>
+                [A] The <AVC> bitstream is constrained as per Annex C
+                    of <SMPTE ST 381-3:2013>.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/artefacts/1.md>
+                    [T] AVC
+                        Advanced Video Coding. A DCT-based video compression format.
+                        <URL: http://www.amwa.tv/projects/rules/01/term/AVC/>
+                    [R] SMPTE ST 381-3:2013
+                        <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20381-3-2013/>
+                [A] No "B Picture" is a reference picture.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/artefacts/2.md>
+                [A] The number of video frames in each "GOP" is less than or equal to the number of video frames in one second (rounded up).
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/artefacts/3.md>
+                [N] Implementation Notes
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E69/>
+                    [A] This constrains the GOP structure and length.
+                        The intention is that streams will be similar to the example given in Figure C.1.
+                        of <SMPTE ST 381-3:2013>.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E69/artefacts/1.md>
+                        [R] SMPTE ST 381-3:2013
+                            <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20381-3-2013/>
+            [B] AVC Maximum Data Rate
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_51/>
+                [A] The number of bits used in each second of stored video frames must not be more than 75,000,000 bits
+                    (where the number of frames in one second is rounded up to the next integer).
+                    
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_51/artefacts/1.md>
+            [B] AVC Mean Data Rate
+                Conformance: recommended
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_52/>
+                [A] The mean data rate of the <Picture Essence> is 50,000,000 bits per second.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_52/artefacts/1.md>
+                    [T] Picture Essence
+                        A type of <Essence> containing predominantly picture data.
+                        <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                        [T] Essence
+                            A bitstream comprising picture, sound or data.
+                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [N] Data rate calculation
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E35/>
                     [A] The mean data rate (in bits per second) can be calculated by taking the total size of the Picture Essence stored in the file (in number of bits), dividing by the number of Edit Units in the file (which might be more than the length of the Material Package or Top Level File Package) and then multiplying the result by the Edit Rate.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E35/artefacts/1.md>
+                [N] Implementation Notes
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E70/>
+                    [A] This constraint is designed to achieve the desired quality while keeping the file
+                        size at an acceptable level.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E70/artefacts/1.md>
+            [B] AVC Padding Bytes
+                Conformance: recommended
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_53/>
+                [A] The <AVC> bitstream contains no <AVC Byte Stream Format> padding bytes.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_53/artefacts/1.md>
+                    [T] AVC
+                        Advanced Video Coding. A DCT-based video compression format.
+                        <URL: http://www.amwa.tv/projects/rules/01/term/AVC/>
+                    [T] AVC Byte Stream Format
+                        A format designed to enable delivery of <AVC> NAL units as an ordered stream of bytes or bits.
+                        <URL: http://www.amwa.tv/projects/rules/01/term/AVC%20Byte%20Stream%20Format/>
+                [N] Implementation Notes
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E71/>
+                    [A] This means that the AVC stream will have a "variable bit rate".
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E71/artefacts/1.md>
             [B] AVC Video Usability Information - Timing Info
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/>
