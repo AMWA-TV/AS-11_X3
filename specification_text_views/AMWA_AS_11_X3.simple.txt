@@ -496,7 +496,9 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] This constrains the GOP structure and length. The intention is that streams will be similar to the example given in Figure C.1. of <SMPTE ST 381-3:2013>.
             [B] AVC Maximum Data Rate
                 Conformance: mandatory
-                [A] The number of bits used in each second of stored video frames must not be more than 75,000,000 bits (where the number of frames in one second is rounded up to the next integer).
+                [A] The number of bits used in each consecutive second of stored video frames must not be more than 75,000,000 bits (where the number of frames in one second is rounded up to the next integer).
+                [N] Implementation Notes
+                    [A] Every single video frame stored inside the MXF file is included in this calculation. Video frames are considered in stored order. The calculation involves dividing the stored video frames into consecutive one second chunks / groups, starting from the first video frame stored in the file. The number of bits used in each chunk is summed and must not be more than 75,000,000 bits.
             [B] AVC Mean Data Rate
                 Conformance: recommended
                 [A] The mean data rate of the <Picture Essence> is 50,000,000 bits per second.

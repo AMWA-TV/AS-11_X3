@@ -2933,8 +2933,30 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='e03dbaf99cb95a995e95efbdca62d9a6'>
                                     <div class='content_container clearfix'>
-                                        <p>The number of bits used in each second of stored video frames must not be more than 75,000,000 bits (where the number of frames in one second is rounded up to the next integer).</p>
+                                        <p>The number of bits used in each consecutive second of stored video frames must not be more than 75,000,000 bits (where the number of frames in one second is rounded up to the next integer).</p>
                                     </div>
+                                </li>
+                                <li data-jstree='{"icon":"include/note.png"}' id='c1d463e6ffd6d3c817a7abd605e0ed4f'>
+                                    <div class='content_container clearfix'>
+                                        <b>Implementation Notes</b>
+                                    </div>
+                                    <ul>
+                                    <li data-jstree='{"icon":"include/file.png"}' id='c1d463e6ffd6d3c817a7abd605e0ed4f-info'>
+                                        <div class='content_container clearfix'>
+                                            Additional Information
+                                        </div>
+                                        <ul>
+                                        <li data-jstree='{"icon":"hidden", "disabled":"true"}' id='c1d463e6ffd6d3c817a7abd605e0ed4f-info-ID'>
+                                            <p class='info'><b>ID:</b> <a href='http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E72/' target='_blank'>http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E72/</a></p>
+                                        </li>
+                                        </ul>
+                                    </li>
+                                    <li data-jstree='{"icon":"include/noteartefact.png"}' id='8d2d440560446f07fe16dfaa28e80d50'>
+                                        <div class='content_container clearfix'>
+                                            <p>Every single video frame stored inside the MXF file is included in this calculation. Video frames are considered in stored order. The calculation involves dividing the stored video frames into consecutive one second chunks / groups, starting from the first video frame stored in the file. The number of bits used in each chunk is summed and must not be more than 75,000,000 bits.</p>
+                                        </div>
+                                    </li>
+                                    </ul>
                                 </li>
                                 </ul>
                             </li>
