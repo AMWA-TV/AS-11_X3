@@ -2230,8 +2230,7 @@ There are two special types of Block which allow the value of one Block to be se
             [B] AVC GOP Structure
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/>
-                [A] The <AVC> bitstream is constrained as per Annex C
-                    of <SMPTE ST 381-3:2013>.
+                [A] The <AVC> bitstream is constrained as per Annex C of <SMPTE ST 381-3:2013>.
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/artefacts/1.md>
                     [T] AVC
                         Advanced Video Coding. A DCT-based video compression format.
@@ -2244,18 +2243,14 @@ There are two special types of Block which allow the value of one Block to be se
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/artefacts/3.md>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E69/>
-                    [A] This constrains the GOP structure and length.
-                        The intention is that streams will be similar to the example given in Figure C.1.
-                        of <SMPTE ST 381-3:2013>.
+                    [A] This constrains the GOP structure and length. The intention is that streams will be similar to the example given in Figure C.1. of <SMPTE ST 381-3:2013>.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E69/artefacts/1.md>
                         [R] SMPTE ST 381-3:2013
                             <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20381-3-2013/>
             [B] AVC Maximum Data Rate
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_51/>
-                [A] The number of bits used in each second of stored video frames must not be more than 75,000,000 bits
-                    (where the number of frames in one second is rounded up to the next integer).
-                    
+                [A] The number of bits used in each second of stored video frames must not be more than 75,000,000 bits (where the number of frames in one second is rounded up to the next integer).
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_51/artefacts/1.md>
             [B] AVC Mean Data Rate
                 Conformance: recommended
@@ -2274,8 +2269,7 @@ There are two special types of Block which allow the value of one Block to be se
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E35/artefacts/1.md>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E70/>
-                    [A] This constraint is designed to achieve the desired quality while keeping the file
-                        size at an acceptable level.
+                    [A] This constraint is designed to achieve the desired quality while keeping the file size at an acceptable level.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E70/artefacts/1.md>
             [B] AVC Padding Bytes
                 Conformance: recommended

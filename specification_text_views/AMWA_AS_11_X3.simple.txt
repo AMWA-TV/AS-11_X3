@@ -489,27 +489,21 @@ There are two special types of Block which allow the value of one Block to be se
                 [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
             [B] AVC GOP Structure
                 Conformance: mandatory
-                [A] The <AVC> bitstream is constrained as per Annex C
-                    of <SMPTE ST 381-3:2013>.
+                [A] The <AVC> bitstream is constrained as per Annex C of <SMPTE ST 381-3:2013>.
                 [A] No "B Picture" is a reference picture.
                 [A] The number of video frames in each "GOP" is less than or equal to the number of video frames in one second (rounded up).
                 [N] Implementation Notes
-                    [A] This constrains the GOP structure and length.
-                        The intention is that streams will be similar to the example given in Figure C.1.
-                        of <SMPTE ST 381-3:2013>.
+                    [A] This constrains the GOP structure and length. The intention is that streams will be similar to the example given in Figure C.1. of <SMPTE ST 381-3:2013>.
             [B] AVC Maximum Data Rate
                 Conformance: mandatory
-                [A] The number of bits used in each second of stored video frames must not be more than 75,000,000 bits
-                    (where the number of frames in one second is rounded up to the next integer).
-                    
+                [A] The number of bits used in each second of stored video frames must not be more than 75,000,000 bits (where the number of frames in one second is rounded up to the next integer).
             [B] AVC Mean Data Rate
                 Conformance: recommended
                 [A] The mean data rate of the <Picture Essence> is 50,000,000 bits per second.
                 [N] Data rate calculation
                     [A] The mean data rate (in bits per second) can be calculated by taking the total size of the Picture Essence stored in the file (in number of bits), dividing by the number of Edit Units in the file (which might be more than the length of the Material Package or Top Level File Package) and then multiplying the result by the Edit Rate.
                 [N] Implementation Notes
-                    [A] This constraint is designed to achieve the desired quality while keeping the file
-                        size at an acceptable level.
+                    [A] This constraint is designed to achieve the desired quality while keeping the file size at an acceptable level.
             [B] AVC Padding Bytes
                 Conformance: recommended
                 [A] The <AVC> bitstream contains no <AVC Byte Stream Format> padding bytes.
