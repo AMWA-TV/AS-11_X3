@@ -544,7 +544,7 @@ There are two special types of Block which allow the value of one Block to be se
                         
                         > The length field of the KLV coded Element shall be 4 bytes BER long-form encoded (i.e. 83h.xx.yy.zz) for Frame wrapping.
                         
-                        4 bytes BER long-form encoded length is limited to 16 MiB (FF.FF.FF). This might become restrictive at the maximum datarates allowed by AVC at Level 5.
+                        4 bytes BER long-form encoded length is limited to 16 MiB (FF.FF.FF). This might become restrictive at the maximum data rates allowed by AVC at Level 5.
                         <URL: http://www.amwa.tv/projects/rules/01/note/E10/artefacts/1.md>
             [K] Picture Essence Constraints
                 Conformance: mandatory
