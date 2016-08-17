@@ -554,7 +554,7 @@ There are two special types of Block which allow the value of one Block to be se
                  `AlternativeProgram`                      | Alternative Program             | `ggAPg`
                  `MusicAndEffects`                         | Music and Effects               | `ggME`
                  `AudioDescription`                        | Audio Description               | `ggAD`
-                 `AudioDescriptionProgramMix`              | Audio Description Programme Mix | `ggADPgMx`
+                 `AudioDescriptionProgramMix`              | Audio Description Program Mix   | `ggADPgMx`
                  `SMPTEST20678MainProgram`                 | Main Program                    | `ggMPg`
             [N] SMPTE Registers Node: InterpretiveSoundEssence
                 [A] http://www.amwa.tv/projects/rules/01/note/InterpretiveSoundEssence/artefacts/Labels.xml

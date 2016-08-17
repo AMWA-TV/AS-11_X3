@@ -25,7 +25,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01010100</UL>
       <Kind>LEAF</Kind>
       <Name>Audio Description Studio Signal Data Channel</Name>
-      <Definition>Identifies an Audio Channel carrying a data signal in the format defined by BBC R&amp;D White Paper WHP 198, intended to be used to control the fade and pan of the Main Programme audio when it is being mixed with a Visually Impaired Narrative Audio Channel</Definition>
+      <Definition>Identifies an Audio Channel carrying a data signal in the format defined by BBC R&amp;D White Paper WHP 198, intended to be used to control the fade and pan of the Main Program audio when it is being mixed with a Visually Impaired Narrative Audio Channel</Definition>
       <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
@@ -80,7 +80,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01030400</UL>
       <Kind>LEAF</Kind>
       <Name>Music and Effects</Name>
-      <Definition>Identifies a mix of the Main Programme with no dialogue</Definition>
+      <Definition>Identifies a mix of the Main Program with no dialogue</Definition>
       <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
