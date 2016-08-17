@@ -445,9 +445,9 @@ There are two special types of Block which allow the value of one Block to be se
                         [A] The value of the "Edit Rate" property of this <Timecode Track> is the same as the value of the "Edit Rate" property of the <Picture Track> in the same <Package>.
                         [A] There is exactly one <Timecode Component> in this <Timecode Track>.
                         [A] The value of the "Rounded Timecode Base" property of the <Timecode Component> is the "Edit Rate" of this <Timecode Track> rounded to the nearest integer.
-            [B] Drop Frame Timecode
+            [B] Timecode mode signalling
                 Conformance: recommended
-                [A] The value of the "Drop Frame" property of the <Timecode Component> in the <Timecode Track> in the <Material Package> is "False" except in any of the following scenarios (in which case it is "True"):
+                [A] The value of the "Drop Frame" property of the <Timecode Component> in the <Timecode Track> in the <Material Package> is "False" (indicating non-drop frame timecode is in use) except in any of the following scenarios (in which case it is "True", indicating drop frame timecode is in use):
                     
                     * The "Rounded Timecode Base" property of the <Timecode Component> is `60` and the "Edit Rate" of the <Timecode Track> is mathematically equal to `60000/1001`
                     * The "Rounded Timecode Base" property of the <Timecode Component> is `30` and the "Edit Rate" of the <Timecode Track> is mathematically equal to `30000/1001`
