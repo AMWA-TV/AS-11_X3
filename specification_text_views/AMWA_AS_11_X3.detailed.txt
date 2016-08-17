@@ -2169,8 +2169,26 @@ There are two special types of Block which allow the value of one Block to be se
                         <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
                 [N] Implementation Notes
                     <URL: http://www.amwa.tv/projects/rules/01/note/022/>
-                    [A] The authority of the Timecode Track in the Material Package needs to be respected by all components of a system that handles the file.
+                    [A] The <Timecode> defined by the <Timecode Track> in the <Material Package> must be used by all the components of a system that handles the file. Other <Timecode>s could be present in the file but these are not authoritative -- these other <Timecode>s could be used by certain systems for very specialist purposes (such as keeping track of where each frame of content originated from) but they must never be used as the authoritative / principal <Timecode> for the content.
                         <URL: http://www.amwa.tv/projects/rules/01/note/022/artefacts/1.md>
+                        [T] Timecode
+                            An annotation of elapsed time along a <Track>.
+                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                            [T] Track
+                                MXF data structure used to describe the content structure.
+                                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        [T] Timecode Track
+                            An MXF <Track> that stores one or more <Timecode Component>s.
+                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
+                            [T] Track
+                                MXF data structure used to describe the content structure.
+                                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            [T] Timecode Component
+                                An MXF structure that stores <Timecode> information.
+                                <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                        [T] Material Package
+                            An MXF data structure that describe an output timeline of the file.
+                            <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
         [N] Implementation Notes
             <URL: http://www.amwa.tv/projects/rules/01/note/implementation4/>
             [A] ## Essence Container Label

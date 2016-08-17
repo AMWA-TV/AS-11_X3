@@ -459,7 +459,7 @@ There are two special types of Block which allow the value of one Block to be se
                 Conformance: mandatory
                 [A] The <Timecode Track> in the <Material Package> defines the authoritative program timecode.
                 [N] Implementation Notes
-                    [A] The authority of the Timecode Track in the Material Package needs to be respected by all components of a system that handles the file.
+                    [A] The <Timecode> defined by the <Timecode Track> in the <Material Package> must be used by all the components of a system that handles the file. Other <Timecode>s could be present in the file but these are not authoritative -- these other <Timecode>s could be used by certain systems for very specialist purposes (such as keeping track of where each frame of content originated from) but they must never be used as the authoritative / principal <Timecode> for the content.
         [N] Implementation Notes
             [A] ## Essence Container Label
                 The stated constraints mean that the <Essence Container Label> used to identify the <Picture Essence> mapping is always urn:smpte:ul:060e2b34.0401010a.0d010301.02106001 (MXFGCAVCByteStreamWithVideoStream0SIDFrameWrapped)
