@@ -14,7 +14,7 @@
         }, 
         {
             "repo_url": "git@gitlab.com:thomas.heritage/rules-processor.git", 
-            "commit": "f81b66acba9a74b1d55393d9d4d4c4d75c20c377"
+            "commit": "bcfbaec939115c75e8dc42455a59bac01dc40691"
         }
     ]
 }

@@ -16,21 +16,36 @@
         return ((itemBottom <= windowScrollBottom) && (itemTop >= windowScrollTop));
     }
 
+    function openTreeToLevel(tree, level)
+    {
+      $(tree.jstree(true).get_json(tree, {flat: true})).each(function() {
+        var node_level = tree.jstree(true).get_node(this.id).parents.length;
+        if (node_level <= level && !String(this.id).endsWith('-info')) {    /* don't open 'additional information' tree nodes with id ending in '-info' */
+          tree.jstree(true).open_node(this.id);
+        }
+      });
+    }
+
     $(function () {
+
+        $( "#tree_expand_first" ).click(function() {
+            $("#jstree").jstree().close_all();
+            openTreeToLevel($("#jstree"), 1);
+        });
+
+        $( "#tree_expand_second" ).click(function() {
+            $("#jstree").jstree().close_all();
+            openTreeToLevel($("#jstree"), 2);
+        });
 
         $( "#tree_expand_all" ).click(function() {
             $("#jstree").jstree().open_all();
         });
 
-        $( "#tree_collapse_all" ).click(function() {
-            $("#jstree").jstree().close_all();
-        });
-
         $("#jstree").on('ready.jstree', function() {
-            $('#jstree').jstree('open_node', '.jstree-anchor:first', function(e, data) {   /* open the first level of the tree */
-                $('#jstree_loading').hide();                                               /* Hide the "tree loading" message */
-                $("#jstree").show();                                                       /* show the whole tree (it was hidden) */
-            } ); 
+            $('#jstree_loading').hide();              /* Hide the "tree loading" message */
+            openTreeToLevel($("#jstree"), 2);
+            $("#jstree").show();                      /* show the whole tree (it was hidden) */
         });
 
         $(document).on('click', 'a', function(event){
