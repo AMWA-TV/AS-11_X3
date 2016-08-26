@@ -135,3 +135,13 @@
   .alert-auto {
     display: inline-block; /* make alert take the width of its content */
   }
+
+  #tree_legend {
+    display: inline-block;
+    background-color: #faf8da;
+    font-size: 90%;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #e9e7cd;
+  }
