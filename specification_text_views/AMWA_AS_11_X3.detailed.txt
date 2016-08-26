@@ -2291,7 +2291,7 @@ There are two special types of Block which allow the value of one Block to be se
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E35/artefacts/1.md>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E70/>
-                    [A] This constraint is designed to achieve the desired quality while keeping the file size at an acceptable level.
+                    [A] This constraint is designed to achieve a desired video quality while keeping the file size at an acceptable level.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E70/artefacts/1.md>
             [B] AVC Padding Bytes
                 Conformance: recommended
