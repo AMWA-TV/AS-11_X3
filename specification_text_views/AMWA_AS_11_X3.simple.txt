@@ -514,8 +514,11 @@ There are two special types of Block which allow the value of one Block to be se
             [B] AVC Video Usability Information - Timing Info
                 Conformance: mandatory
                 [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
+            [B] AVC bitstream level
+                Conformance: mandatory
+                [A] The AVC "Level" must be less than or equal to Level 4.2.
             [N] Implementation Notes
-                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 4.1 or 4.2.
+                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of 4, 4.1 or 4.2 for 25p and 4.2 for 50p.
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (http://www.amwa.tv/projects/rules/01/block/param3/)

@@ -2316,10 +2316,15 @@ There are two special types of Block which allow the value of one Block to be se
                     [T] fixed_frame_rate_flag
                         An AVC syntax element that indicates that constraints apply to the temporal distance between the output times of any two consecutive pictures.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/fixed_frame_rate_flag/>
+            [B] AVC bitstream level
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_54/>
+                [A] The AVC "Level" must be less than or equal to Level 4.2.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_54/artefacts/1.md>
             [N] Implementation Notes
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E20/>
-                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 4.1 or 4.2.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E20/artefacts/1.md>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E73/>
+                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of 4, 4.1 or 4.2 for 25p and 4.2 for 50p.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E73/artefacts/1.md>
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (http://www.amwa.tv/projects/rules/01/block/param3/)
