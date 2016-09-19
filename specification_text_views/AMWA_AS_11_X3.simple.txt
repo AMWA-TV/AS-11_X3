@@ -490,10 +490,9 @@ There are two special types of Block which allow the value of one Block to be se
             [B] AVC GOP Structure
                 Conformance: mandatory
                 [A] The <AVC> bitstream is constrained as per Annex C of <SMPTE ST 381-3:2013>.
-                [A] No "B Picture" is a reference picture.
                 [A] The number of video frames in each "GOP" is less than or equal to the number of video frames in one second (rounded up).
                 [N] Implementation Notes
-                    [A] This constrains the GOP structure and length. The intention is that streams will be similar to the example given in Figure C.1. of <SMPTE ST 381-3:2013>.
+                    [A] This constrains the GOP structure and length. The intention is that streams will be similar to either the example given in Figure C.1 or the example given in Figure C.2 of <SMPTE ST 381-3:2013>.
             [B] AVC Maximum Data Rate
                 Conformance: mandatory
                 [A] The number of bits used in each consecutive second of stored video frames must not be more than 75,000,000 bits (where the number of frames in one second is rounded up to the next integer).

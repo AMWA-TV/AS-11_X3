@@ -2255,13 +2255,11 @@ There are two special types of Block which allow the value of one Block to be se
                         <URL: http://www.amwa.tv/projects/rules/01/term/AVC/>
                     [R] SMPTE ST 381-3:2013
                         <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20381-3-2013/>
-                [A] No "B Picture" is a reference picture.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/artefacts/2.md>
                 [A] The number of video frames in each "GOP" is less than or equal to the number of video frames in one second (rounded up).
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/artefacts/3.md>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_50/artefacts/2.md>
                 [N] Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E69/>
-                    [A] This constrains the GOP structure and length. The intention is that streams will be similar to the example given in Figure C.1. of <SMPTE ST 381-3:2013>.
+                    [A] This constrains the GOP structure and length. The intention is that streams will be similar to either the example given in Figure C.1 or the example given in Figure C.2 of <SMPTE ST 381-3:2013>.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E69/artefacts/1.md>
                         [R] SMPTE ST 381-3:2013
                             <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20381-3-2013/>
