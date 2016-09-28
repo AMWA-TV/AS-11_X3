@@ -86,6 +86,17 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     </Entry>
     <Entry>
       <Register>Labels</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
+      <Symbol>UnusedAudio</Symbol>
+      <UL>urn:smpte:ul:060e2b34.04010101.0d010801.01030500</UL>
+      <Kind>LEAF</Kind>
+      <Name>Unused Audio</Name>
+      <Definition>Identifies audio that is not used. The audio could be present for backward compatibility with devices and systems that require a set number of channels, beyond what is actually required to carry the content.</Definition>
+      <DefiningDocument>AMWA Rules-based Specification component</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Labels</Register>
       <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
       <Symbol>LeftAudioChannel</Symbol>
       <UL>urn:smpte:ul:060e2b34.0401010d.03020101.00000000</UL>
