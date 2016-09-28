@@ -1445,7 +1445,7 @@ There are two special types of Block which allow the value of one Block to be se
                                     A collection of one or more <Soundfield Group>s which all have the same program content or the same purpose.
                                     <URL: http://www.amwa.tv/projects/rules/01/term/Group%20of%20Soundfield%20Groups/>
                     [K] Labels for use in Multichannel Audio Labeling Framework
-                        Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://www.amwa.tv/projects/rules/01/block/param_link_7_r001/)
+                        Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (http://www.amwa.tv/projects/rules/01/block/param_link_7_r002/)
                         <URL: http://www.amwa.tv/projects/rules/01/block/param4/>
                 [N] Implementation Notes
                     <URL: http://www.amwa.tv/projects/rules/01/note/E40/>
@@ -2335,12 +2335,12 @@ There are two special types of Block which allow the value of one Block to be se
     [V] Labels for use in Multichannel Audio Labeling Framework
         Conformance: mandatory
         Associated Parameter Key: "Labels for use in Multichannel Audio Labeling Framework" (http://www.amwa.tv/projects/rules/01/block/param4/)
-        <URL: http://www.amwa.tv/projects/rules/01/block/param_link_7_r001/>
+        <URL: http://www.amwa.tv/projects/rules/01/block/param_link_7_r002/>
         [B] Multichannel Audio Labels Collection 0
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r001/>
-            [A] http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r001/artefacts/Labels.xml
-                <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r001/artefacts/Labels.xml>
+            <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r002/>
+            [A] http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r002/artefacts/Labels.xml
+                <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r002/artefacts/Labels.xml>
             [A] <AudioChannelLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name                  | MCA Tag Symbol
@@ -2353,7 +2353,7 @@ There are two special types of Block which allow the value of one Block to be se
                  `LeftSurroundAudioChannel`                | Left Surround                 | `chLs`
                  `RightSurroundAudioChannel`               | Right Surround                | `chRs`
                  `VisuallyImpairedNarrativeAudioChannel`   | Visually Impaired Narrative   | `chVIN`
-                <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r001/artefacts/ch.md>
+                <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r002/artefacts/ch.md>
                 [T] AudioChannelLabelSubDescriptor
                     A subclass of <MCALabelSubDescriptor> used to describe an <Audio Channel>.
                     <URL: http://www.amwa.tv/projects/rules/01/term/AudioChannelLabelSubDescriptor/>
@@ -2370,7 +2370,7 @@ There are two special types of Block which allow the value of one Block to be se
                  `AudioDescriptionStudioSignal`            | AD Studio Signal  | `sgADSS`       | `chVIN`, `chADSSdc`
                  `_51SoundfieldGroup`                      | 5.1               | `sg51`         | `chL`, `chR`, `chC`, `chLFE`, `chLs`, `chRs`
                  `SMPTEST20678StandardStereo`              | Standard Stereo   | `sgST`         | `chL`, `chR`
-                <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r001/artefacts/sg.md>
+                <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r002/artefacts/sg.md>
                 [T] SoundfieldGroupLabelSubDescriptor
                     A subclass of <MCALabelSubDescriptor> used to describe a <Soundfield Group>.
                     <URL: http://www.amwa.tv/projects/rules/01/term/SoundfieldGroupLabelSubDescriptor/>
@@ -2390,10 +2390,10 @@ There are two special types of Block which allow the value of one Block to be se
                  `AlternativeProgram`                      | Alternative Program             | `ggAPg`
                  `MusicAndEffects`                         | Music and Effects               | `ggME`
                  `AudioDescription`                        | Audio Description               | `ggAD`
-                 `AudioDescriptionProgramMix`              | Audio Description Programme Mix | `ggADPgMx`
+                 `AudioDescriptionProgramMix`              | Audio Description Program Mix   | `ggADPgMx`
                  `SMPTEST20678MainProgram`                 | Main Program                    | `ggMPg`
                  `UnusedAudio`                             | Unused Audio                    | `ggUnAu`
-                <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r001/artefacts/gg.md>
+                <URL: http://www.amwa.tv/projects/rules/01/block/MCAL_Labels_Set_0_r002/artefacts/gg.md>
                 [T] GroupOfSoundfieldGroupsLabelSubDescriptor
                     A subclass of <MCALabelSubDescriptor> used to describe a <Group of Soundfield Groups>.
                     <URL: http://www.amwa.tv/projects/rules/01/term/GroupOfSoundfieldGroupsLabelSubDescriptor/>
