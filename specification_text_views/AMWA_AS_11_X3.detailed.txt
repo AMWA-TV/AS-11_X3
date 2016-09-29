@@ -1625,6 +1625,10 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/>
                             [A] http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/artefacts/Labels.xml
                                 <URL: http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/artefacts/Labels.xml>
+                            [N] SMPTE Registers Node: MetadataPayloadSchemes
+                                <URL: http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/>
+                                [A] http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/artefacts/Labels.xml
+                                    <URL: http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/artefacts/Labels.xml>
                     [A] In the "UTF-8 Text-based Set" the property "Text Data Description" is present and has a value equal to the namespace of the root element of the XML document.
                         <URL: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/5.md>
                     [A] <2-byte Local Length Encoding> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".

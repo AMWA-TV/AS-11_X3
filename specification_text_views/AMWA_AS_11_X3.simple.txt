@@ -338,6 +338,8 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] In the "UTF-8 Text-based Set" the property "Text-based Metadata Payload Scheme ID" has the value of <DM_XML_Document>.
                         [B] DM_XML_Document
                             [A] http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/artefacts/Labels.xml
+                            [N] SMPTE Registers Node: MetadataPayloadSchemes
+                                [A] http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/artefacts/Labels.xml
                     [A] In the "UTF-8 Text-based Set" the property "Text Data Description" is present and has a value equal to the namespace of the root element of the XML document.
                     [A] <2-byte Local Length Encoding> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".
                     [N] ST 2057 Implementation Notes
