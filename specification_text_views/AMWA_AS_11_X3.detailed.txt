@@ -69,7 +69,7 @@ There are two special types of Block which allow the value of one Block to be se
     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/FF_5/>
     [B] File Format with Parameter Keys
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/FF_0/>
+        <URL: http://www.amwa.tv/projects/rules/01/block/FF_0_r001/>
         [B] Core MXF constraints
             Conformance: mandatory
             <URL: http://www.amwa.tv/projects/rules/01/block/MXF_Core/>
@@ -2017,7 +2017,7 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://www.amwa.tv/projects/rules/01/note/E2/artefacts/1.md>
         [B] Timecode constraints
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/TT0/>
+            <URL: http://www.amwa.tv/projects/rules/01/block/TT0_r001/>
             [B] Timecode Track Presence
                 Conformance: mandatory
                 <URL: http://www.amwa.tv/projects/rules/01/block/280/>
@@ -2116,7 +2116,7 @@ There are two special types of Block which allow the value of one Block to be se
                                         MXF data structure used to describe the content structure.
                                         <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
             [B] Timecode mode signalling
-                Conformance: recommended
+                Conformance: mandatory
                 <URL: http://www.amwa.tv/projects/rules/01/block/DF/>
                 [A] The value of the "Drop Frame" property of the <Timecode Component> in the <Timecode Track> in the <Material Package> is "False" (indicating non-drop frame timecode is in use) except in any of the following scenarios (in which case it is "True", indicating drop frame timecode is in use):
                     
@@ -2147,6 +2147,10 @@ There are two special types of Block which allow the value of one Block to be se
                         
                         When making comparisons of these values, it is insufficient to simply compare each of the numerators and each of the denominators. For example, `7/5` is mathematically equal to `14/10`.
                         <URL: http://www.amwa.tv/projects/rules/01/note/E69/artefacts/1.md>
+                [N] Implementation Notes
+                    <URL: http://www.amwa.tv/projects/rules/01/note/E81/>
+                    [A] Note that for an "Edit Rate" of 24000/1001 the "Drop Frame" property will be "False" because drop frame timecode is not applicable to this rate.
+                        <URL: http://www.amwa.tv/projects/rules/01/note/E81/artefacts/1.md>
             [B] Timecode Track Precedence
                 Conformance: mandatory
                 <URL: http://www.amwa.tv/projects/rules/01/block/290/>
