@@ -69,9 +69,15 @@
 
 
         $('[data-toggle="tooltip"]').tooltip();
+        prettyPrint();
 
         $("#jstree").on('open_node.jstree show_node.jstree create_node.jstree', function(event, data) {
             $('#' + data.node.id + ' [data-toggle="tooltip"]').tooltip();
+
+            if ($('#' + data.node.id + ' .prettyprint').length > 0) {
+                prettyPrint();
+            }
+
         });
 
 
