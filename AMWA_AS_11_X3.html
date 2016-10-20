@@ -67,44 +67,35 @@
                 <div class='header_markdown'>
                     <h2 id="understanding-the-specification-blocks-tree">Understanding the Specification Blocks Tree</h2>
 
-<p>This Specification is formed of "Blocks" that naturally form a "tree". A rendering / view of this tree is shown below and is explained here.</p>
+<h3 id="the-rules-based-specification-framework">The Rules-Based Specification Framework</h3>
 
-<h3 id="entities-summary">Entities Summary</h3>
-
-<p>The Specification-writing framework used to produce this Specification has several different types of component / entity. In summary:</p>
+<p>This Specification has been written using a 'Rules-based Specification Framework'. In this framework, each 'constraint' or 'rule' is expressed as a 'Component' which can be unambiguosly identified by its ID (which is a URL). These Components assemble into 'networks' or 'webs' to form complete Specifications, with many Components being re-used across a number of Specifications. Through this approach machine processable Specifications are developed which are less ambiguous and easier to implement and test.</p>
 
 <ul>
-<li>Each Specification is composed of a single Top-Level <strong>Block (B)</strong></li>
-<li>Blocks are defined by containing <strong>Artefacts (A)</strong> or linking directly to other Blocks</li>
-<li>Artefacts often refer to <strong>Terms (T)</strong> and <strong>References (R)</strong> as well as Blocks</li>
-<li>Blocks are sometimes described by <strong>Notes (N)</strong></li>
+<li><strong>Blocks (B)</strong> are the fundamental 'building bricks' of a Specification -- they provide its <em>structure</em>.</li>
+<li>A Block can either link to <strong>Artefacts (A)</strong> that it 'owns' or link to other Blocks.</li>
+<li>Artefacts provide the real <em>content</em> of a Specification. They may contain textual statements, code excerpts, or tables, for example.</li>
+<li>Artefacts often refer to <strong>Terms (T)</strong> and <strong>References (R)</strong> as well as Blocks.</li>
+<li>Blocks are sometimes described by <strong>Notes (N)</strong>.</li>
+<li>There are two special types of Block which allow the value of one Block to be set by another Block:</li>
+<li><strong>Parameter Key Block (K)</strong> -- this is a Block whose value must be set elsewhere in the Specification (it effectively defines a "variable" or an "argument").</li>
+<li><strong>Parameter Value Block (V)</strong> -- this is a Block which sets the value of a specific Parameter Key Block.</li>
 </ul>
 
-<p>Each entity is identified by a unique URL.</p>
-
-<p>Some of the letters in brackets above are used in the tree view to identify the type of each entity.</p>
+<p>In this document the network of Blocks (and other Components) that form the Specification are shown as a 'tree': the Specification Blocks Tree. The letters in brackets above are used in the tree to identify the different kinds of Component.</p>
 
 <h3 id="conformance">Conformance</h3>
 
-<p>An implementation complies with a Block if it complies with all of the Blocks / Artefacts from which it is constructed. "Informative" statements do not have to be complied with (details of "informative" statements are given below).</p>
+<p>An implementation complies with this Specification if it complies with the Components from which it is constructed, as shown in the Specification Blocks Tree, subject to the following provisions:</p>
 
 <ul>
+<li>An implementation complies with a Block if it complies with all of the normative Components from which it is constructed. "Informative" items (as defined below) do not have to be complied with.</li>
+<li>"Note" Components are considered "informative". All other Components are considered "normative" unless otherwise noted.</li>
 <li>Compliance with some Blocks is not mandatory. Such Blocks are marked with an alternative "conformance" state (such as "optional" or "recommended").</li>
-<li>The name / title of an entity is considered "informative", as is its "description" (if present).</li>
-<li>"Note" entities are considered "informative".</li>
+<li>The name / title of a Component is considered "informative".</li>
 <li>Prose Artefacts are written as statements of fact. An implementation complies with one of these Artefacts if the stated fact is True for the implementation.</li>
-<li>Some Artefacts are "data files" such as SMPTE Metadata Registers XML files or XML Schema files. Some of these may be partially rendered below. An implementation must always fully comply with these data files.</li>
-</ul>
-
-<p><em>Note that an Artefact does not always make sense on its own: all of the Artefacts contained within a Block need to be read (in order) to understand the Block fully and correctly.</em></p>
-
-<h3 id="parameter-blocks">Parameter Blocks</h3>
-
-<p>There are two special types of Block which allow the value of one Block to be set by another Block:</p>
-
-<ul>
-<li><strong>Parameter Key Block (K)</strong> -- this is a Block whose value must be set elsewhere in the Specification (it effectively defines a "variable" or an "argument")</li>
-<li><strong>Parameter Value Block (V)</strong> -- this is a Block which sets the value of a specific Parameter Key Block (K)</li>
+<li>Other Artefacts are "data files" (such as SMPTE Metadata Registers XML files or XML Schema files). Some of these may be <em>partially</em> rendered below. An implementation must always fully comply with these data files -- links are provided to such data files in the Specification Blocks Tree.</li>
+<li>Note that an Artefact does not always make sense on its own: all of the Artefacts contained within a Block need to be read (in order) to understand the Block fully and correctly.</li>
 </ul>
 
                 </div>
