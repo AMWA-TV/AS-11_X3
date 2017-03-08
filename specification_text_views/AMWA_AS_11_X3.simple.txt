@@ -342,7 +342,7 @@ An implementation complies with this Specification if it complies with the Compo
                             
                             ## Amendment
                             A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.
-        [B] AS-11 Segmentation DM
+        [B] AS-11 Segmentation DM (Descriptive Metadata)
             Conformance: mandatory
             [A] The file contains exactly one <Program Segmentation Track>.
                 [B] Program Segmentation Track

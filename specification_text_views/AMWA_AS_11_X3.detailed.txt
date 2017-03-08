@@ -1638,7 +1638,7 @@ An implementation complies with this Specification if it complies with the Compo
                             ## Amendment
                             A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.
                             <URL: http://www.amwa.tv/projects/rules/01/note/E9/artefacts/1.md>
-        [B] AS-11 Segmentation DM
+        [B] AS-11 Segmentation DM (Descriptive Metadata)
             Conformance: mandatory
             <URL: http://www.amwa.tv/projects/rules/01/block/530/>
             [A] The file contains exactly one <Program Segmentation Track>.
