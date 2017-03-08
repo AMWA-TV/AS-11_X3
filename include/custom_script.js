@@ -54,15 +54,21 @@
 
                 var target_id = $(this).attr('href').substr(1);
 
-                if ($('#jstree').jstree(true).open_node(target_id) || $('#jstree').jstree(true).is_open(target_id)) {
-                    $('#jstree').jstree(true).deselect_all();
-                    $('#jstree').jstree(true).select_node(target_id);
-                    if (fullHeightOfItemInView('#' + target_id + ' .jstree-themeicon')) {
-                        // Do not jump to the link target if the target is in the tree and the full height of the tree node's icon is visible
-                        event.preventDefault();
+                if (target_id == 'component-id-message') {
+                    $('#component-id-message').modal()
+                    // Do not jump to the link target
+                    event.preventDefault();
+                } else {
+
+                    if ($('#jstree').jstree(true).open_node(target_id) || $('#jstree').jstree(true).is_open(target_id)) {
+                        $('#jstree').jstree(true).deselect_all();
+                        $('#jstree').jstree(true).select_node(target_id);
+                        if (fullHeightOfItemInView('#' + target_id + ' .jstree-themeicon')) {
+                            // Do not jump to the link target if the target is in the tree and the full height of the tree node's icon is visible
+                            event.preventDefault();
+                        }
                     }
                 }
-
             }
 
         });
