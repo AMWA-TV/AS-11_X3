@@ -67,7 +67,7 @@ An implementation complies with this Specification if it complies with the Compo
     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/FF_5/>
     [B] File Format with Parameter Keys
         Conformance: mandatory
-        <Component ID: http://www.amwa.tv/projects/rules/01/block/FF_0_r001/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/FF_0_r002/>
         [B] Core MXF constraints
             Conformance: mandatory
             <Component ID: http://www.amwa.tv/projects/rules/01/block/MXF_Core/>
@@ -1522,9 +1522,9 @@ An implementation complies with this Specification if it complies with the Compo
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Group%20of%20Soundfield%20Groups/>
         [B] Embedded XML Documents
             Conformance: mandatory
-            <Component ID: http://www.amwa.tv/projects/rules/01/block/DM0/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/DM0_r001/>
             [A] Each XML document identified by <List of Embedded XML Documents> is embedded in the file using <XML Document in Header Metadata Carriage>.
-                <Component ID: http://www.amwa.tv/projects/rules/01/block/DM0/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/DM0_r001/artefacts/1.md>
                 [K] List of Embedded XML Documents
                     Associated Parameter Value: "List of Embedded XML Documents" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_0/)
                     <Component ID: http://www.amwa.tv/projects/rules/01/block/param0/>
@@ -1642,6 +1642,36 @@ An implementation complies with this Specification if it complies with the Compo
                             ## Amendment
                             A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.
                             <Component ID: http://www.amwa.tv/projects/rules/01/note/E9/artefacts/1.md>
+            [A] For each of these embedded XML documents, the "UTF-8 Text-based Set" that carries it is uniquely identified within the `sets_in_scope` by the value of its "Text Data Description" property; where `sets_in_scope` consists of all the instances of "Text-based Object" (as defined by <SMPTE RP 2057:2011>) present in the <Material Package> that have a value of <DM_XML_Document> for the "Text-based Metadata Payload Scheme ID" property.
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/DM0_r001/artefacts/2.md>
+                [R] SMPTE RP 2057:2011
+                    <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20RP%202057-2011/>
+                [T] Material Package
+                    An MXF data structure that describe an output timeline of the file.
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                [B] DM_XML_Document
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/>
+                    [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/XMLDMLabel/artefacts/Labels.xml
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/artefacts/Labels.xml>
+                    [N] SMPTE Registers Node: MetadataPayloadSchemes
+                        <Component ID: http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/>
+                        [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/MetadataPayloadSchemes/artefacts/Labels.xml
+                            <Component ID: http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/artefacts/Labels.xml>
+            [N] Other Text/XML Documents can also be Embedded
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E82/>
+                [A] This Block does not prohibit other text documents (XML or otherwise) from also being embedded in the MXF file. This could be useful because it allows custom XML documents also to be carried along with the mandated XML document(s).
+                    
+                    Note that the stated constraints help readers in identifying the mandated XML document(s); if a device examines all sets / objects that meet all of the following criteria:
+                    
+                    * it is an instance of a "Text-based Object" (so it is a "Generic Stream Text-based Set", "UTF-8 Text-based Set" or "UTF-16 Text-based Set")
+                    * it is in the <Material Package>
+                    * the "Text-based Metadata Payload Scheme ID" property has the specified value
+                    
+                    then the set / object containing a specific mandated XML document can be uniquely identified by the value of its "Text Data Description" property (this property contains the namespace of the root element of the XML document).
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E82/artefacts/1.md>
+                    [T] Material Package
+                        An MXF data structure that describe an output timeline of the file.
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
         [B] AS-11 Segmentation DM (Descriptive Metadata)
             Conformance: mandatory
             <Component ID: http://www.amwa.tv/projects/rules/01/block/530/>
