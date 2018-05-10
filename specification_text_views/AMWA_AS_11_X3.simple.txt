@@ -155,7 +155,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 
                                 This Block places no constraint on Index Table Repetition. For example, a complete Index Table could additionally be included somewhere in the file if required.
                     [N] Application to CBE Essence
-                        [A] While these constraints are designed for use with Varible Bytes per Element (VBE) Essence, it is possible to apply them to Constant Bytes per Element (CBE) Essence. There are more efficient ways to deal with CBE Essence, however.
+                        [A] While these constraints are designed for use with Variable Bytes per Element (VBE) Essence, it is possible to apply them to Constant Bytes per Element (CBE) Essence. There are more efficient ways to deal with CBE Essence, however.
                 [B] MXF Indexing and Partitioning strategy for CBE Essence
                     [B] Index precedes Essence
                         Conformance: mandatory

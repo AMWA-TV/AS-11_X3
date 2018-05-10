@@ -390,7 +390,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 <Component ID: http://www.amwa.tv/projects/rules/01/note/E13/artefacts/1.md>
                     [N] Application to CBE Essence
                         <Component ID: http://www.amwa.tv/projects/rules/01/note/E29/>
-                        [A] While these constraints are designed for use with Varible Bytes per Element (VBE) Essence, it is possible to apply them to Constant Bytes per Element (CBE) Essence. There are more efficient ways to deal with CBE Essence, however.
+                        [A] While these constraints are designed for use with Variable Bytes per Element (VBE) Essence, it is possible to apply them to Constant Bytes per Element (CBE) Essence. There are more efficient ways to deal with CBE Essence, however.
                             <Component ID: http://www.amwa.tv/projects/rules/01/note/E29/artefacts/1.md>
                 [B] MXF Indexing and Partitioning strategy for CBE Essence
                     <Component ID: http://www.amwa.tv/projects/rules/01/block/MXF_Intra/>
