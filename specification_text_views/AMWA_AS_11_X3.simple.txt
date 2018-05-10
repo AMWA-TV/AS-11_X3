@@ -222,7 +222,7 @@ An implementation complies with this Specification if it complies with the Compo
                 Conformance: mandatory
                 [A] An <Audio Layout Mode> is used with the properties set as specified by <Audio Layout Mode 0> or one of the <Audio Layout Mode>s specified by <Extra Audio Layout Modes>.
                     [B] Audio Layout Mode
-                        [A] The value of <Channel Assignment Label> is a SMPTE Universal Label that is used as the value of the "ChannelAssignment" property in the {WAVEPCMDescriptor}.
+                        [A] The value of <Channel Assignment Label> is a SMPTE Universal Label that is used as the value of the <Sound Essence Descriptor> property that signals channel assignment.
                         [A] If <MCA Labeling Present> is "true" then <Constrained Multichannel Audio Labeling Framework> is used. Otherwise the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012> is not used.
                             [B] Constrained Multichannel Audio Labeling Framework
                                 [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
@@ -256,6 +256,11 @@ An implementation complies with this Specification if it complies with the Compo
                                         * However, the entry for `RFC5646SpokenLanguage` in the SMPTE Elements Register correctly lists the type as "ISO7", which refers to "ISO/IEC 646:1991, Information technology -- ISO 7-bit coded character set for information interchange.". That is the same character repertoire referenced by IETF RFC 5646.
                                         
                         [A] The value of <Default Audio Layout> defines any static properties of <Audio Channel>s and <Sound Track>s in the file.
+                        [N] Channel Assignment Signalling
+                            [A] There are different ways of signalling channel assignment depending on the format of the audio. For example:
+                                
+                                * PCM uses the "ChannelAssignment" property of the {WAVEPCMDescriptor} <Sound Essence Descriptor>
+                                * AAC uses the "MPEGAudioChannelAssignment" property of the {MPEGAudioDescriptor} <Sound Essence Descriptor>
                     [B] Audio Layout Mode 0
                         [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework(Label)>.
                             [B] ConstrainedMultichannelAudioLabelingFramework(Label)

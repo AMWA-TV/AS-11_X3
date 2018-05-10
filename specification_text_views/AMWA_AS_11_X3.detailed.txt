@@ -67,7 +67,7 @@ An implementation complies with this Specification if it complies with the Compo
     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/FF_5/>
     [B] File Format with Parameter Keys
         Conformance: mandatory
-        <Component ID: http://www.amwa.tv/projects/rules/01/block/FF_0_r002/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/FF_0_r003/>
         [B] Core MXF constraints
             Conformance: mandatory
             <Component ID: http://www.amwa.tv/projects/rules/01/block/MXF_Core/>
@@ -552,7 +552,7 @@ An implementation complies with this Specification if it complies with the Compo
                     <Component ID: http://www.amwa.tv/projects/rules/01/block/param2/artefacts/1.md>
         [B] Multichannel, 24-bit, 48 kHz, uncompressed PCM, mapped with ST 382
             Conformance: mandatory
-            <Component ID: http://www.amwa.tv/projects/rules/01/block/S0/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/S0_r001/>
             [B] One Soundfield Group per Sound Track
                 Conformance: mandatory
                 <Component ID: http://www.amwa.tv/projects/rules/01/block/220b/>
@@ -649,18 +649,27 @@ An implementation complies with this Specification if it complies with the Compo
                             <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20382-2007/>
             [B] Audio Layout
                 Conformance: mandatory
-                <Component ID: http://www.amwa.tv/projects/rules/01/block/AL/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/AL_r001/>
                 [A] An <Audio Layout Mode> is used with the properties set as specified by <Audio Layout Mode 0> or one of the <Audio Layout Mode>s specified by <Extra Audio Layout Modes>.
-                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AL/artefacts/4.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AL_r001/artefacts/4.md>
                     [B] Audio Layout Mode
-                        <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM/>
-                        [A] The value of <Channel Assignment Label> is a SMPTE Universal Label that is used as the value of the "ChannelAssignment" property in the {WAVEPCMDescriptor}.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM/artefacts/1.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM_r001/>
+                        [A] The value of <Channel Assignment Label> is a SMPTE Universal Label that is used as the value of the <Sound Essence Descriptor> property that signals channel assignment.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM_r001/artefacts/1.md>
                             [T] Channel Assignment Label
                                 A property of an Audio Layout Mode
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Channel%20Assignment%20Label/>
+                            [T] Sound Essence Descriptor
+                                MXF technical metadata that describes the <Sound Essence>.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence%20Descriptor/>
+                                [T] Sound Essence
+                                    A type of <Essence> containing sound data.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/>
+                                    [T] Essence
+                                        A bitstream comprising picture, sound or data.
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                         [A] If <MCA Labeling Present> is "true" then <Constrained Multichannel Audio Labeling Framework> is used. Otherwise the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012> is not used.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM/artefacts/2.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM_r001/artefacts/2.md>
                             [T] MCA Labeling Present
                                 A property of an Audio Layout Mode
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/MCA%20Labeling%20Present/>
@@ -1027,7 +1036,7 @@ An implementation complies with this Specification if it complies with the Compo
                             [R] SMPTE ST 377-4:2012
                                 <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-4-2012/>
                         [A] The value of <Default Audio Layout> defines any static properties of <Audio Channel>s and <Sound Track>s in the file.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM/artefacts/3.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM_r001/artefacts/3.md>
                             [T] Default Audio Layout
                                 A property of an Audio Layout Mode
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Default%20Audio%20Layout/>
@@ -1052,6 +1061,22 @@ An implementation complies with this Specification if it complies with the Compo
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
                                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        [N] Channel Assignment Signalling
+                            <Component ID: http://www.amwa.tv/projects/rules/01/note/ChannelAssignmentSignalling/>
+                            [A] There are different ways of signalling channel assignment depending on the format of the audio. For example:
+                                
+                                * PCM uses the "ChannelAssignment" property of the {WAVEPCMDescriptor} <Sound Essence Descriptor>
+                                * AAC uses the "MPEGAudioChannelAssignment" property of the {MPEGAudioDescriptor} <Sound Essence Descriptor>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/note/ChannelAssignmentSignalling/artefacts/1.md>
+                                [T] Sound Essence Descriptor
+                                    MXF technical metadata that describes the <Sound Essence>.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence%20Descriptor/>
+                                    [T] Sound Essence
+                                        A type of <Essence> containing sound data.
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/>
+                                        [T] Essence
+                                            A bitstream comprising picture, sound or data.
+                                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                     [B] Audio Layout Mode 0
                         <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM0/>
                         [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework(Label)>.
@@ -1081,7 +1106,7 @@ An implementation complies with this Specification if it complies with the Compo
                         Associated Parameter Value: "Extra Audio Layout Modes" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_8/)
                         <Component ID: http://www.amwa.tv/projects/rules/01/block/param1/>
                 [A] If <Constrained Multichannel Audio Labeling Framework> is used then any device or system that reads, writes or otherwise processes the file supports <Labels for use in Multichannel Audio Labeling Framework>.
-                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AL/artefacts/5.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AL_r001/artefacts/5.md>
                     [B] Constrained Multichannel Audio Labeling Framework
                         <Component ID: http://www.amwa.tv/projects/rules/01/block/SN2/>
                         [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
