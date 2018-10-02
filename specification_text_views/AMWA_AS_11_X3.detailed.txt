@@ -2369,12 +2369,12 @@ An implementation complies with this Specification if it complies with the Compo
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E71/artefacts/1.md>
             [B] AVC Video Usability Information - Timing Info
                 Conformance: mandatory
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_VUI_TI/>
                 [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_VUI_TI/artefacts/1.md>
                     [T] fixed_frame_rate_flag
                         An AVC syntax element that indicates that constraints apply to the temporal distance between the output times of any two consecutive pictures.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/fixed_frame_rate_flag/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/fixed_frame_rate_flag/>
             [B] AVC bitstream level
                 Conformance: mandatory
                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_54/>
