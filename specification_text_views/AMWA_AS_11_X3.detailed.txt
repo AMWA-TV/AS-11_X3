@@ -2763,7 +2763,7 @@ Readers are advised that any IPR contribution forms associated with this
 project are available from the [AMWA](http://amwa.tv/)
 
 
-(c) AMWA 2018, Licensed under the Apache License, Version 2.0
+(c) AMWA 2019, Licensed under the Apache License, Version 2.0
 
 The following license applies to all parts of this Specification except
 as documented below:
