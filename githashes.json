@@ -1,20 +1,20 @@
 {
     "githashes": [
         {
+            "repo_url": "git@github.com:AMWA-TV/rules-components-AS-11-wip.git", 
+            "commit": "1ab90e9c2ce424e3764507169d2094ac511cea7a"
+        }, 
+        {
             "repo_url": "git@github.com:AMWA-TV/rules-spec-definitions-AS-11.git", 
-            "commit": "06b8ec582936c7daee01270b1d793bedc4d3c12c"
+            "commit": "224755f795ae87cef3c9cbfc79454a0565a36ed8"
         }, 
         {
             "repo_url": "git@github.com:AMWA-TV/rules-components-amwa-01.git", 
-            "commit": "1cc0b69d15741ff5d640f9775ee8263831303366"
-        }, 
-        {
-            "repo_url": "git@github.com:AMWA-TV/rules-components-AS-11-wip.git", 
-            "commit": "1dac58a1466fd7a86e634ace3d281dc027890f3d"
+            "commit": "8a67762a6015df6972064e87d34aa791bbe897fa"
         }, 
         {
             "repo_url": "git@github.com:AMWA-TV/rules-processor.git", 
-            "commit": "22a79b22c5fb34eea7a8298eb2688862376f5315"
+            "commit": "f67b59b0ba93792afc40aa9ea2904594deabd428"
         }
     ]
 }
