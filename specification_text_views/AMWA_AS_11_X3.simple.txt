@@ -379,8 +379,6 @@ An implementation complies with this Specification if it complies with the Compo
                         [A] The start and end timecodes for program regions, commonly referred to as "start of material" (som) and "end of material" (eom), can be determined based on the location of <DM Segment> objects on the <Program Segmentation Track> relative to the adjacent <Timecode Track> in the <Material Package> that contains the <Program Segmentation Track>.
                     [N] Non-Programme Content
                         [A] Examples of non-programme content include: black, ident, clock.
-                    [N] Track Composition
-                        [A] Constraints set out in <SMPTE ST 377-1:2011> and <SMPTE ST 378:2004> mean that the <Program Segmentation Track> is necessarily full from start to finish and is the same length as all other <Timeline Track>s in the <Material Package>.
             [A] This <Track> is in the <Material Package>.
             [A] Each <DM Segment> object in the <Track> strongly references an instance of <DM_AS_11_Segmentation>.
                 [B] DM_AS_11_Segmentation
@@ -393,6 +391,7 @@ An implementation complies with this Specification if it complies with the Compo
                             [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Types.xml
             [N] Implementation Notes
                 [A] The <Track> can be identified by an MXF reader by the presence of <DM Segment> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <DM Framework>.
+                [A] As the <Track> is in the <Material Package>, it is necessarily full from start to finish and is the same length as all other <Timeline Track>s in the <Material Package>.
             [N] Repetition of Header Metadata
                 [A] Repetition of Header Metadata in the Footer Partition is not considered to be another instance of any of the components of that Header Metadata.
         [B] Specification Identification

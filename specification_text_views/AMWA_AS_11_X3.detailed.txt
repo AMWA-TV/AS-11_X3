@@ -1821,23 +1821,6 @@ An implementation complies with this Specification if it complies with the Compo
                         <Component ID: http://www.amwa.tv/projects/rules/01/note/048/>
                         [A] Examples of non-programme content include: black, ident, clock.
                             <Component ID: http://www.amwa.tv/projects/rules/01/note/048/artefacts/1.md>
-                    [N] Track Composition
-                        <Component ID: http://www.amwa.tv/projects/rules/01/note/050/>
-                        [A] Constraints set out in <SMPTE ST 377-1:2011> and <SMPTE ST 378:2004> mean that the <Program Segmentation Track> is necessarily full from start to finish and is the same length as all other <Timeline Track>s in the <Material Package>.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/note/050/artefacts/1.md>
-                            [R] SMPTE ST 377-1:2011
-                                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-1-2011/>
-                            [R] SMPTE ST 378:2004
-                                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20378-2004/>
-                            [T] Timeline Track
-                                A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
-                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
-                                [T] Track
-                                    MXF data structure used to describe the content structure.
-                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
-                            [T] Material Package
-                                An MXF data structure that describes an output timeline of the file.
-                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
             [A] This <Track> is in the <Material Package>.
                 <Component ID: http://www.amwa.tv/projects/rules/01/block/530/artefacts/531.md>
                 [T] Track
@@ -1901,9 +1884,9 @@ An implementation complies with this Specification if it complies with the Compo
                                     A bitstream comprising picture, sound or data.
                                     <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [N] Implementation Notes
-                <Component ID: http://www.amwa.tv/projects/rules/01/note/049/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/049_r001/>
                 [A] The <Track> can be identified by an MXF reader by the presence of <DM Segment> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <DM Framework>.
-                    <Component ID: http://www.amwa.tv/projects/rules/01/note/049/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/049_r001/artefacts/1.md>
                     [T] Track
                         MXF data structure used to describe the content structure.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
@@ -1925,6 +1908,17 @@ An implementation complies with this Specification if it complies with the Compo
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                [A] As the <Track> is in the <Material Package>, it is necessarily full from start to finish and is the same length as all other <Timeline Track>s in the <Material Package>.
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/049_r001/artefacts/2.md>
+                    [T] Track
+                        MXF data structure used to describe the content structure.
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                    [T] Material Package
+                        An MXF data structure that describes an output timeline of the file.
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                    [T] Timeline Track
+                        A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
             [N] Repetition of Header Metadata
                 <Component ID: http://www.amwa.tv/projects/rules/01/note/051/>
                 [A] Repetition of Header Metadata in the Footer Partition is not considered to be another instance of any of the components of that Header Metadata.
