@@ -44,7 +44,15 @@
 
         $("#jstree").on('ready.jstree', function() {
             $('#jstree_loading').hide();              /* Hide the "tree loading" message */
-            openTreeToLevel($("#jstree"), 2);
+            if ($("#jstree").jstree('select_node', window.location.hash)) { /* the hash corresponds to an element in the tree */
+                $("#jstree").jstree('open_node', window.location.hash);
+                $("#jstree").one('after_open.jstree', function(e, data) {
+                    $('html, body').scrollTop($(window.location.hash).offset().top);
+                });
+            } else {
+                history.replaceState(null, null, document.location.pathname); /* if there is an unrecognised anchor, remove it */
+                openTreeToLevel($("#jstree"), 2);
+            }
             $("#jstree").show();                      /* show the whole tree (it was hidden) */
         });
 
@@ -86,6 +94,9 @@
 
         });
 
+        $("#jstree").on('select_node.jstree', function(e, data) {
+            history.replaceState(null, null, document.location.pathname + '#' + data.node.id); /* allows URL with anchor to selected element to be copied */
+        });
 
         $( "#tInfo_btn_show" ).click(function() {
             $('.tInfo').css( "display", "block" );
