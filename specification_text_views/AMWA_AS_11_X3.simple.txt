@@ -3,7 +3,7 @@
 |*Important links*| |
 |-----------------|-|
 |[Specification Repository on GitHub](https://github.com/AMWA-TV/AS-11_X3/)|This repository is where the entire Specification (including this file and alternative renderings / views of the Specification) is stored and version controlled|
-|[Project Page on the AMWA Website](http://amwa.tv/projects/AS-11-X3/)|The home of the Specification on the AMWA website|
+|[Project Page on the AMWA Website](https://www.amwa.tv/as-11-x3/)|The home of the Specification on the AMWA website|
 |[Development and Implementation Resources](https://github.com/AMWA-TV/AS-11_Overview/)|Provides resources such as Specification issue tracking, MXF sample files, and tools|
 
 
@@ -680,7 +680,7 @@ Readers are advised that any IPR contribution forms associated with this
 project are available from the [AMWA](http://amwa.tv/)
 
 
-(c) AMWA 2019, Licensed under the Apache License, Version 2.0
+(c) AMWA 2020, Licensed under the Apache License, Version 2.0
 
 The following license applies to all parts of this Specification except
 as documented below:

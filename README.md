@@ -1,6 +1,6 @@
 # **[Work In Progress]** AS-11 X3 (MXF Program Contribution - HD Long GOP (25p, 50p))
 
-This repository contains the full details of this [AMWA Specification](http://amwa.tv/projects/AS-11-X3/). For the latest version of this repository please refer to [its GitHub project](https://github.com/AMWA-TV/AS-11_X3/).
+This repository contains the full details of this [AMWA Specification](https://www.amwa.tv/as-11-x3/). For the latest version of this repository please refer to [its GitHub project](https://github.com/AMWA-TV/AS-11_X3/).
 
 ## Getting Started
 
