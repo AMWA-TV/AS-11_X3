@@ -304,7 +304,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 * However, the entry for `RFC5646SpokenLanguage` in the SMPTE Elements Register correctly lists the type as "ISO7", which refers to "ISO/IEC 646:1991, Information technology -- ISO 7-bit coded character set for information interchange.". That is the same character repertoire referenced by IETF RFC 5646.
                                 
                     [K] Labels for use in Multichannel Audio Labeling Framework
-                        Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_7_r002/)
+                        Associated Parameter Value: "Labels for use in Multichannel Audio Labeling Framework" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_7_r003/)
                 [N] Implementation Notes
                     [A] # "MCA Label Dictionary ID" Labels Used
                         
@@ -550,7 +550,7 @@ An implementation complies with this Specification if it complies with the Compo
         Associated Parameter Key: "Labels for use in Multichannel Audio Labeling Framework" (Component ID: http://www.amwa.tv/projects/rules/01/block/param4/)
         [B] Multichannel Audio Labels Collection 0
             Conformance: mandatory
-            [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/MCAL_Labels_Set_0_r002/artefacts/Labels.xml
+            [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/MCAL_Labels_Set_0_r003/artefacts/Labels.xml
             [A] <AudioChannelLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name                  | MCA Tag Symbol
@@ -563,6 +563,8 @@ An implementation complies with this Specification if it complies with the Compo
                  `LeftSurroundAudioChannel`                | Left Surround                 | `chLs`
                  `RightSurroundAudioChannel`               | Right Surround                | `chRs`
                  `VisuallyImpairedNarrativeAudioChannel`   | Visually Impaired Narrative   | `chVIN`
+                
+                __⚠__ The MCA Tag Name "Visually Impaired-Narrative" (with a hyphen) is used elsewhere, such as in IMF and D-Cinema.
             [A] <SoundfieldGroupLabelSubDescriptor>s use the SMPTE Metadata Registers Entries listed here in accordance with this table.
                 
                  SMPTE Metadata Registers Symbol           | MCA Tag Name      | MCA Tag Symbol | Constituent Audio Channels (in no particular order)
