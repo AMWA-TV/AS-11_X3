@@ -14,7 +14,7 @@
         }, 
         {
             "repo_url": "git@github.com:AMWA-TV/rules-processor.git", 
-            "commit": "e9410fe935be11a6d05b8f0e175cf59386585d10"
+            "commit": "f134b56cc47ca154f60c98f7141a480cb01b55d1"
         }
     ]
 }

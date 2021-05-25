@@ -44,11 +44,31 @@
 
         $("#jstree").on('ready.jstree', function() {
             $('#jstree_loading').hide();              /* Hide the "tree loading" message */
-            if ($("#jstree").jstree('select_node', window.location.hash)) { /* the hash corresponds to an element in the tree */
-                $("#jstree").jstree('open_node', window.location.hash);
-                $("#jstree").one('after_open.jstree', function(e, data) {
-                    $('html, body').scrollTop($(window.location.hash).offset().top);
-                });
+            var node = $("#jstree").jstree('get_node', window.location.hash);
+            if (node) { /* the hash corresponds to an element in the tree */
+                /* Select the element corresponding to the hash, open to it
+                   and also open it if it has children, and scroll to it.
+                   As this procedure is done on page loading, we must ensure that the tree
+                   has reached a state where the vertical position of the element within the page
+                   has been accurately determined before we try to scroll to it.
+                   At this point, that has not happened. It seems not to be reliable
+                   until an after_open event is issued by an open_node() call.
+                   We must therefore ensure that a successful call to open_node() is made.
+                   If the target node has children, this is achieved by opening it,
+                   but if it does not, its immediate parent is closed and opened
+                   to achieve the same thing. */
+                $("#jstree").jstree('select_node', node);
+                if (node.children.length || node.parents.length) {
+                    $("#jstree").one('after_open.jstree', function(e, data) {
+                        $('html, body').scrollTop($(window.location.hash).offset().top);
+                    });
+                    if (node.children.length) {
+                        $("#jstree").jstree('open_node', node);
+                    } else {
+                        $("#jstree").jstree('close_node', node.parents[0]);
+                        $("#jstree").jstree('open_node', node.parents[0]);
+                    }
+                }
             } else {
                 history.replaceState(null, null, document.location.pathname); /* if there is an unrecognised anchor, remove it */
                 openTreeToLevel($("#jstree"), 2);
