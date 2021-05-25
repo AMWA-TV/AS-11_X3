@@ -6,7 +6,7 @@
         }, 
         {
             "repo_url": "git@github.com:AMWA-TV/rules-spec-definitions-AS-11.git", 
-            "commit": "054f0083d16b4378e195d891ccb78b8acee6e327"
+            "commit": "35d823880426ce532775ba953b3ebf718ac45726"
         }, 
         {
             "repo_url": "git@github.com:AMWA-TV/rules-processor.git", 
