@@ -2,7 +2,7 @@
     "githashes": [
         {
             "repo_url": "git@github.com:AMWA-TV/rules-processor.git", 
-            "commit": "42a9ee90de8f08179835ec1c658f268d0144ee46"
+            "commit": "55c351da32fc3db2115cdc1495104932c5a3c7d1"
         }, 
         {
             "repo_url": "git@github.com:AMWA-TV/rules-components-AS-11-wip.git", 
