@@ -1,4 +1,4 @@
-# **[Work In Progress]** AS-11 X3 (MXF Program Contribution - HD Long GOP (25p, 50p))
+# **[Archived]** AS-11 X3 (MXF Program Contribution - HD Long GOP (25p, 50p))
 
 ### **View the latest version of this Specification online [here](https://amwa-tv.github.io/AS-11_X3/AMWA_AS_11_X3.html)**.
 

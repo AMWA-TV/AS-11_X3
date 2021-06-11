@@ -1,4 +1,4 @@
-# **[Work In Progress]** AS-11 X3 (MXF Program Contribution - HD Long GOP (25p, 50p))
+# **[Archived]** AS-11 X3 (MXF Program Contribution - HD Long GOP (25p, 50p))
 
 |*Important links*| |
 |-----------------|-|
