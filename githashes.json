@@ -5,12 +5,12 @@
             "commit": "875ea96e24e7a3b4ad1b15df17b3644cd59ace51"
         },
         {
-            "repo_url": "git@github.com:AMWA-TV/rules-components-amwa-01.git",
-            "commit": "be2011d55d3cdf373443c7eb68badab3905d8980"
+            "repo_url": "git@github.com:AMWA-TV/rules-spec-definitions-AS-11.git",
+            "commit": "a245fa275f889d959a49aa87eff1e32de3822418"
         },
         {
-            "repo_url": "git@github.com:AMWA-TV/rules-spec-definitions-AS-11.git",
-            "commit": "cfdf3e1b34a58541565480ed6196f4779709d9cc"
+            "repo_url": "git@github.com:AMWA-TV/rules-components-amwa-01.git",
+            "commit": "be2011d55d3cdf373443c7eb68badab3905d8980"
         },
         {
             "repo_url": "git@github.com:AMWA-TV/rules-processor.git",
