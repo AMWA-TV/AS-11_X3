@@ -3,6 +3,7 @@
 |*Important links*| |
 |-----------------|-|
 |[Specification Repository on GitHub](https://github.com/AMWA-TV/AS-11_X3/)|This repository is where the entire Specification (including this file and alternative renderings / views of the Specification) is stored and version controlled|
+|[List of Releases](https://github.com/AMWA-TV/AS-11_X3/releases)|Milestones marking significant points in the development of the Specification|
 |[Project Page on the AMWA Website](https://www.amwa.tv/as-11-x3/)|The home of the Specification on the AMWA website|
 |[Development and Implementation Resources](https://github.com/AMWA-TV/AS-11_Overview/)|Provides resources such as Specification issue tracking, MXF sample files, and tools|
 
